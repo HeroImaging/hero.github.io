@@ -67,55 +67,64 @@
         </div>
 
         <!-- Page Content  -->
-        <div id="content" class="col"><h1 id="welcome-to-mice-toolkit">Welcome to MICE Toolkit!</h1>
+        <div id="content" class="col"><h1 id="v1.1.0">v1.1.0</h1>
 <hr />
-<p>The MICE Toolkit (Medical Interactive Creative Environment) is a graphical programming user interface that is user friendly while still highly flexible. Complex image analysis processes can be constructed rapidly and it also serves as a platform for research, where users can share their solutions with the community in a standardized way. The basic idea is to make advanced and complex processing and analysis of medical images available to all professionals who need it, including medical fields such as radiotherapy, radiology and pathology. To do so the ambition is that MICE Toolkit provides you with advanced tools for complex processing and analysis in a intuitive way not just simplifying the work process but also making it far less time consuming to generate results suited to the users particular needs – be it further analysis or formal presentation of your research.</p>
-<h2 id="downloading">Downloading</h2>
-<p>The latest stable release of MICE Toolkit is version 1.0.9 and the latest beta version is 1.0.21, you can download them here:</p>
-<p><a href="https://nonpi.s3.eu-north-1.amazonaws.com/mtk/release/stable/1.0.9/MICE-Toolkit-1.0.9-Setup.exe">Download Stable v1.0.9</a></p>
-<p><a href="https://nonpi.s3.eu-north-1.amazonaws.com/mtk/release/beta/MICE+Toolkit+BETA+1.0.21+Setup.exe">Download Beta v1.0.21</a></p>
-<h2 id="installing">Installing</h2>
-<p>Install the software by running the downloaded .exe file. The installation requires approximately 1.5GB of free space.</p>
-<h3 id="license">License</h3>
-<p>To run the software a license is needed, if you don't have a license you can register for a free license <a href="https://service.micetoolkit.com/?t=signup">HERE</a>.</p>
-<p>The license is verified against a license server when you run the software. If you have a premium license you need an internet connection to get access to all of the features of your license.</p>
-<h3 id="virtual-machines">Virtual Machines</h3>
-<p>You can use a lite license on a virtual machine but not a premium one. If you need to use your premium license on a virtual machine, please <a href="https://service.micetoolkit.com/?t=contact">contact us</a>.</p>
-<h3 id="remote-desktop">Remote Desktop</h3>
-<p>If you want to run MICE Toolkit via windows built in remote desktop you need to start the MICE Toolkit  locally on the machine before you connect. This is due to the way windows handle graphics in the remote desktop software. Other remote desktop software like VNC seems to work fine.</p>
-<h2 id="hardware-requirements">Hardware Requirements</h2>
-<h3 id="os">OS</h3>
-<p>We recommend using <strong>Windows 10</strong> but it will run on Windows 7, 8 and 8.1 as well.</p>
-<h3 id="cpu">CPU</h3>
-<p>MICE Toolkit uses the CPU with multiple threads for most of the processing so a <strong>fast multi core CPU</strong> is  preferred.</p>
-<h3 id="memory">Memory</h3>
-<p>Depending on what you like to do there is no upper limit to the amount of memory you might need, anything less than <strong>8GB</strong> will probably not be enough for most scenarios.</p>
-<h3 id="graphics">Graphics</h3>
-<p>MICE Toolkit uses VTK to visualize images so before deciding on a graphics card please read the following taken from the VTK/FAQ:</p>
-<blockquote class="blockquote">
-<p>Modern graphics cards that supports OpenGL 2.1 or better typically provide all the functionality that VTK needs. However, there is good deal of variability in results across OS platform and vendor's OpenGL implementation. NVidia cards and drivers work the best. Intel HD integrated graphics and ATI Radeon HD devices and drivers are known to have a few issues. Mesa3D OpenGL although claiming support for a wide range of devices is highly unstable and the overall buggy-ness of their implementation changes daily and by renderer. Mesa's llvmpipe drivers are expected to generally work well.</p>
-</blockquote>
-<p>Our experience tells us that cards from <strong>NVidia</strong> are the most compatible.</p>
-<h3 id="disk-space">Disk Space</h3>
-<p>The installation requires approximately <strong>1.5GB of free space</strong>.</p>
+<p>In this version support for the old licensing system has been removed and keys generated in the old system will not work. If you are using and old key you need to create a new license account <a href="https://service.micetoolkit.com/?t=signup">here</a> to get a new free lite license. If you have a premium license in the old licensing system please <a href="https://service.micetoolkit.com/?t=contact">contact us</a> to receive your new license key.</p>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>Improved reading performance of large structure sets.</li>
+<li>Changed the way the visualization image list is ordered, the most recently added item is now always at the bottom of the list.</li>
+<li>Changed the title of images in the visualizer to display the image name as title, the name of the output is now displayed below the title.</li>
+<li>Python plugin API changed, please see below.</li>
+<li>Added new metadata structure to images.</li>
+<li>Added passing of image metadata to plugin nodes.</li>
+<li>Added new image metadata viewer.</li>
+<li>Added NIfTI export.</li>
+<li>Added support for NIfTI metadata .xml files.</li>
+<li>Added save warnings when closing the application or process tab.</li>
+<li>Added import of Open Slide images (microscopy).</li>
+<li>Added MR emulator.</li>
+<li>Added run button.</li>
+<li>Added save warnings when closing.</li>
+<li>Added simplified license sign-up.</li>
+<li>Added split panel between image sets and view-port items to improve scaling.</li>
+<li>Added create image node.</li>
+<li>Added license sign-up form.</li>
+<li>Added split container for image sets and view-port items.</li>
+<li>Added new FFT nodes.</li>
+<li>Added basic support for reading &lsquo;Parametric Map&rsquo; type DICOM images containing float pixel data.</li>
+</ul>
+<h3 id="plugins">Plugins</h3>
+<p>We have made many changes to the Python plugin API so if you want to use your old plugins you will probably have to update the code. In addition to that we have added image metadata to all images sent to and from python and m-file plugins.</p>
+<h3 id="python-api-changes">Python API Changes</h3>
+<h2 id="bug-fixes">Bug fixes</h2>
+<ul>
+<li>Fixed NIfTI import node not being able to parse certain orientations correctly.</li>
+<li>Fixed bug related to missing metadata in some images.</li>
+<li>Fixed license use for multiple users using the same machine.</li>
+<li>Fixed EUD normalization error.</li>
+<li>Fixed multiple inputs on plugin nodes.</li>
+<li>Fixed 2D/2D registration requiring 3D images.</li>
+<li>Fixed bug when batching MIQA database images with name &lsquo;No Description&rsquo;.</li>
+<li>Fixed saving bug in plugin editor where the asterisk indicating changes wasn't removed when saving.</li>
+</ul>
+<h2 id="general-changes">General Changes</h2>
+<ul>
+<li>Updated SimpleITK to 1.2.0.</li>
+<li>Updated UI layout.</li>
+</ul>
 <p class="copyright">Copyright &#169; NONPI Medical AB</p></div>
 
         <!-- Indexbar  -->
         <div id="right-wrapper" class="col-3">
             <div id="indexbar" class="sticky-top">
                 <p><i class="fas fa-align-left"></i> CONTENTS</p>
-                <h1><a href="#welcome-to-mice-toolkit">Welcome to MICE Toolkit!</a></h1>
-<h2><a href="#downloading">Downloading</a></h2>
-<h2><a href="#installing">Installing</a></h2>
-<h3><a href="#license">License</a></h3>
-<h3><a href="#virtual-machines">Virtual Machines</a></h3>
-<h3><a href="#remote-desktop">Remote Desktop</a></h3>
-<h2><a href="#hardware-requirements">Hardware Requirements</a></h2>
-<h3><a href="#os">OS</a></h3>
-<h3><a href="#cpu">CPU</a></h3>
-<h3><a href="#memory">Memory</a></h3>
-<h3><a href="#graphics">Graphics</a></h3>
-<h3><a href="#disk-space">Disk Space</a></h3>
+                <h1><a href="#v1.1.0">v1.1.0</a></h1>
+<h2><a href="#changes">Changes</a></h2>
+<h3><a href="#plugins">Plugins</a></h3>
+<h3><a href="#python-api-changes">Python API Changes</a></h3>
+<h2><a href="#bug-fixes">Bug fixes</a></h2>
+<h2><a href="#general-changes">General Changes</a></h2>
 
             </div>
         </div>
