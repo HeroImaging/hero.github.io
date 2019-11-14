@@ -409,6 +409,19 @@ a[data-toggle="collapse"] {
   transform: translate(-50%, -50%);
 }
 
+.smaller {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+
 #tipue_search_input {
     background: #FFF;
     border: none;
