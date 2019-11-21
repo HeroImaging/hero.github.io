@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MICE Toolkit</title>
+    <!-- Styles -->
+    <link href="../styles/normalize.css" rel="stylesheet">
+    <link href="../styles/all.css" rel="stylesheet">
+    <link href="../styles/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/tipuesearch.css" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="../scripts/solid.js"></script>
+    <script defer src="../scripts/fontawesome.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#indexbar" data-offset="30">
+    <nav id="searchbar">
+        <div id="search">
+            <i class="fas fa-search"></i><input placeholder="Search..." type="text" name="searchbox" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters">
+            <div id="dismiss">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <div id="tipue_search_content"></div>
+    </nav>
+    <div class="overlay">
+    </div>
+    <div id="topmenu">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img src="../images\logo.png" alt="MICE Toolkit" height="51">
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <div class="navsearch">
+                            <i class="fas fa-search navsearch"></i><input placeholder="Search..." type="text" class="searchbox" id="sidebarCollapse">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <!-- Sidebar  -->
+        <div id="left-wrapper" class="col-3">
+            <div id="sidebar" class="sticky-top">
+                <ul class="list-unstyled components">
+<li>
+<a id="p1" href="../home.html?p1">Home</a>
+</li>
+<li>
+<a href="#m2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tutorials</a>
+<ul class="submenu collapse list-unstyled" id="m2">
+<li>
+<a href="#m3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Videos</a>
+<ul class="submenu collapse list-unstyled" id="m3">
+<li>
+<a id="p4" href="../tutorials/videos/getting_started.html?p4">Getting Started</a>
+</li>
+<li>
+<a id="p5" href="../tutorials/videos/masks.html?p5">Masks</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m6" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Changelog</a>
+<ul class="submenu collapse list-unstyled show" id="m6">
+<li>
+<a id="p7" href="../changelog/1.1.0.html?p7">1.1.0</a>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+
+        <script>
+            var qAt = document.URL.indexOf("?");
+            if (qAt > 0) {
+                var params = document.URL.substr(qAt + 1);
+                document.getElementById(params).className += "focused";
+            }
+        </script>
+
+        <!-- Page Content  -->
+        <div id="content" class="col"><h1 id="section">1.1.0</h1>
+<hr />
+<p>In this version support for the old licensing system has been removed and keys generated in the old system will not work. If you are using and old key you need to create a new license account <a href="https://service.micetoolkit.com/?t=signup">here</a> to get a new free lite license. If you have a premium license in the old licensing system please <a href="https://service.micetoolkit.com/?t=contact">contact us</a> to receive your new license key.</p>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>Improved reading performance for large structure sets.</li>
+<li>Changed the way the visualization image list is ordered, the most recently added item is now always at the bottom of the list.</li>
+<li>Changed the title of images in the visualizer to display the image name as title, the name of the output is now displayed below the title.</li>
+<li>Python plugin API changed, please <a href="#plugins">see below</a>.</li>
+<li>Added new metadata structure to images.</li>
+<li>Added passing of image metadata to plugin nodes.</li>
+<li>Added new image metadata viewer.</li>
+<li>Added functionality to connect several nodes to one input at the same time.</li>
+<li>Added NIfTI export.</li>
+<li>Added support for NIfTI metadata .json files.</li>
+<li>Added save warnings when closing the application or process tab.</li>
+<li>Added import of Open Slide images (microscopy).</li>
+<li>Added MR emulator.</li>
+<li>Added run button.</li>
+<li>Added save warnings when closing.</li>
+<li>Added simplified license sign-up.</li>
+<li>Added split panel between image sets and view-port items to improve scaling.</li>
+<li>Added create image node.</li>
+<li>Added new FFT nodes.</li>
+<li>Added basic support for reading &lsquo;Parametric Map&rsquo; type DICOM images containing float pixel data.</li>
+</ul>
+<h2 id="bug-fixes">Bug Fixes</h2>
+<ul>
+<li>Fixed NIfTI import node not being able to parse certain orientations correctly.</li>
+<li>Fixed bug related to missing metadata in some images.</li>
+<li>Fixed license use for multiple users using the same machine.</li>
+<li>Fixed EUD normalization error.</li>
+<li>Fixed multiple inputs on plugin nodes.</li>
+<li>Fixed 2D/2D registration requiring 3D images.</li>
+<li>Fixed bug when batching MIQA database images with name &lsquo;No Description&rsquo;.</li>
+<li>Fixed saving bug in plugin editor where the asterisk indicating changes wasn't removed when saving.</li>
+<li>Fixed bool values in plugins to be either <em>True</em> or <em>False</em>, not 1 and 0.</li>
+<li>Fixed generation of the InputPaths variable in plugins.</li>
+</ul>
+<h2 id="general-changes">General Changes</h2>
+<ul>
+<li>Updated SimpleITK to 1.2.0.</li>
+<li>Updated UI layout.</li>
+</ul>
+<h2 id="plugins">Plugins</h2>
+<p>We have made substantial changes to the Python plugin API, so if you want to use your old plugins you will probably have to update the code. We have also added import and export of image metadata to all images sent to and from python and MATLAB plugins.</p>
+<h3 id="python-api-changes">Python API Changes</h3>
+<p>The code now adheres to PEP8, which means that many methods and property names have changed slightly. A new module has been added, mtk.utils, which contains many of the methods and functions previously found in Image4D.</p>
+<h3 id="class-mtk.image.image4d">Class mtk.image.Image4D</h3>
+<h4 id="changes-1">Changes</h4>
+<ul>
+<li>Changed the constructor to only require shape and dtype parameters. All other parameters are optional.</li>
+<li>Changed <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">shape</code>, <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">voxel_size</code> and <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">position</code> are now given as a list or a tuple.</li>
+<li>Changed <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">to_itk_image()</code> to take one optional argument, frame, which selects the frame to send to SimpleITK. By default frame=0.</li>
+<li>Changed <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">clone_empty()</code> to take one optional argument dtype, which can be used to change the data type of the cloned image.</li>
+<li>Renamed method <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">toItkImage()</code> to <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">to_itk_image()</code>.</li>
+<li>Renamed method <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">writemhd()</code> to <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">mtk.utils.write_mhd()</code> and moved it to mtk.utils.</li>
+<li>Renamed <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">readmhd()</code> to <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">tk.utils.read_mhd()</code> and moved it to mtk.utils.</li>
+<li>Removed <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">create()</code>, <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">create4d()</code>, <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">create3d()</code>, <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">create2d()</code>. Please use the Image4D class constructor instead.</li>
+</ul>
+<h4 id="additions">Additions</h4>
+<ul>
+<li>Added <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">transpose(self, *axes)</code>. Returns a copy of the image with the axes transposed. Use this if you want to change the order of the image dimensions according to the optional input axes.</li>
+<li>Added method <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">T()</code>. This methods reverses the order of the axes.</li>
+<li>Support for metadata has been added. A metadata structure is exported to the python environment in a TypedList, where each element contains the metadata for each frame of the image.</li>
+</ul>
+<h3 id="class-mtk.utils">Class mtk.utils</h3>
+<ul>
+<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">read_csv(filename, delimiter=&quot;;&quot;)</code>: Reads a csv file from disk.</li>
+<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">write_csv(data, filename, delimiter=&quot;;&quot;)</code>: Writes a csv file to disk.</li>
+<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">read_metadata(path)</code>: Read image metadata from an .xml file given in path.</li>
+<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">from_itk_image(itkimage)</code>: Convert a SimpleITK image to an Image4D class.</li>
+<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">valid_variable(variable_name)</code>: Checks if a variable name is valid in MICE/Python.</li>
+<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">valid_type(value)</code>: Checks if a variable has a valid type.</li>
+<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">TypedList(list)</code>: Creates a list datatype with strong typing. This datatype is used in the metadata representation.</li>
+<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">Struct(object)</code>: Creates a structure datatype from a dictionary. This datatype is used in the metadata representation.</li>
+</ul>
+<h3 id="code-example">Code Example</h3>
+<pre><code class="language-py"># Image4D constructor
+image = mtk.image.Image4D([10, 10, 10, 3], name='Empty', dtype='bool')
+
+# Show overview of image properties
+image
+print(image)
+
+# Get shape, voxel size and position of image
+image.shape
+image.voxel_size
+image.position
+
+# ITK conversion
+itk_image = image.to_itk_image()
+itk_image_frame = image.to_itk_image(frame=2)
+image_from_itk = mtk.utils.from_itk_image(itk_image_frame, dtype='float')
+
+'''Create some metadata. A metadata structure, defined in mtk.utils.Struct 
+is compatible with a DICOM struct, but more flexible. Structs can contain fields, 
+Structs, and TypedLists. A TypedList is a list with strong typing, where each 
+element in must be of the same type. The metadata structure is stored in a 
+TypedList, where each frame has its own Struct. 
+'''
+# Create a metadata struct, with fields common to all frames
+metadata_struct = mtk.utils.Struct(dict(PatientID='10',PatientName='Dummy'))
+
+# Add a field to the metadata
+metadata_struct.Age = 77
+
+# Clone metadata_struct in a TypedList
+metadata_list = mtk.utils.TypedList([metadata_struct]*3)
+
+# Create a tag called &quot;Frame&quot;, that is different in each frame
+for i, _ in enumerate(metadata_list):
+    metadata_list[i].Frame = i
+
+# Store metadata in the Image4D object     
+image.metadata = metadata_list
+
+# Cloning
+mask = image.clone_empty(dtype='bool')
+
+# Write to MHD. The metadata is written to an XML file. 
+mtk.utils.write_mhd(&quot;c:\\temp\\mhdimage.mhd&quot;, image)
+mhd_image = mtk.utils.read_mhd(&quot;c:\\temp\\mhdimage.mhd&quot;)
+
+# Verify that the metadata is intact
+mhd_image.metadata[0].PatientName
+</code></pre>
+<p class="copyright">Copyright &#169; 2019, NONPI Medical AB</p></div>
+
+        <!-- Indexbar  -->
+        <div id="right-wrapper" class="col-3">
+            <nav id="indexbar" class="nav sticky-top">
+                <p><i class="fas fa-align-left"></i> CONTENTS</p>
+                <a class="nav-link" href="#section"><h1>1.1.0</h1></a>
+<a class="nav-link" href="#changes"><h2>Changes</h2></a>
+<a class="nav-link" href="#bug-fixes"><h2>Bug Fixes</h2></a>
+<a class="nav-link" href="#general-changes"><h2>General Changes</h2></a>
+<a class="nav-link" href="#plugins"><h2>Plugins</h2></a>
+
+            </nav>
+        </div>
+    </div>
+
+    <!-- Popper.JS -->
+    <script src="../scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="../scripts/prism.js" type="text/javascript"></script>
+    <script src="../scripts/popper.min.js" type="text/javascript"></script>
+    <script src="../scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../scripts/tipuesearch_content.js" type="text/javascript"></script>
+    <script src="../scripts/tipuesearch_set.js" type="text/javascript"></script>
+    <script src="../scripts/tipuesearch.min.js" type="text/javascript"></script>
+    <script src="../scripts/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+
+            $("#searchbar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#searchbar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#searchbar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                $('#tipue_search_input').focus();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#tipue_search_input').tipuesearch({
+                'show': 10,
+                'showTime': false,
+                'showURL': false
+            });
+        });
+    </script>
+</body>
+</html>
