@@ -92,7 +92,8 @@
 
         <!-- Page Content  -->
         <div id="content" class="col"><h1 id="section">1.1.0</h1>
-<hr />
+<div class="tiny"><p>October 22, 2019</p>
+</div>
 <p>In this version support for the old licensing system has been removed and keys generated in the old system will not work. If you are using and old key you need to create a new license account <a href="https://service.micetoolkit.com/?t=signup">here</a> to get a new free lite license. If you have a premium license in the old licensing system please <a href="https://service.micetoolkit.com/?t=contact">contact us</a> to receive your new license key.</p>
 <h2 id="changes">Changes</h2>
 <ul>
@@ -143,30 +144,30 @@
 <h4 id="changes-1">Changes</h4>
 <ul>
 <li>Changed the constructor to only require shape and dtype parameters. All other parameters are optional.</li>
-<li>Changed <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">shape</code>, <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">voxel_size</code> and <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">position</code> are now given as a list or a tuple.</li>
-<li>Changed <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">to_itk_image()</code> to take one optional argument, frame, which selects the frame to send to SimpleITK. By default frame=0.</li>
-<li>Changed <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">clone_empty()</code> to take one optional argument dtype, which can be used to change the data type of the cloned image.</li>
-<li>Renamed method <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">toItkImage()</code> to <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">to_itk_image()</code>.</li>
-<li>Renamed method <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">writemhd()</code> to <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">mtk.utils.write_mhd()</code> and moved it to mtk.utils.</li>
-<li>Renamed <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">readmhd()</code> to <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">tk.utils.read_mhd()</code> and moved it to mtk.utils.</li>
-<li>Removed <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">create()</code>, <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">create4d()</code>, <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">create3d()</code>, <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">create2d()</code>. Please use the Image4D class constructor instead.</li>
+<li>Changed <code class="language-py">shape</code>, <code class="language-py">voxel_size</code> and <code class="language-py">position</code> are now given as a list or a tuple.</li>
+<li>Changed <code class="language-py">to_itk_image()</code> to take one optional argument, frame, which selects the frame to send to SimpleITK. By default frame=0.</li>
+<li>Changed <code class="language-py">clone_empty()</code> to take one optional argument dtype, which can be used to change the data type of the cloned image.</li>
+<li>Renamed method <code class="language-py">toItkImage()</code> to <code class="language-py">to_itk_image()</code>.</li>
+<li>Renamed method <code class="language-py">writemhd()</code> to <code class="language-py">mtk.utils.write_mhd()</code> and moved it to mtk.utils.</li>
+<li>Renamed <code class="language-py">readmhd()</code> to <code class="language-py">tk.utils.read_mhd()</code> and moved it to mtk.utils.</li>
+<li>Removed <code class="language-py">create()</code>, <code class="language-py">create4d()</code>, <code class="language-py">create3d()</code>, <code class="language-py">create2d()</code>. Please use the Image4D class constructor instead.</li>
 </ul>
 <h4 id="additions">Additions</h4>
 <ul>
-<li>Added <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">transpose(self, *axes)</code>. Returns a copy of the image with the axes transposed. Use this if you want to change the order of the image dimensions according to the optional input axes.</li>
-<li>Added method <code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">T()</code>. This methods reverses the order of the axes.</li>
+<li>Added <code class="language-py">transpose(self, *axes)</code>. Returns a copy of the image with the axes transposed. Use this if you want to change the order of the image dimensions according to the optional input axes.</li>
+<li>Added method <code class="language-py">T()</code>. This methods reverses the order of the axes.</li>
 <li>Support for metadata has been added. A metadata structure is exported to the python environment in a TypedList, where each element contains the metadata for each frame of the image.</li>
 </ul>
 <h3 id="class-mtk.utils">Class mtk.utils</h3>
 <ul>
-<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">read_csv(filename, delimiter=&quot;;&quot;)</code>: Reads a csv file from disk.</li>
-<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">write_csv(data, filename, delimiter=&quot;;&quot;)</code>: Writes a csv file to disk.</li>
-<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">read_metadata(path)</code>: Read image metadata from an .xml file given in path.</li>
-<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">from_itk_image(itkimage)</code>: Convert a SimpleITK image to an Image4D class.</li>
-<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">valid_variable(variable_name)</code>: Checks if a variable name is valid in MICE/Python.</li>
-<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">valid_type(value)</code>: Checks if a variable has a valid type.</li>
-<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">TypedList(list)</code>: Creates a list datatype with strong typing. This datatype is used in the metadata representation.</li>
-<li><code class="language-Code="Code=&quot;Code=&amp;quot;py&amp;quot;&quot;"">Struct(object)</code>: Creates a structure datatype from a dictionary. This datatype is used in the metadata representation.</li>
+<li><code class="language-py">read_csv(filename, delimiter=&quot;;&quot;)</code>: Reads a csv file from disk.</li>
+<li><code class="language-py">write_csv(data, filename, delimiter=&quot;;&quot;)</code>: Writes a csv file to disk.</li>
+<li><code class="language-py">read_metadata(path)</code>: Read image metadata from an .xml file given in path.</li>
+<li><code class="language-py">from_itk_image(itkimage)</code>: Convert a SimpleITK image to an Image4D class.</li>
+<li><code class="language-py">valid_variable(variable_name)</code>: Checks if a variable name is valid in MICE/Python.</li>
+<li><code class="language-py">valid_type(value)</code>: Checks if a variable has a valid type.</li>
+<li><code class="language-py">TypedList(list)</code>: Creates a list datatype with strong typing. This datatype is used in the metadata representation.</li>
+<li><code class="language-py">Struct(object)</code>: Creates a structure datatype from a dictionary. This datatype is used in the metadata representation.</li>
 </ul>
 <h3 id="code-example">Code Example</h3>
 <pre><code class="language-py"># Image4D constructor
@@ -186,7 +187,8 @@ itk_image = image.to_itk_image()
 itk_image_frame = image.to_itk_image(frame=2)
 image_from_itk = mtk.utils.from_itk_image(itk_image_frame, dtype='float')
 
-'''Create some metadata. A metadata structure, defined in mtk.utils.Struct 
+'''
+Create some metadata. A metadata structure, defined in mtk.utils.Struct 
 is compatible with a DICOM struct, but more flexible. Structs can contain fields, 
 Structs, and TypedLists. A TypedList is a list with strong typing, where each 
 element in must be of the same type. The metadata structure is stored in a 

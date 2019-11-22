@@ -93,6 +93,12 @@ iframe.img-fluid[height="256"] {
         color: #404040;
     }
 
+    #content .tiny p {
+        font-size: 13px;
+        line-height: 16px;
+        color: #999;
+    }
+
     #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
         font-weight: 700;
         line-height: 1.5;
@@ -728,11 +734,16 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  * @author Rose Pritchard
  */
 
+/**
+ * GHColors theme by Avi Aryan (http://aviaryan.in)
+ * Inspired by Github syntax coloring
+ */
+
 code[class*="language-"],
 pre[class*="language-"] {
-    color: #b3b9c5;
-    background: none;
+    color: #393A34;
     font-family: 'Roboto Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    direction: ltr;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -749,7 +760,20 @@ pre[class*="language-"] {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-    border-radius: 4px;
+}
+
+pre > code[class*="language-"] {
+    font-size: 1em;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+    background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+    background: #b3d4fc;
 }
 
 /* Code blocks */
@@ -757,18 +781,19 @@ pre[class*="language-"] {
     padding: 1em;
     margin: .5em 0;
     overflow: auto;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-    background: #2d2d2d;
+    background: #fafcfe;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-    padding: .1em;
-    border-radius: .3em;
-    white-space: normal;
+    padding: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: #fafcfe;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
 }
 
 .token.comment,
@@ -776,11 +801,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-    color: #999;
+    color: #7D8B99;
 }
 
 .token.punctuation {
-    color: #ccc;
+    color: #393A34;
 }
 
 .token.tag,
@@ -791,20 +816,23 @@ pre[class*="language-"] {
 }
 
 .token.function-name {
-    color: #6196cc;
+    color: #6f42c1;
 }
 
 .token.boolean,
-.token.number,
+.token.number {
+    color: #dd00a9;
+}
+
 .token.function {
-    color: #f08d49;
+    color: #6f42c1;
 }
 
 .token.property,
 .token.class-name,
 .token.constant,
 .token.symbol {
-    color: #f8c555;
+    color: #3789ee;
 }
 
 .token.selector,
@@ -812,7 +840,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-    color: #cc99cd;
+    color: #3789ee;
 }
 
 .token.string,
@@ -820,13 +848,13 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-    color: #7ec699;
+    color: #058b00;
 }
 
 .token.operator,
 .token.entity,
 .token.url {
-    color: #67cdcc;
+    color: #393A34;
 }
 
 .token.important,
@@ -845,6 +873,15 @@ pre[class*="language-"] {
 .token.inserted {
     color: green;
 }
+
+.token.entity {
+    cursor: help;
+}
+
+.token.inserted {
+    color: green;
+}
+
 
 div.code-toolbar {
     position: relative;
@@ -892,13 +929,13 @@ div.code-toolbar {
     div.code-toolbar > .toolbar a,
     div.code-toolbar > .toolbar button,
     div.code-toolbar > .toolbar span {
-        color: #bbb;
-        font-size: .8em;
-        padding: 0 .5em;
-        background: #f5f2f0;
-        background: rgba(224, 224, 224, 0.2);
+        color: #aaa;
+        font-size: 13px;
+        padding: 2px 6px;
+        background: rgba(150, 150, 150, 0.2);
         box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
-        border-radius: .5em;
+        border-radius: 8px;
+        margin-right: 3px;
     }
 
         div.code-toolbar > .toolbar a:hover,
@@ -907,6 +944,6 @@ div.code-toolbar {
         div.code-toolbar > .toolbar button:focus,
         div.code-toolbar > .toolbar span:hover,
         div.code-toolbar > .toolbar span:focus {
-            color: inherit;
+            color: #666;
             text-decoration: none;
         }
