@@ -796,15 +796,6 @@ pre[class*="language-"] {
     border-radius: 3px;
 }
 
-.token.comment,
-.token.triple-quoted-string,
-.token.block-comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-    color: #7D8B99;
-}
-
 .token.punctuation {
     color: #393A34;
 }
@@ -850,6 +841,15 @@ pre[class*="language-"] {
 .token.regex,
 .token.variable {
     color: #058b00;
+}
+
+.token.comment,
+.token.triple-quoted-string,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #7D8B99;
 }
 
 .token.operator,
