@@ -1,0 +1,1409 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MICE Toolkit</title>
+    <!-- Styles -->
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/all.css" rel="stylesheet">
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/tipuesearch.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="scripts/solid.js"></script>
+    <script defer src="scripts/fontawesome.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#indexbar" data-offset="30">
+    <nav id="searchbar">
+        <div id="search">
+            <div id="searchbox">
+                <i class="fas fa-search"></i><input placeholder="Search..." type="text" name="searchbox" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters">
+            </div>
+            <div id="dismiss">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <div id="tipue_search_content"></div>
+    </nav>
+    <div class="overlay">
+    </div>
+    <div id="topmenu" class="navbar">
+        <div id="logo">
+            <img src="images/logo.png" alt="MICE Toolkit" height="51">
+        </div>
+        <div id="mainmenu">
+
+        </div>
+        <div class="navsearchbox">
+            <i class="fas fa-search navsearch"></i><input placeholder="Search..." type="text" class="searchbox" id="sidebarCollapse">
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Sidebar  -->
+        <div id="left-wrapper" class="col-3">
+            <div id="sidebar" class="sticky-top">
+                <ul class="list-unstyled components">
+<li>
+<a  id="p1" href="home.html">Home</a>
+</li>
+<li>
+<a href="#m2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nodes</a>
+<ul class="submenu collapse list-unstyled" id="m2">
+<li>
+<a href="#m3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Image</a>
+<ul class="submenu collapse list-unstyled" id="m3">
+<li>
+<a href="#m4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Math. Operations</a>
+<ul class="submenu collapse list-unstyled" id="m4">
+<li>
+<a  id="p5" href="nodes.image.math._operations.add.html">Add</a>
+</li>
+<li>
+<a  id="p6" href="nodes.image.math._operations.subtract.html">Subtract</a>
+</li>
+<li>
+<a  id="p7" href="nodes.image.math._operations.multiply.html">Multiply</a>
+</li>
+<li>
+<a  id="p8" href="nodes.image.math._operations.divide.html">Divide</a>
+</li>
+<li>
+<a  id="p9" href="nodes.image.math._operations.absolute_value.html">Absolute Value</a>
+</li>
+<li>
+<a  id="p10" href="nodes.image.math._operations.ceiling.html">Ceiling</a>
+</li>
+<li>
+<a  id="p11" href="nodes.image.math._operations.floor.html">Floor</a>
+</li>
+<li>
+<a  id="p12" href="nodes.image.math._operations.round.html">Round</a>
+</li>
+<li>
+<a  id="p13" href="nodes.image.math._operations.raise_to_power.html">Raise To Power</a>
+</li>
+<li>
+<a  id="p14" href="nodes.image.math._operations.square_root.html">Square Root</a>
+</li>
+<li>
+<a  id="p15" href="nodes.image.math._operations.principal_component_analysis.html">Principal Component Analysis</a>
+</li>
+<li>
+<a  id="p16" href="nodes.image.math._operations.convolution.html">Convolution</a>
+</li>
+<li>
+<a  id="p17" href="nodes.image.math._operations.forward_fft.html">Forward FFT</a>
+</li>
+<li>
+<a  id="p18" href="nodes.image.math._operations.inverse_fft.html">Inverse FFT</a>
+</li>
+<li>
+<a  id="p19" href="nodes.image.math._operations.fft_shift.html">FFT Shift</a>
+</li>
+<li>
+<a  id="p20" href="nodes.image.math._operations.inverse_fft_shift.html">Inverse FFT Shift</a>
+</li>
+<li>
+<a  id="p21" href="nodes.image.math._operations.fft_convolution.html">FFT Convolution</a>
+</li>
+<li>
+<a  id="p22" href="nodes.image.math._operations.create_expression.html">Create Expression</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m23" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Filters</a>
+<ul class="submenu collapse list-unstyled" id="m23">
+<li>
+<a href="#m24" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Noise</a>
+<ul class="submenu collapse list-unstyled" id="m24">
+<li>
+<a  id="p25" href="nodes.image.filters.noise.normal_(gaussian).html">Normal (Gaussian)</a>
+</li>
+<li>
+<a  id="p26" href="nodes.image.filters.noise.gamma.html">Gamma</a>
+</li>
+<li>
+<a  id="p27" href="nodes.image.filters.noise.log-normal.html">Log-Normal</a>
+</li>
+<li>
+<a  id="p28" href="nodes.image.filters.noise.poission.html">Poission</a>
+</li>
+<li>
+<a  id="p29" href="nodes.image.filters.noise.laplace.html">Laplace</a>
+</li>
+<li>
+<a  id="p30" href="nodes.image.filters.noise.beta.html">Beta</a>
+</li>
+<li>
+<a  id="p31" href="nodes.image.filters.noise.chi.html">Chi</a>
+</li>
+<li>
+<a  id="p32" href="nodes.image.filters.noise.rician.html">Rician</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m33" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Denoise</a>
+<ul class="submenu collapse list-unstyled" id="m33">
+<li>
+<a  id="p34" href="nodes.image.filters.denoise.gaussian_blur.html">Gaussian Blur</a>
+</li>
+<li>
+<a  id="p35" href="nodes.image.filters.denoise.median.html">Median</a>
+</li>
+<li>
+<a  id="p36" href="nodes.image.filters.denoise.box_mean.html">Box Mean</a>
+</li>
+<li>
+<a  id="p37" href="nodes.image.filters.denoise.curvature_flow.html">Curvature Flow</a>
+</li>
+<li>
+<a  id="p38" href="nodes.image.filters.denoise.minmax_curvature_flow.html">Min/Max Curvature Flow</a>
+</li>
+<li>
+<a  id="p39" href="nodes.image.filters.denoise.patch_based_denoising.html">Patch Based Denoising</a>
+</li>
+<li>
+<a  id="p40" href="nodes.image.filters.denoise.curvature_anisotropic_diffusion.html">Curvature Anisotropic Diffusion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m41" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Sharpen</a>
+<ul class="submenu collapse list-unstyled" id="m41">
+<li>
+<a  id="p42" href="nodes.image.filters.sharpen.laplacian.html">Laplacian</a>
+</li>
+<li>
+<a  id="p43" href="nodes.image.filters.sharpen.landweber_deconvolution.html">Landweber Deconvolution</a>
+</li>
+<li>
+<a  id="p44" href="nodes.image.filters.sharpen.projected_landweber_deconvolution.html">Projected Landweber Deconvolution</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p45" href="nodes.image.filters.adaptive_histogram_equalization.html">Adaptive Histogram Equalization</a>
+</li>
+<li>
+<a  id="p46" href="nodes.image.filters.n4_bias_field_correction.html">N4 Bias Field Correction</a>
+</li>
+<li>
+<a  id="p47" href="nodes.image.filters.normalize.html">Normalize</a>
+</li>
+<li>
+<a  id="p48" href="nodes.image.filters.truncate.html">Truncate</a>
+</li>
+<li>
+<a  id="p49" href="nodes.image.filters.sigmoid.html">Sigmoid</a>
+</li>
+<li>
+<a  id="p50" href="nodes.image.filters.sobel.html">Sobel</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m51" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Morphology</a>
+<ul class="submenu collapse list-unstyled" id="m51">
+<li>
+<a  id="p52" href="nodes.image.morphology.erode.html">Erode</a>
+</li>
+<li>
+<a  id="p53" href="nodes.image.morphology.dilate.html">Dilate</a>
+</li>
+<li>
+<a  id="p54" href="nodes.image.morphology.opening.html">Opening</a>
+</li>
+<li>
+<a  id="p55" href="nodes.image.morphology.closing.html">Closing</a>
+</li>
+<li>
+<a  id="p56" href="nodes.image.morphology.opening_by_reconstruction.html">Opening by Reconstruction</a>
+</li>
+<li>
+<a  id="p57" href="nodes.image.morphology.closing_by_reconstruction.html">Closing by Reconstruction</a>
+</li>
+<li>
+<a  id="p58" href="nodes.image.morphology.fill_hole.html">Fill Hole</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m59" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Flow Control</a>
+<ul class="submenu collapse list-unstyled" id="m59">
+<li>
+<a href="#m60" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Select</a>
+<ul class="submenu collapse list-unstyled" id="m60">
+<li>
+<a  id="p61" href="nodes.image.flow_control.select.from_four_images.html">From Four Images</a>
+</li>
+<li>
+<a  id="p62" href="nodes.image.flow_control.select.from_two_images.html">From Two Images</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m63" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Texture</a>
+<ul class="submenu collapse list-unstyled" id="m63">
+<li>
+<a  id="p64" href="nodes.image.texture.texture_analysis.html">Texture Analysis</a>
+</li>
+<li>
+<a  id="p65" href="nodes.image.texture.texture_glcm.html">Texture GLCM</a>
+</li>
+<li>
+<a  id="p66" href="nodes.image.texture.texture_lbp.html">Texture LBP</a>
+</li>
+<li>
+<a  id="p67" href="nodes.image.texture.noise_image.html">Noise Image</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m68" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m68">
+<li>
+<a  id="p69" href="nodes.image.convert_to.grid.html">Grid</a>
+</li>
+<li>
+<a  id="p70" href="nodes.image.convert_to.label_map_(region)_mask.html">Label Map (Region) Mask</a>
+</li>
+<li>
+<a  id="p71" href="nodes.image.convert_to.line_profile.html">Line Profile</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m72" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Segmentation</a>
+<ul class="submenu collapse list-unstyled" id="m72">
+<li>
+<a  id="p73" href="nodes.image.segmentation.threshold.html">Threshold</a>
+</li>
+<li>
+<a  id="p74" href="nodes.image.segmentation.adaptive_threshold.html">Adaptive Threshold</a>
+</li>
+<li>
+<a  id="p75" href="nodes.image.segmentation.connected_threshold.html">Connected Threshold</a>
+</li>
+<li>
+<a  id="p76" href="nodes.image.segmentation.watershed.html">Watershed</a>
+</li>
+<li>
+<a  id="p77" href="nodes.image.segmentation.gradient_magnitude.html">Gradient Magnitude</a>
+</li>
+<li>
+<a  id="p78" href="nodes.image.segmentation.k-means.html">K-Means</a>
+</li>
+<li>
+<a  id="p79" href="nodes.image.segmentation.gradient_magnitude_recursive_gaussian.html">Gradient Magnitude Recursive Gaussian</a>
+</li>
+<li>
+<a  id="p80" href="nodes.image.segmentation.geodesic_active_contour_level_set.html">Geodesic Active Contour Level Set</a>
+</li>
+<li>
+<a  id="p81" href="nodes.image.segmentation.canny_edge_detection.html">Canny Edge Detection</a>
+</li>
+<li>
+<a  id="p82" href="nodes.image.segmentation.otsu__thresholding.html">Otsu  Thresholding</a>
+</li>
+<li>
+<a  id="p83" href="nodes.image.segmentation.otsu_multi_thresholding.html">Otsu Multi Thresholding</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m84" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Registration</a>
+<ul class="submenu collapse list-unstyled" id="m84">
+<li>
+<a  id="p85" href="nodes.image.registration.elastix_registration.html">Elastix Registration</a>
+</li>
+<li>
+<a  id="p86" href="nodes.image.registration.demons_registration.html">Demons Registration</a>
+</li>
+<li>
+<a  id="p87" href="nodes.image.registration.optical_flow_registration.html">Optical Flow Registration</a>
+</li>
+<li>
+<a  id="p88" href="nodes.image.registration.inverse_transform.html">Inverse Transform</a>
+</li>
+<li>
+<a  id="p89" href="nodes.image.registration.apply_transformix_registration.html">Apply Transformix Registration</a>
+</li>
+<li>
+<a  id="p90" href="nodes.image.registration.apply_dicom_registration.html">Apply DICOM Registration</a>
+</li>
+<li>
+<a  id="p91" href="nodes.image.registration.deformation_analysis.html">Deformation Analysis</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m92" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Transform</a>
+<ul class="submenu collapse list-unstyled" id="m92">
+<li>
+<a  id="p93" href="nodes.image.transform.set_position.html">Set Position</a>
+</li>
+<li>
+<a  id="p94" href="nodes.image.transform.set_voxel_size.html">Set Voxel Size</a>
+</li>
+<li>
+<a  id="p95" href="nodes.image.transform.set_orientation.html">Set Orientation</a>
+</li>
+<li>
+<a  id="p96" href="nodes.image.transform.translate.html">Translate</a>
+</li>
+<li>
+<a  id="p97" href="nodes.image.transform.resample_to_reference.html">Resample To Reference</a>
+</li>
+<li>
+<a  id="p98" href="nodes.image.transform.change_voxel_size.html">Change Voxel Size</a>
+</li>
+<li>
+<a  id="p99" href="nodes.image.transform.deform_using_vector_field.html">Deform Using Vector Field</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m100" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reshape</a>
+<ul class="submenu collapse list-unstyled" id="m100">
+<li>
+<a  id="p101" href="nodes.image.reshape.extract_frames.html">Extract Frames</a>
+</li>
+<li>
+<a  id="p102" href="nodes.image.reshape.extract_slices.html">Extract Slices</a>
+</li>
+<li>
+<a  id="p103" href="nodes.image.reshape.merge_frames.html">Merge Frames</a>
+</li>
+<li>
+<a  id="p104" href="nodes.image.reshape.projection.html">Projection</a>
+</li>
+<li>
+<a  id="p105" href="nodes.image.reshape.image_paste.html">Image Paste</a>
+</li>
+<li>
+<a  id="p106" href="nodes.image.reshape.pad.html">Pad</a>
+</li>
+<li>
+<a  id="p107" href="nodes.image.reshape.flip_axes.html">Flip Axes</a>
+</li>
+<li>
+<a  id="p108" href="nodes.image.reshape.permute_axes.html">Permute Axes</a>
+</li>
+<li>
+<a  id="p109" href="nodes.image.reshape.create_stack.html">Create Stack</a>
+</li>
+<li>
+<a  id="p110" href="nodes.image.reshape.create_time_series.html">Create Time Series</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m111" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">MRI</a>
+<ul class="submenu collapse list-unstyled" id="m111">
+<li>
+<a  id="p112" href="nodes.image.mri.adc_map.html">ADC Map</a>
+</li>
+<li>
+<a href="#m113" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">T1 Map</a>
+<ul class="submenu collapse list-unstyled" id="m113">
+<li>
+<a  id="p114" href="nodes.image.mri.t1_map.inversion_recovery.html">Inversion Recovery</a>
+</li>
+<li>
+<a  id="p115" href="nodes.image.mri.t1_map.variable_flip_angles.html">Variable Flip Angles</a>
+</li>
+<li>
+<a  id="p116" href="nodes.image.mri.t1_map.schuff.html">Schuff</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p117" href="nodes.image.mri.t2t2_map.html">T2/T2* Map</a>
+</li>
+<li>
+<a href="#m118" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">AIF Generation</a>
+<ul class="submenu collapse list-unstyled" id="m118">
+<li>
+<a  id="p119" href="nodes.image.mri.aif_generation.parker_aif.html">Parker AIF</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p120" href="nodes.image.mri.ca_quantifier.html">CA Quantifier</a>
+</li>
+<li>
+<a  id="p121" href="nodes.image.mri.linear_kety_estimator.html">Linear KETY Estimator</a>
+</li>
+<li>
+<a  id="p122" href="nodes.image.mri.brix.html">Brix</a>
+</li>
+<li>
+<a  id="p123" href="nodes.image.mri.area_under_curve.html">Area Under Curve</a>
+</li>
+<li>
+<a  id="p124" href="nodes.image.mri.b1_correction_map.html">B1 Correction Map</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m125" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PET</a>
+<ul class="submenu collapse list-unstyled" id="m125">
+<li>
+<a  id="p126" href="nodes.image.pet.suv.html">SUV</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m127" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Radiotherapy</a>
+<ul class="submenu collapse list-unstyled" id="m127">
+<li>
+<a  id="p128" href="nodes.image.radiotherapy.dose_volume_histogram.html">Dose Volume Histogram</a>
+</li>
+<li>
+<a  id="p129" href="nodes.image.radiotherapy.gamma_index.html">Gamma Index</a>
+</li>
+<li>
+<a  id="p130" href="nodes.image.radiotherapy.equivalent_uniform_dose.html">Equivalent Uniform Dose</a>
+</li>
+<li>
+<a  id="p131" href="nodes.image.radiotherapy.induced_susceptibility_effect.html">Induced Susceptibility Effect</a>
+</li>
+<li>
+<a  id="p132" href="nodes.image.radiotherapy.susceptibility_map.html">Susceptibility Map</a>
+</li>
+<li>
+<a  id="p133" href="nodes.image.radiotherapy.b0_distortion.html">B0 Distortion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m134" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Statistics</a>
+<ul class="submenu collapse list-unstyled" id="m134">
+<li>
+<a  id="p135" href="nodes.image.statistics.statistics.html">Statistics</a>
+</li>
+<li>
+<a  id="p136" href="nodes.image.statistics.histogram.html">Histogram</a>
+</li>
+<li>
+<a  id="p137" href="nodes.image.statistics.image_time_statistics.html">Image Time Statistics</a>
+</li>
+<li>
+<a  id="p138" href="nodes.image.statistics.region_time_statistics.html">Region Time Statistics</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m139" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Export</a>
+<ul class="submenu collapse list-unstyled" id="m139">
+<li>
+<a  id="p140" href="nodes.image.export.dicom_.dcm.html">DICOM .dcm</a>
+</li>
+<li>
+<a  id="p141" href="nodes.image.export.nifti_.nii.html">NIfTI .nii</a>
+</li>
+<li>
+<a  id="p142" href="nodes.image.export.image_.bmp,_.jpg_etc.html">Image .bmp, .jpg etc</a>
+</li>
+<li>
+<a  id="p143" href="nodes.image.export.metaio_.mhd.html">MetaIO .mhd</a>
+</li>
+<li>
+<a  id="p144" href="nodes.image.export.matlab_.mat.html">MATLAB .mat</a>
+</li>
+<li>
+<a  id="p145" href="nodes.image.export.csv_.csv.html">CSV .csv</a>
+</li>
+<li>
+<a  id="p146" href="nodes.image.export.transformix_.txt.html">Transformix .txt</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p147" href="nodes.image.create_new_image.html">Create New Image</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m148" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Mask</a>
+<ul class="submenu collapse list-unstyled" id="m148">
+<li>
+<a href="#m149" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Boolean Algebra</a>
+<ul class="submenu collapse list-unstyled" id="m149">
+<li>
+<a  id="p150" href="nodes.mask.boolean_algebra.and.html">AND</a>
+</li>
+<li>
+<a  id="p151" href="nodes.mask.boolean_algebra.not.html">NOT</a>
+</li>
+<li>
+<a  id="p152" href="nodes.mask.boolean_algebra.or.html">OR</a>
+</li>
+<li>
+<a  id="p153" href="nodes.mask.boolean_algebra.xor.html">XOR</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m154" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Morphology</a>
+<ul class="submenu collapse list-unstyled" id="m154">
+<li>
+<a  id="p155" href="nodes.mask.morphology.erode.html">Erode</a>
+</li>
+<li>
+<a  id="p156" href="nodes.mask.morphology.dilate.html">Dilate</a>
+</li>
+<li>
+<a  id="p157" href="nodes.mask.morphology.opening.html">Opening</a>
+</li>
+<li>
+<a  id="p158" href="nodes.mask.morphology.closing.html">Closing</a>
+</li>
+<li>
+<a  id="p159" href="nodes.mask.morphology.opening_by_reconstruction.html">Opening by Reconstruction</a>
+</li>
+<li>
+<a  id="p160" href="nodes.mask.morphology.closing_by_reconstruction.html">Closing by Reconstruction</a>
+</li>
+<li>
+<a  id="p161" href="nodes.mask.morphology.seed_reconstruction.html">Seed Reconstruction</a>
+</li>
+<li>
+<a  id="p162" href="nodes.mask.morphology.fill_hole.html">Fill Hole</a>
+</li>
+<li>
+<a  id="p163" href="nodes.mask.morphology.contour_interpolation.html">Contour Interpolation</a>
+</li>
+<li>
+<a  id="p164" href="nodes.mask.morphology.bounding_box.html">Bounding Box</a>
+</li>
+<li>
+<a  id="p165" href="nodes.mask.morphology.contour.html">Contour</a>
+</li>
+<li>
+<a  id="p166" href="nodes.mask.morphology.thinning.html">Thinning</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m167" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Analysis</a>
+<ul class="submenu collapse list-unstyled" id="m167">
+<li>
+<a  id="p168" href="nodes.mask.analysis.hausdorff_distance.html">Hausdorff Distance</a>
+</li>
+<li>
+<a  id="p169" href="nodes.mask.analysis.maurer_distance.html">Maurer Distance</a>
+</li>
+<li>
+<a  id="p170" href="nodes.mask.analysis.overlap_measures.html">Overlap Measures</a>
+</li>
+<li>
+<a  id="p171" href="nodes.mask.analysis.staple.html">STAPLE</a>
+</li>
+<li>
+<a  id="p172" href="nodes.mask.analysis.voting.html">Voting</a>
+</li>
+<li>
+<a  id="p173" href="nodes.mask.analysis.shape_statistics.html">Shape Statistics</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m174" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m174">
+<li>
+<a  id="p175" href="nodes.mask.convert_to.image.html">Image</a>
+</li>
+<li>
+<a  id="p176" href="nodes.mask.convert_to.label_map_(regions).html">Label Map (Regions)</a>
+</li>
+<li>
+<a  id="p177" href="nodes.mask.convert_to.structure.html">Structure</a>
+</li>
+<li>
+<a  id="p178" href="nodes.mask.convert_to.surface_estimation.html">Surface Estimation</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m179" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate</a>
+<ul class="submenu collapse list-unstyled" id="m179">
+<li>
+<a  id="p180" href="nodes.mask.generate.custom_mask_from_image.html">Custom Mask From Image</a>
+</li>
+<li>
+<a  id="p181" href="nodes.mask.generate.point_cloud.html">Point Cloud</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m182" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reshape</a>
+<ul class="submenu collapse list-unstyled" id="m182">
+<li>
+<a  id="p183" href="nodes.mask.reshape.crop_to_bounding_box.html">Crop To Bounding Box</a>
+</li>
+<li>
+<a  id="p184" href="nodes.mask.reshape.pad.html">Pad</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m185" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Export</a>
+<ul class="submenu collapse list-unstyled" id="m185">
+<li>
+<a  id="p186" href="nodes.mask.export.metaio_.mhd.html">MetaIO .mhd</a>
+</li>
+<li>
+<a  id="p187" href="nodes.mask.export.matlab_.mat.html">MATLAB .mat</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p188" href="nodes.mask.apply_to_image.html">Apply To Image</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m189" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Structure</a>
+<ul class="submenu collapse list-unstyled" id="m189">
+<li>
+<a href="#m190" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m190">
+<li>
+<a  id="p191" href="nodes.structure.convert_to.point_data.html">Point Data</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m192" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate From</a>
+<ul class="submenu collapse list-unstyled" id="m192">
+<li>
+<a  id="p193" href="nodes.structure.generate_from.point_data.html">Point Data</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m194" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Export</a>
+<ul class="submenu collapse list-unstyled" id="m194">
+<li>
+<a  id="p195" href="nodes.structure.export.rtstruct.html">RTSTRUCT</a>
+</li>
+<li>
+<a  id="p196" href="nodes.structure.export.stl.html">STL</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p197" href="nodes.structure.apply_transform.html">Apply Transform</a>
+</li>
+<li>
+<a  id="p198" href="nodes.structure.struct_processor.html">Struct Processor</a>
+</li>
+<li>
+<a  id="p199" href="nodes.structure.struct_filter.html">Struct Filter</a>
+</li>
+<li>
+<a  id="p200" href="nodes.structure.struct_cleaner.html">Struct Cleaner</a>
+</li>
+<li>
+<a  id="p201" href="nodes.structure.struct_renamer.html">Struct Renamer</a>
+</li>
+<li>
+<a  id="p202" href="nodes.structure.struct_renderer.html">Struct Renderer</a>
+</li>
+<li>
+<a  id="p203" href="nodes.structure.struct_selector.html">Struct Selector</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m204" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Data</a>
+<ul class="submenu collapse list-unstyled" id="m204">
+<li>
+<a href="#m205" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Export</a>
+<ul class="submenu collapse list-unstyled" id="m205">
+<li>
+<a  id="p206" href="nodes.data.export.csv.html">CSV</a>
+</li>
+<li>
+<a  id="p207" href="nodes.data.export.excel.html">Excel</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m208" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate From</a>
+<ul class="submenu collapse list-unstyled" id="m208">
+<li>
+<a  id="p209" href="nodes.data.generate_from.data_elements.html">Data Elements</a>
+</li>
+<li>
+<a  id="p210" href="nodes.data.generate_from.curves.html">Curves</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p211" href="nodes.data.extract_data.html">Extract Data</a>
+</li>
+<li>
+<a  id="p212" href="nodes.data.merge_data.html">Merge Data</a>
+</li>
+<li>
+<a  id="p213" href="nodes.data.merge_curves.html">Merge Curves</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m214" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Values</a>
+<ul class="submenu collapse list-unstyled" id="m214">
+<li>
+<a href="#m215" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Bit</a>
+<ul class="submenu collapse list-unstyled" id="m215">
+<li>
+<a href="#m216" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Boolean Algebra</a>
+<ul class="submenu collapse list-unstyled" id="m216">
+<li>
+<a  id="p217" href="nodes.values.bit.boolean_algebra.and.html">AND</a>
+</li>
+<li>
+<a  id="p218" href="nodes.values.bit.boolean_algebra.not.html">NOT</a>
+</li>
+<li>
+<a  id="p219" href="nodes.values.bit.boolean_algebra.or.html">OR</a>
+</li>
+<li>
+<a  id="p220" href="nodes.values.bit.boolean_algebra.xor.html">XOR</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m221" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate From</a>
+<ul class="submenu collapse list-unstyled" id="m221">
+<li>
+<a  id="p222" href="nodes.values.bit.generate_from.create_constant.html">Create Constant</a>
+</li>
+<li>
+<a  id="p223" href="nodes.values.bit.generate_from.number.html">Number</a>
+</li>
+<li>
+<a  id="p224" href="nodes.values.bit.generate_from.text.html">Text</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m225" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m225">
+<li>
+<a  id="p226" href="nodes.values.bit.convert_to.data_element.html">Data Element</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p227" href="nodes.values.bit.display_bit.html">Display Bit</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m228" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Number</a>
+<ul class="submenu collapse list-unstyled" id="m228">
+<li>
+<a href="#m229" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Math. Operations</a>
+<ul class="submenu collapse list-unstyled" id="m229">
+<li>
+<a  id="p230" href="nodes.values.number.math._operations.add.html">Add</a>
+</li>
+<li>
+<a  id="p231" href="nodes.values.number.math._operations.subtract.html">Subtract</a>
+</li>
+<li>
+<a  id="p232" href="nodes.values.number.math._operations.multiply.html">Multiply</a>
+</li>
+<li>
+<a  id="p233" href="nodes.values.number.math._operations.divide.html">Divide</a>
+</li>
+<li>
+<a  id="p234" href="nodes.values.number.math._operations.raise_to_power.html">Raise To Power</a>
+</li>
+<li>
+<a  id="p235" href="nodes.values.number.math._operations.sqrt.html">Sqrt</a>
+</li>
+<li>
+<a  id="p236" href="nodes.values.number.math._operations.sin.html">Sin</a>
+</li>
+<li>
+<a  id="p237" href="nodes.values.number.math._operations.cos.html">Cos</a>
+</li>
+<li>
+<a  id="p238" href="nodes.values.number.math._operations.tan.html">Tan</a>
+</li>
+<li>
+<a  id="p239" href="nodes.values.number.math._operations.log.html">Log</a>
+</li>
+<li>
+<a  id="p240" href="nodes.values.number.math._operations.log_10.html">Log 10</a>
+</li>
+<li>
+<a  id="p241" href="nodes.values.number.math._operations.create_expression.html">Create Expression</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m242" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Constants</a>
+<ul class="submenu collapse list-unstyled" id="m242">
+<li>
+<a  id="p243" href="nodes.values.number.constants.pi.html">Pi</a>
+</li>
+<li>
+<a  id="p244" href="nodes.values.number.constants.create_constant.html">Create Constant</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m245" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate From</a>
+<ul class="submenu collapse list-unstyled" id="m245">
+<li>
+<a  id="p246" href="nodes.values.number.generate_from.image.html">Image</a>
+</li>
+<li>
+<a  id="p247" href="nodes.values.number.generate_from.mask.html">Mask</a>
+</li>
+<li>
+<a  id="p248" href="nodes.values.number.generate_from.data.html">Data</a>
+</li>
+<li>
+<a  id="p249" href="nodes.values.number.generate_from.curve.html">Curve</a>
+</li>
+<li>
+<a  id="p250" href="nodes.values.number.generate_from.dicom_tag.html">Dicom Tag</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m251" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m251">
+<li>
+<a  id="p252" href="nodes.values.number.convert_to.text.html">Text</a>
+</li>
+<li>
+<a  id="p253" href="nodes.values.number.convert_to.data_element.html">Data Element</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p254" href="nodes.values.number.display_number.html">Display Number</a>
+</li>
+<li>
+<a  id="p255" href="nodes.values.number.get_voxel_position.html">Get Voxel Position</a>
+</li>
+<li>
+<a  id="p256" href="nodes.values.number.get_voxel_index.html">Get Voxel Index</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m257" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Text</a>
+<ul class="submenu collapse list-unstyled" id="m257">
+<li>
+<a href="#m258" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Constants</a>
+<ul class="submenu collapse list-unstyled" id="m258">
+<li>
+<a  id="p259" href="nodes.values.text.constants.create_constant.html">Create Constant</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m260" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Format</a>
+<ul class="submenu collapse list-unstyled" id="m260">
+<li>
+<a  id="p261" href="nodes.values.text.format.concatenate.html">Concatenate</a>
+</li>
+<li>
+<a  id="p262" href="nodes.values.text.format.extract_substring.html">Extract Substring</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m263" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate From</a>
+<ul class="submenu collapse list-unstyled" id="m263">
+<li>
+<a  id="p264" href="nodes.values.text.generate_from.dicom_tag.html">Dicom Tag</a>
+</li>
+<li>
+<a  id="p265" href="nodes.values.text.generate_from.data.html">Data</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m266" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m266">
+<li>
+<a  id="p267" href="nodes.values.text.convert_to.data_element.html">Data Element</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p268" href="nodes.values.text.display_text.html">Display Text</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p269" href="nodes.values.add_database_tag.html">Add Database Tag</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m270" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Vector</a>
+<ul class="submenu collapse list-unstyled" id="m270">
+<li>
+<a href="#m271" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Math. Operations</a>
+<ul class="submenu collapse list-unstyled" id="m271">
+<li>
+<a  id="p272" href="nodes.vector.math._operations.add.html">Add</a>
+</li>
+<li>
+<a  id="p273" href="nodes.vector.math._operations.subtract.html">Subtract</a>
+</li>
+<li>
+<a  id="p274" href="nodes.vector.math._operations.multiply.html">Multiply</a>
+</li>
+<li>
+<a  id="p275" href="nodes.vector.math._operations.divide.html">Divide</a>
+</li>
+<li>
+<a  id="p276" href="nodes.vector.math._operations.ceiling.html">Ceiling</a>
+</li>
+<li>
+<a  id="p277" href="nodes.vector.math._operations.floor.html">Floor</a>
+</li>
+<li>
+<a  id="p278" href="nodes.vector.math._operations.round.html">Round</a>
+</li>
+<li>
+<a  id="p279" href="nodes.vector.math._operations.dot_product.html">Dot Product</a>
+</li>
+<li>
+<a  id="p280" href="nodes.vector.math._operations.cross_product.html">Cross Product</a>
+</li>
+<li>
+<a  id="p281" href="nodes.vector.math._operations.invert_displacement_field.html">Invert Displacement Field</a>
+</li>
+<li>
+<a  id="p282" href="nodes.vector.math._operations.principal_component_analysis.html">Principal Component Analysis</a>
+</li>
+<li>
+<a  id="p283" href="nodes.vector.math._operations.jacobian_determinant.html">Jacobian Determinant</a>
+</li>
+<li>
+<a  id="p284" href="nodes.vector.math._operations.normalize.html">Normalize</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m285" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m285">
+<li>
+<a  id="p286" href="nodes.vector.convert_to.image.html">Image</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m287" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Create From</a>
+<ul class="submenu collapse list-unstyled" id="m287">
+<li>
+<a  id="p288" href="nodes.vector.create_from.transformix.html">Transformix</a>
+</li>
+<li>
+<a  id="p289" href="nodes.vector.create_from.xyz_images.html">XYZ Images</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m290" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Export</a>
+<ul class="submenu collapse list-unstyled" id="m290">
+<li>
+<a  id="p291" href="nodes.vector.export.metaio_.mhd.html">MetaIO .mhd</a>
+</li>
+<li>
+<a  id="p292" href="nodes.vector.export.matlab_.mat.html">MATLAB .mat</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m293" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Complex</a>
+<ul class="submenu collapse list-unstyled" id="m293">
+<li>
+<a href="#m294" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m294">
+<li>
+<a  id="p295" href="nodes.complex.convert_to.magnitudephase_images.html">Magnitude/Phase Images</a>
+</li>
+<li>
+<a  id="p296" href="nodes.complex.convert_to.realimaginary_images.html">Real/Imaginary Images</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m297" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate From</a>
+<ul class="submenu collapse list-unstyled" id="m297">
+<li>
+<a  id="p298" href="nodes.complex.generate_from.magnitudephase_images.html">Magnitude/Phase Images</a>
+</li>
+<li>
+<a  id="p299" href="nodes.complex.generate_from.realimaginary_images.html">Real/Imaginary Images</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m300" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Export</a>
+<ul class="submenu collapse list-unstyled" id="m300">
+<li>
+<a  id="p301" href="nodes.complex.export.metaio_.mhd.html">MetaIO .mhd</a>
+</li>
+<li>
+<a  id="p302" href="nodes.complex.export.matlab_.mat.html">MATLAB .mat</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m303" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Applications</a>
+<ul class="submenu collapse list-unstyled" id="m303">
+<li>
+<a href="#m304" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reports</a>
+<ul class="submenu collapse list-unstyled" id="m304">
+<li>
+<a  id="p305" href="nodes.applications.reports.pdf.html">PDF</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m306" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Digital Phantoms</a>
+<ul class="submenu collapse list-unstyled" id="m306">
+<li>
+<a  id="p307" href="nodes.applications.digital_phantoms.brainweb_mr_beta.html">Brainweb MR BETA</a>
+</li>
+<li>
+<a  id="p308" href="nodes.applications.digital_phantoms.spin-echo_contrast_beta.html">Spin-echo contrast BETA</a>
+</li>
+<li>
+<a  id="p309" href="nodes.applications.digital_phantoms.gradient-echo_contrast_beta.html">Gradient-echo contrast BETA</a>
+</li>
+<li>
+<a  id="p310" href="nodes.applications.digital_phantoms.mri_emulator_beta.html">MRI Emulator BETA</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m311" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tutorials</a>
+<ul class="submenu collapse list-unstyled" id="m311">
+<li>
+<a href="#m312" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Videos</a>
+<ul class="submenu collapse list-unstyled" id="m312">
+<li>
+<a  id="p313" href="tutorials.videos.getting_started.html">Getting Started</a>
+</li>
+<li>
+<a  id="p314" href="tutorials.videos.masks.html">Masks</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m315" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Changelog</a>
+<ul class="submenu collapse list-unstyled" id="m315">
+<li>
+<a  id="p316" href="changelog.1.1.0.html">1.1.0</a>
+</li>
+<li>
+<a  id="p317" href="changelog.1.1.2.html">1.1.2</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m318" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Articles</a>
+<ul class="submenu collapse list-unstyled show" id="m318">
+<li>
+<a class="focused" id="p319" href="articles.image_registration.html">Image registration</a>
+</li>
+<li>
+<a  id="p320" href="articles.smooth_masks.html">Smooth masks</a>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+
+        <!-- Page Content  -->
+        <div id="content" class="col"><h1 id="image-registration-with-elastix">Image registration with Elastix</h1>
+<hr />
+<p>Image registration is an important part of medical image analysis, to align images taken with different modalities or at different times. The mathematical basis for image registration will not be covered in this article, which will focus on the practical aspects of image registration using elastix in MICE. If you want to know more about the mathematical foundation of image registration, please look in the excellent <a href="http://elastix.isi.uu.nl/download/elastix-5.0.0-manual.pdf">manual</a> available at the <a href="http://elastix.isi.uu.nl/index.php">elastix</a> homepage. Some background on the image registration process is however necessary to review.</p>
+<h2 id="the-image-registration-process">The image registration process</h2>
+<p>The basic image registration problem is based on two images, the <em>fixed</em> image and the <em>moving</em> image. The two images are defined in their own spatial domain, i.e. have their own coordinate systems, and the registration processes aims to find the displacement that spatially aligns the moving image to the fixed image. This is done by displacing the moving image using some <em>transform</em>, spatially mapping a point from the fixed image to the moving image and comparing the information in the two images at that point using some <em>metric</em>. By trying many different displacements using an <em>optimizer</em>, ideally the best alignment between the two images can be found, as illustrated below. In the following sections, the elastix parameter name highlighted as <code class="language-java">code</code>.</p>
+<p><img src="images/illustrations/registration_scheme.svg" class="img-fluid" alt="Registration scheme" /></p>
+<h2 id="registration-components">Registration components</h2>
+<h3 id="metrics">Metrics</h3>
+<p>There are several similarity measures available in elastix, listed below with some pointers on their applicability:</p>
+<ul>
+<li><strong>Mean squared difference (MSD)</strong>: <code class="language-java">(AdvancedMeanSquares)</code> This measure is simple, but only suitable for images with equal intensity distribution, i.e. mono-modal images.</li>
+<li><strong>Normalised correlation coefficient (NCC)</strong>: <code class="language-java">(AdvancedNormalizedCorrelation)</code> The images to be registered must have a linear relationship between their intensity values, and is therefore less strict than <strong>MSD</strong> and can be used more often.</li>
+<li><strong>Mutual information (MI)</strong>: <code class="language-java">(AdvancedMattesMutualInformation)</code> There must only be a relationship between the probability distributions of the intensity values, and is therefore more general than both <strong>MSD</strong> and <strong>NCC</strong>. It is the workhorse of image registration, and works well for both multi- and mono-modal image pairs. This is also the metric that works best in elastix performance wise.</li>
+<li><strong>Normalized mutual information (NMI)</strong>: <code class="language-java">(NormalizedMutualInformation)</code> Similar to <strong>MI</strong> – there have been indications of better performance than MI in some cases.</li>
+<li><strong>Kappa statistic (KS)</strong>: <code class="language-java">(AdvancedKappaStatistic)</code> Specific to registrations of binary images – measures overlap of segmentations.</li>
+</ul>
+<h3 id="transforms">Transforms</h3>
+<p>There are many transforms available in elastix with different degrees of freedom.</p>
+<ul>
+<li><strong>Translation</strong>: <code class="language-java">(TranslationTransform)</code> The moving image can only be translated to match the fixed image.</li>
+<li><strong>Rigid</strong>: <code class="language-java">(EulerTransform)</code> The moving image can be translated and rotated to match the fixed image.</li>
+<li><strong>Similarity</strong>: <code class="language-java">(SimilarityTransform)</code> The moving image can be translated, rotated and scaled isotropically. This is a quite uncommon transform.</li>
+<li><strong>Affine</strong>: <code class="language-java">(AffineTransform)</code> The moving image can be translated, rotated, scaled and sheared.</li>
+<li><strong>B-splines</strong>: <code class="language-java">(BSplineTransform)</code> A non-rigid transform which can model local deformations. The scale of the deformations is largely controlled by the control point spacing.</li>
+</ul>
+<h3 id="optimisers">Optimisers</h3>
+<p>There are several different optimizers available in elastix - the most used ones are <strong>gradient descent (GD)</strong>, <strong>Robbins-Monro (RM)</strong> and <strong>adaptive stochastic gradient descent (ASGD)</strong> <code class="language-java">(AdaptiveStochasticGradientDescent)</code>. The <strong>RM</strong> optimizer approximates the calculation of the derivative, making it faster to calculate, and is the recommended over <strong>GD</strong> in elastix. <strong>ASGD</strong> requires less parameters to be set and tends to be more robust than <strong>GD</strong>, and can be used as a default optimizer since it works well in most applications. There are many more optimizers available as well - we refer to the elastix manual for details on these.</p>
+<h3 id="other-components">Other components</h3>
+<p>There are other components necessary in the image registration scheme, such as the image sampler, interpolator and multi-resolution scheme.</p>
+<p>The <strong>image sampler</strong> defines the way the evaluated points are selected. In general, all of the points in the fixed image need not be evaluated in order to accomplish a good registration, a subset may suffice. The available choices are</p>
+<ul>
+<li><strong>Full</strong>: <code class="language-java">(Full)</code> The full sampler evaluates all point in the fixed image.</li>
+<li><strong>Grid</strong>: <code class="language-java">(Grid)</code> The grid sampler defines a regular grid on the fixed image with grid size defined by the user, effectively downsampling the image.</li>
+<li><strong>Random</strong>: <code class="language-java">(Random)</code> The random sampler randomly selects a user specified number of voxels from the fixed image. Every voxel has equal chance to be selected, and the same voxel can be selected several times.</li>
+<li><strong>Random coordinate</strong>: <code class="language-java">(RandomCoordinate)</code> Similar to the random sampler, but is not limited to voxel positions, i.e. points in between voxels can also be selected. The voxel values at these position must be obtained by interpolation.</li>
+</ul>
+<p>The <strong>interpolator</strong> is necessary since the optimization is evaluated at non-voxel positions (the moving image moves, rotates and deforms in physical space). There are several methods available with different quality and speed. The available interpolators are</p>
+<ul>
+<li><strong>Nearest neighbour</strong>: <code class="language-java">(NearestNeighborInterpolator)</code> Fast but course - the intensity of the voxel nearest in space is returned.</li>
+<li><strong>Linear</strong>: <code class="language-java">(LinearInterpolator)</code> The average of the nearest voxels, weighted by the distance to each voxels. This option usually gives good results during registration.</li>
+<li><strong>N-th order B-spline</strong>: <code class="language-java">(BSplineInterpolator)</code> The higher order, the better quality but requiring more computation time.</li>
+</ul>
+<p>The <strong>multi-resolution scheme</strong> is a way to increase the chance of successful registrations by starting the process with images of lower complexity. This is accomplished using image pyramids which can be smoothed, downsampled, or both, increasing the complexity (i.e. reducing the amount or smoothing and/or downsampling) as the registration process converges. This parameter should be specified for both the fixed and moving image as <code class="language-java">(Fixed______ImagePyramid)</code> and <code class="language-java">(Moving______ImagePyramid)</code> where the blank space indicates what kind of method is used. In elastix, the available choices are (parameters only given for the fixed image):</p>
+<ul>
+<li><strong>Gaussian pyramid</strong>: <code class="language-java">(FixedRecursiveImagePyramid)</code> Applies both smoothing and downsampling.</li>
+<li><strong>Gaussian scale space</strong>: <code class="language-java">(FixedSmoothingImagePyramid)</code> Applies only smoothing.</li>
+<li><strong>Shrinking pyramid</strong>: <code class="language-java">(FixedShrinkingImagePyramid)</code> Applies only downsampling.</li>
+</ul>
+<h2 id="the-elastix-parameter-file">The elastix parameter file</h2>
+<p>The registration components and their parameter values are defined in the elastix parameter file. The syntax is simple and is supplied as follows:</p>
+<pre><code class="language-java">(ParameterName &quot;value(s)&quot;)
+</code></pre>
+<p>Below, a parameter file is supplied which specifies a 2D rigid registration without comments. The full parameter file with comments can be found <a href="http://elastix.bigr.nl/wiki/images/1/17/Parameters_Rigid.txt">here</a>. Note that this is just one example - e.g. some parameters regarding the transform are only valid for the transform that is selected, so the parameter file can vary extensively. It is divided in sections. The first section defines the main settings of the registration - the most important setting for a MICE/elastix user is the image dimension settings, which must be changed between 2D and 3D depending on the application.</p>
+<pre><code class="language-java">// Main settings
+
+(FixedInternalImagePixelType &quot;float&quot;)
+(MovingInternalImagePixelType &quot;float&quot;)
+
+(FixedImageDimension 2)
+(MovingImageDimension 2)
+
+(UseDirectionCosines &quot;true&quot;)
+
+</code></pre>
+<p>The second section defines the main components of the registration, many of which have been described in the above sections. Two of the components were not mentioned - the registration component connects all other components and implements the multi resolution aspect of the registration. It can also handle multi-metric registrations, which will be further described below in the examples. Also the re-sampler was not mentioned - it defines how to re-sample the final result. Is normally left unchanged.</p>
+<pre><code class="language-java">// **************** Main Components **************************
+
+(Registration &quot;MultiResolutionRegistration&quot;)
+(Interpolator &quot;BSplineInterpolator&quot;)
+(ResampleInterpolator &quot;FinalBSplineInterpolator&quot;)
+(Resampler &quot;DefaultResampler&quot;)
+
+(FixedImagePyramid &quot;FixedRecursiveImagePyramid&quot;)
+(MovingImagePyramid &quot;MovingRecursiveImagePyramid&quot;)
+
+(Optimizer &quot;AdaptiveStochasticGradientDescent&quot;)
+(Transform &quot;EulerTransform&quot;)
+(Metric &quot;AdvancedMattesMutualInformation&quot;)
+
+</code></pre>
+<p>The following section defines parameters pertaining to the transform - how to scale, combine and initialize them.</p>
+<pre><code class="language-java">// ***************** Transformation **************************
+
+(AutomaticScalesEstimation &quot;true&quot;)
+
+(AutomaticTransformInitialization &quot;true&quot;)
+
+(HowToCombineTransforms &quot;Compose&quot;)
+
+</code></pre>
+<p>This section specifies parameters regarding the metric.</p>
+<pre><code class="language-java">// ******************* Similarity measure *********************
+
+(NumberOfHistogramBins 32)
+
+(ErodeMask &quot;false&quot;)
+
+</code></pre>
+<p>Next, details regarding the multi-resolution scheme.</p>
+<pre><code class="language-java">// ******************** Multiresolution **********************
+
+(NumberOfResolutions 4)
+
+(ImagePyramidSchedule 8 8  4 4  2 2  1 1 )
+
+</code></pre>
+<p>Details regarding the optimizer.</p>
+<pre><code class="language-java">// ******************* Optimizer ****************************
+
+(MaximumNumberOfIterations 250)
+
+</code></pre>
+<p>This section defines how the image sampling should be done.</p>
+<pre><code class="language-java">// **************** Image sampling **********************
+
+(NumberOfSpatialSamples 2048)
+
+(NewSamplesEveryIteration &quot;true&quot;)
+(ImageSampler &quot;Random&quot;)
+
+</code></pre>
+<p>Finally, there is a section regarding details on how the interpolation and final re-sampling of the result should be done.</p>
+<pre><code class="language-java">// ************* Interpolation and Re-sampling ****************
+
+(BSplineInterpolationOrder 1)
+
+(FinalBSplineInterpolationOrder 3)
+
+(DefaultPixelValue 0)
+
+(WriteResultImage &quot;true&quot;)
+
+(ResultImagePixelType &quot;short&quot;)
+(ResultImageFormat &quot;mhd&quot;)
+
+
+</code></pre>
+<p>There is detailed documentation on the available parameters on the elastix homepage, as well as several parameter file examples with references to literature, see below. In MICE, in the parameter file editor which you can access from the node settings panel or by double-clicking on the node itself in the Process pane, you can find some default parameter files in the <strong>PRESETS</strong> menu.</p>
+<div class="tiny"><p><a href="http://elastix.isi.uu.nl/doxygen/parameter.html">Elastix parameter documentation</a></p>
+<p><a href="http://elastix.bigr.nl/wiki/index.php/Parameter_file_database">Elastix parameter file database</a></p>
+</div>
+<h2 id="examples-in-mice">Examples in MICE</h2>
+<p>Elastix is normally called via a command-line interpreter, using commands like this:</p>
+<pre><code class="language-java">elastix -f fixedImage.ext -m movingImage.ext -out outputDirectory -p parameterFile.txt
+</code></pre>
+<p>MICE works like a wrapper to elastix, so you can use it in a graphical user interface. In the following section, examples are provided to demonstrate how to set up the elastix node in MICE to solve different registration tasks. To study the parameter file and node settings, open the example workflows.</p>
+<h3 id="rigid-registration-in-3d">Rigid registration in 3D</h3>
+<p>This is the simplest case, and it's only using the default settings of Elastix in MICE. Just connect the fixed and moving images and run the process. The parameter file is called <em>Default rigid</em>.</p>
+<p><img src="images/illustrations/registration_rigid_3d.png" class="img-fluid" alt="Node Icon" /></p>
+<div class="tiny"><p><a href="workflows/registration_rigid_3d.ice">Rigid 3D example</a></p>
+</div>
+<h3 id="affine-registration">Affine registration</h3>
+<p>This example shows how to make an affine registration in 3D. The parameter file is called <em>Default affine</em>. The node looks exactly the same as in the rigid example, but the parameters are different.</p>
+<p><img src="images/illustrations/registration_rigid_3d.png" class="img-fluid" alt="Node Icon" /></p>
+<div class="tiny"><p><a href="workflows/registration_affine_2d.ice">Affine 2D example</a></p>
+</div>
+<h3 id="basic-non-rigid-registration-in-3d">Basic non-rigid registration in 3D</h3>
+<p>This example shows how to make a basic non-rigid registration in 3D. Use the parameter-file <em>Default non-rigid</em>. The node has an extra input, <em>Initial transform</em>, which contains the initial rigid registration. You can either register the output image from the rigid registration without an initial transform, or the original moving image with an initial transform. It also has an extra output <em>TFX1</em> which contains the transform parameters. This can be used to produce vector fields to analyze the deformation, apply it to other images, etc.</p>
+<p><img src="images/illustrations/registration_deformable_3d.png" class="img-fluid" alt="Node Icon" /></p>
+<div class="tiny"><p><a href="workflows/registration_deformable_3d.ice">Non-rigid 3D example</a></p>
+</div>
+<h3 id="non-rigid-registration-with-guiding-structures-in-2d">Non-rigid registration with guiding structures in 2D</h3>
+<p>This example is a little more involved than the previous ones. It is a deformable registration that simultaneously takes into account the image information create a global registration, as well as some guiding structures to guide the registration in a smaller section of the images. To create such a registration, you need to select <em>Use Multiple Fixed Images</em> and <em>Multi Metric</em> in the <strong>Node Settings</strong> pane. This will create inputs for two image pairs which will be registered simultaneously - note that this type of registration will register the images together, i.e. both image pairs will contribute to the loss function, but they will have the same transform. You will also need to toggle the 2D/2D Registration switch in the <strong>Node Settings</strong> pane. There are also some special parameter settings:</p>
+<pre><code class="language-java">(FixedImageDimension 2)
+(MovingImageDimension 2)
+
+(Registration &quot;MultiMetricMultiResolutionRegistration&quot;)
+(Interpolator &quot;LinearInterpolator&quot; &quot;LinearInterpolator&quot;)
+(ImageSampler &quot;RandomCoordinate&quot; &quot;RandomCoordinate&quot;)
+
+(FixedImagePyramid &quot;FixedSmoothingImagePyramid&quot; &quot;FixedSmoothingImagePyramid&quot;)
+(MovingImagePyramid &quot;MovingSmoothingImagePyramid&quot; &quot;MovingSmoothingImagePyramid&quot;)
+
+(Metric &quot;AdvancedMattesMutualInformation&quot; &quot;AdvancedMeanSquares&quot;)
+
+(Metric0Weight 0.3)
+(Metric1Weight 0.7)
+</code></pre>
+<p>Several parameters need to be specified twice, as there are two simultaneous registrations running. In this registration, we also employ <em>Fixed Masks</em>. These are binary masks, specified in the fixed image space, which defines in what areas the image should be sampled. By using these, you can focus the registration on certain parts of the image.</p>
+<p><img src="images/illustrations/registration_deformable_with_guiding_structure.png" class="img-fluid" alt="Node Icon" /></p>
+<div class="tiny"><p><a href="workflows/registration_deformable_with_guide_2D.ice">Non-rigid with guiding structures 2D example</a></p>
+</div>
+<h3 id="partially-rigid-deformable-registration-in-2d">Partially rigid deformable registration in 2D</h3>
+<p>This example shows how to use auxiliary images to guide the registration, here using an image specifying the rigidity of the image. Where the auxiliary image is 0, the moving image is deformable and where it is 1, the moving image is rigid. To use this type of registration, set the desired number of <em>Auxiliary images</em> to 1 in the <strong>Node Settings</strong> panel. There are some specific settings in the parameter file:</p>
+<pre><code class="language-java">(Registration &quot;MultiMetricMultiResolutionRegistration&quot;)
+
+(Metric &quot;AdvancedMattesMutualInformation&quot; &quot;TransformBendingEnergyPenalty&quot; &quot;TransformRigidityPenalty&quot;)
+
+(Metric0Weight 0.9)
+(Metric1Weight 0.1)
+(Metric2Weight 0.1 0.1 0.1 4)
+
+(MovingRigidityImageName AUX1)
+(DilateRigidityImages &quot;false&quot;)
+</code></pre>
+<p>In this example, we change the metric weights depending on where in the multi-resolution scheme we are. In the final resolution, the rigidity penalty is dominant. Note that you call the auxiliary image using <code class="language-java">AUX1</code>. For details regarding the use of partially rigid registrations and the specific parameters which can be user, we refer to the <a href="http://elastix.isi.uu.nl/doxygen/classelastix_1_1TransformRigidityPenalty.html">elastix</a> homepage and the paper by <a href="https://www.ncbi.nlm.nih.gov/pubmed/18072476">Staring, Klein and Pluim</a>.</p>
+<p><img src="images/illustrations/registration_partially_rigid_2d.png" class="img-fluid" alt="Node Icon" /></p>
+<div class="tiny"><p><a href="workflows/registration_partially_rigid_2d.ice">Non-rigid with guiding structures 2D example</a></p>
+</div>
+<p class="copyright">Copyright &#169; 2019, NONPI Medical AB</p></div>
+
+        <!-- Indexbar  -->
+        <div id="right-wrapper" class="col-3">
+            <nav id="indexbar" class="nav sticky-top">
+                <p><i class="fas fa-align-left"></i> CONTENTS</p>
+                <a class="nav-link" href="#image-registration-with-elastix"><h1>Image registration with Elastix</h1></a>
+<a class="nav-link" href="#the-image-registration-process"><h2>The image registration process</h2></a>
+<a class="nav-link" href="#registration-components"><h2>Registration components</h2></a>
+<a class="nav-link" href="#the-elastix-parameter-file"><h2>The elastix parameter file</h2></a>
+<a class="nav-link" href="#examples-in-mice"><h2>Examples in MICE</h2></a>
+
+            </nav>
+        </div>
+    </div>
+
+    <!-- Popper.JS -->
+    <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="scripts/prism.js" type="text/javascript"></script>
+    <script src="scripts/popper.min.js" type="text/javascript"></script>
+    <script src="scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="scripts/tipuesearch_content.js" type="text/javascript"></script>
+    <script src="scripts/tipuesearch_set.js" type="text/javascript"></script>
+    <script src="scripts/tipuesearch.min.js" type="text/javascript"></script>
+    <script src="scripts/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#dismiss, .overlay').on('click', function () {
+                $('#searchbar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#searchbar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                $('#tipue_search_input').focus();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#tipue_search_input').tipuesearch({
+                'show': 7,
+                'footerPages': 7,
+                'showTime': false,
+                'showURL': false,
+                'wholeWords': false
+            });
+        });
+    </script>
+</body>
+</html>
