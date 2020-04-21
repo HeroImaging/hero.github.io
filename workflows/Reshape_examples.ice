@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-03-25 13:46:54.5651554" ID="8Fa2D40eBd20D4dE" Name="Reshape_examples">
+<MICE Version="1.1.2.0" Timestamp="2020-03-25 13:46:54.5651554" ID="8Fa2D40eBd20D4dE" Name="Reshape_examples">
   <Nodes>
     <Node ID="aB85fBdC607144a4" T="NodeImageNormalNoise" V="0.1" X="327" Y="307" FI="">
       <Inputs>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-01-25 15:41:21.5050148" ID="a6a3EA2aDCFCac71" Name="Seed-Reconstruction_Contour_Thinning_Generate-Mask">
+<MICE Version="1.1.2.0" Timestamp="2020-01-25 15:41:21.5050148" ID="a6a3EA2aDCFCac71" Name="Seed-Reconstruction_Contour_Thinning_Generate-Mask">
   <Nodes>
     <Node ID="00Ca4E4D0a5aa242" T="NodeMaskCustom" V="0.1" X="167" Y="361" FI="">
       <Inputs>

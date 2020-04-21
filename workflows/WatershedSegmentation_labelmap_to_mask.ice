@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-03-25 14:18:18.8115704" ID="BA15451D2d62b8BD" Name="WatershedSegmentation_labelmap_to_mask">
+<MICE Version="1.1.2.0" Timestamp="2020-03-25 14:18:18.8115704" ID="BA15451D2d62b8BD" Name="WatershedSegmentation_labelmap_to_mask">
   <Nodes>
     <Node ID="8Ea615d3DcaE8aAa" T="NodeImageWatershedSegmentation" V="0.1" X="328" Y="54" FI="">
       <Inputs>

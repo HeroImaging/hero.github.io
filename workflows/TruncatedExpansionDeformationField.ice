@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-01-28 18:14:57.7974897" ID="7E4F7ecD1d3dd7AB" Name="TruncatedExpansionDeformationField">
+<MICE Version="1.1.2.0" Timestamp="2020-01-28 18:14:57.7974897" ID="7E4F7ecD1d3dd7AB" Name="TruncatedExpansionDeformationField">
   <Nodes>
     <Node ID="D18CDcdC13fDF475" T="NodeImageExpression" V="0.1" X="-133" Y="464" FI="">
       <Inputs>

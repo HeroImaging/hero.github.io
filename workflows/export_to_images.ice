@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-03-25 13:20:02.0467791" ID="Df72B5c3Fadf2Cb7" Name="export_to_images">
+<MICE Version="1.1.2.0" Timestamp="2020-03-25 13:20:02.0467791" ID="Df72B5c3Fadf2Cb7" Name="export_to_images">
   <Nodes>
     <Node ID="D67dE6D0EA3D23f1" T="NodeExportNIfTI" V="0.1" X="326" Y="303" FI="">
       <Inputs>

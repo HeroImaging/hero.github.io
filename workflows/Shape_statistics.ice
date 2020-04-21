@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-03-25 14:10:18.3386873" ID="aDC3BBBA4f5ecb2C" Name="Shape_statistics">
+<MICE Version="1.1.2.0" Timestamp="2020-03-25 14:10:18.3386873" ID="aDC3BBBA4f5ecb2C" Name="Shape_statistics">
   <Nodes>
     <Node ID="DD5Dac35aEa3eBDf" T="NodeImageCreate" V="1.0" X="128" Y="302" FI="">
       <Inputs />

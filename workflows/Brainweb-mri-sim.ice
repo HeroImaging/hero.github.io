@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-02-08 15:50:51.0399495" ID="Bf3fe12141debAcB" Name="Brainweb-mri-sim">
+<MICE Version="1.1.2.0" Timestamp="2020-02-08 15:50:51.0399495" ID="Bf3fe12141debAcB" Name="Brainweb-mri-sim">
   <Nodes>
     <Node ID="fBF8dBb52E32E1b5" T="NodePhantomBrainwebMR" V="0.1" X="147" Y="208" FI="">
       <Inputs />

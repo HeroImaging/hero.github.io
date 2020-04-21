@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-03-25 14:01:39.9466599" ID="24b6EdEcCDd5df50" Name="Maurer-distance">
+<MICE Version="1.1.2.0" Timestamp="2020-03-25 14:01:39.9466599" ID="24b6EdEcCDd5df50" Name="Maurer-distance">
   <Nodes>
     <Node ID="88dAafF5605aa6d1" T="NodeImageTruncate" V="0.1" X="653" Y="73" FI="">
       <Inputs>

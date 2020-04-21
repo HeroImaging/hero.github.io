@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-03-25 13:18:53.3257875" ID="a08D6aF75DEEB8e4" Name="export_to_DICOM">
+<MICE Version="1.1.2.0" Timestamp="2020-03-25 13:18:53.3257875" ID="a08D6aF75DEEB8e4" Name="export_to_DICOM">
   <Nodes>
     <Node ID="EEe30c2C1f2dDfce" T="NodeExportDICOM" V="0.1" X="548" Y="640" FI="Frame of Reference;">
       <Inputs>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-03-25 15:55:11.9368811" ID="332377D01Ef54B0e" Name="structurehandlingexamples">
+<MICE Version="1.1.2.0" Timestamp="2020-03-25 15:55:11.9368811" ID="332377D01Ef54B0e" Name="structurehandlingexamples">
   <Nodes>
     <Node ID="a834c3cfDDC2FB4C" T="NodeStructProcessor" V="0.1" X="398" Y="350" FI="">
       <Inputs>

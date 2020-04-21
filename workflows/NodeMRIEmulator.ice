@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-03-25 14:04:15.0902051" ID="cb0753FbEa0caDDc" Name="NodeMRIEmulator">
+<MICE Version="1.1.2.0" Timestamp="2020-03-25 14:04:15.0902051" ID="cb0753FbEa0caDDc" Name="NodeMRIEmulator">
   <Nodes>
     <Node ID="A441c51f15BAfaA5" T="NodeMRIEmulator" V="0.1" X="18" Y="88" FI="">
       <Inputs />

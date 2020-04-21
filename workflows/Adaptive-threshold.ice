@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-03-25 13:53:03.0245488" ID="e6DDd2EbF72Fb7d0" Name="Adaptive-threshold">
+<MICE Version="1.1.2.0" Timestamp="2020-03-25 13:53:03.0245488" ID="e6DDd2EbF72Fb7d0" Name="Adaptive-threshold">
   <Nodes>
     <Node ID="A2BbfCD12b3c4B55" T="NodeImageExpression" V="0.1" X="489" Y="100" FI="">
       <Inputs>

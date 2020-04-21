@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-03-25 13:56:19.8981564" ID="Ee86BC256742aDBa" Name="connectedthreshold">
+<MICE Version="1.1.2.0" Timestamp="2020-03-25 13:56:19.8981564" ID="Ee86BC256742aDBa" Name="connectedthreshold">
   <Nodes>
     <Node ID="4d136D3Ed5f86735" T="NodeImageConnectedThreshold" V="0.1" X="418" Y="137" FI="">
       <Inputs>

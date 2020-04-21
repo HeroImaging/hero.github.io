@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-03-25 14:12:10.0513393" ID="20f7dD5a65DfefED" Name="STAPLE_Voting">
+<MICE Version="1.1.2.0" Timestamp="2020-03-25 14:12:10.0513393" ID="20f7dD5a65DfefED" Name="STAPLE_Voting">
   <Nodes>
     <Node ID="6A83ae33bfd2f7ac" T="NodeMaskCustom" V="0.1" X="258" Y="128" FI="">
       <Inputs>

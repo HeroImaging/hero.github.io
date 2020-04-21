@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="1.1.1.0" Timestamp="2020-03-25 13:59:51.1228550" ID="b3704Fe5687b5EaD" Name="Kmeans_labelmap_to_mask">
+<MICE Version="1.1.2.0" Timestamp="2020-03-25 13:59:51.1228550" ID="b3704Fe5687b5EaD" Name="Kmeans_labelmap_to_mask">
   <Nodes>
     <Node ID="D8Da70eBc6D4aA1d" T="NodeKMeansFilter" V="0.1" X="209" Y="60" FI="">
       <Inputs>
