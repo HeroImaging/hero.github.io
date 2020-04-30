@@ -53,11 +53,11 @@
 <a  id="p1" href="home.html">Home</a>
 </li>
 <li>
-<a href="#m2" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Nodes</a>
-<ul class="submenu collapse list-unstyled show" id="m2">
+<a href="#m2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nodes</a>
+<ul class="submenu collapse list-unstyled" id="m2">
 <li>
-<a href="#m3" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Image</a>
-<ul class="submenu collapse list-unstyled show" id="m3">
+<a href="#m3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Image</a>
+<ul class="submenu collapse list-unstyled" id="m3">
 <li>
 <a href="#m4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Math. Operations</a>
 <ul class="submenu collapse list-unstyled" id="m4">
@@ -118,8 +118,8 @@
 </ul>
 </li>
 <li>
-<a href="#m23" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Filters</a>
-<ul class="submenu collapse list-unstyled show" id="m23">
+<a href="#m23" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Filters</a>
+<ul class="submenu collapse list-unstyled" id="m23">
 <li>
 <a href="#m24" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Noise</a>
 <ul class="submenu collapse list-unstyled" id="m24">
@@ -202,7 +202,7 @@
 <a  id="p48" href="nodes.image.filters.truncate.html">Truncate</a>
 </li>
 <li>
-<a class="focused" id="p49" href="nodes.image.filters.sigmoid.html">Sigmoid</a>
+<a  id="p49" href="nodes.image.filters.sigmoid.html">Sigmoid</a>
 </li>
 <li>
 <a  id="p50" href="nodes.image.filters.sobel.html">Sobel</a>
@@ -1110,11 +1110,11 @@
 </ul>
 </li>
 <li>
-<a href="#m311" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tutorials</a>
-<ul class="submenu collapse list-unstyled" id="m311">
+<a href="#m311" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Tutorials</a>
+<ul class="submenu collapse list-unstyled show" id="m311">
 <li>
-<a href="#m312" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Videos</a>
-<ul class="submenu collapse list-unstyled" id="m312">
+<a href="#m312" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Videos</a>
+<ul class="submenu collapse list-unstyled show" id="m312">
 <li>
 <a  id="p313" href="tutorials.videos.getting_started.html">Getting Started</a>
 </li>
@@ -1122,7 +1122,7 @@
 <a  id="p314" href="tutorials.videos.masks.html">Masks</a>
 </li>
 <li>
-<a  id="p315" href="tutorials.videos.batching.html">Batching</a>
+<a class="focused" id="p315" href="tutorials.videos.batching.html">Batching</a>
 </li>
 </ul>
 </li>
@@ -1159,55 +1159,20 @@
         </div>
 
         <!-- Page Content  -->
-        <div id="content" class="col"><h1 id="sigmoid">Sigmoid</h1>
-<div class="tiny"><p>Class: <strong>NodeSigmoidFilter</strong></p>
-</div>
-<p><img src="images/nodes/nodesigmoidfilter.png" class="img-fluid" alt="Node Icon" /></p>
-<p>Computes the sigmoid function pixel-wise. A linear transformation is applied first on the argument of the sigmoid function. The resulting total transform is given by<br><br> f(x) = (Max-Min) * 1/(1+e^( -(x - beta)  / alpha )) + Min <br><br>Every output pixel is equal to f(x). Where x is the intensity of the homologous input pixel, and alpha and beta are user-provided constants.</p>
-<h2 id="inputs">Inputs</h2>
-<div class="box"><h4 id="image"><svg width="20" height="20"><circle cx="10" cy="8" r="6" stroke="#242424" stroke-width="1" fill="#90EE90" /></svg>Image</h4>
-<p>input image.</p>
-<div class="tiny"><p>Type: <strong>Image4DFloat</strong>, Required, Single</p>
-</div>
-</div>
-<div><h2 id="outputs">Outputs</h2>
-<div class="box"><h4 id="output"><svg width="20" height="20"><circle cx="10" cy="8" r="6" stroke="#242424" stroke-width="1" fill="#90EE90" /></svg>Output</h4>
-<p>Resulting image.</p>
-<div class="tiny"><p>Type: <strong>Image4DFloat</strong></p>
-</div>
-</div>
-</div>
-<div><h2 id="settings">Settings</h2>
-<div class="box"><h4 id="alpha-number">Alpha <span class="label  label-blue">Number</span></h4>
-<p>Alpha parameter.</p>
-</div>
-</div>
-<div class="box"><h4 id="beta-number">Beta <span class="label  label-blue">Number</span></h4>
-<p>Beta parameter.</p>
-</div>
-<div class="box"><h4 id="output-maximum-number">Output Maximum <span class="label  label-blue">Number</span></h4>
-<p>Output max value.</p>
-</div>
-<div class="box"><h4 id="output-minimum-number">Output Minimum <span class="label  label-blue">Number</span></h4>
-<p>Output min value.</p>
-</div>
-<h2 id="references">References</h2>
-<div class="tiny">
-<ol>
-<li>&ldquo;The Insight Segmentation and Registration Toolkit&rdquo; <a href="http://www.itk.org">www.itk.org</a></li>
-</ol>
-</div>
+        <div id="content" class="col"><h1 id="batching">Batching</h1>
+<h3 id="creating-a-batch-analysis-the-basics">1. Creating a batch analysis - the basics</h3>
+<p><iframe src="https://www.youtube.com/embed/qiWyE6ZmKx4" class="img-fluid" width="455" height="256" frameborder="0" allowfullscreen=""></iframe></p>
+<h3 id="creating-a-batch-analysis-using-images-from-different-exams">2. Creating a batch analysis - using images from different exams</h3>
+<p><iframe src="https://www.youtube.com/embed/JMh6GkBU5F4" class="img-fluid" width="455" height="256" frameborder="0" allowfullscreen=""></iframe></p>
+<h3 id="creating-a-batch-analysis-batching-over-variables">3. Creating a batch analysis - batching over variables</h3>
+<p><iframe src="https://www.youtube.com/embed/2mbkR8ygJtc" class="img-fluid" width="455" height="256" frameborder="0" allowfullscreen=""></iframe></p>
 <p class="copyright">Copyright &#169; 2019, NONPI Medical AB</p></div>
 
         <!-- Indexbar  -->
         <div id="right-wrapper" class="col-3">
             <nav id="indexbar" class="nav sticky-top">
                 <p><i class="fas fa-align-left"></i> CONTENTS</p>
-                <a class="nav-link" href="#sigmoid"><h1>Sigmoid</h1></a>
-<a class="nav-link" href="#inputs"><h2>Inputs</h2></a>
-<a class="nav-link" href="#outputs"><h2>Outputs</h2></a>
-<a class="nav-link" href="#settings"><h2>Settings</h2></a>
-<a class="nav-link" href="#references"><h2>References</h2></a>
+                <a class="nav-link" href="#batching"><h1>Batching</h1></a>
 
             </nav>
         </div>
