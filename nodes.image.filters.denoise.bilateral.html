@@ -1,0 +1,1525 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MICE Toolkit</title>
+    <!-- Styles -->
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/all.css" rel="stylesheet">
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/tipuesearch.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="scripts/solid.js"></script>
+    <script defer src="scripts/fontawesome.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#indexbar" data-offset="30">
+    <nav id="searchbar">
+        <div id="search">
+            <div id="searchbox">
+                <i class="fas fa-search"></i><input placeholder="Search..." type="text" name="searchbox" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters">
+            </div>
+            <div id="dismiss">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <div id="tipue_search_content"></div>
+    </nav>
+    <div class="overlay">
+    </div>
+    <div id="topmenu" class="navbar">
+        <div id="logo">
+            <img src="images/logo.png" alt="MICE Toolkit" height="51">
+        </div>
+        <div id="mainmenu">
+
+        </div>
+        <div class="navsearchbox">
+            <i class="fas fa-search navsearch"></i><input placeholder="Search..." type="text" class="searchbox" id="sidebarCollapse">
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Sidebar  -->
+        <div id="left-wrapper" class="col-3">
+            <div id="sidebar" class="sticky-top">
+                <ul class="list-unstyled components">
+<li>
+<a  id="p1" href="home.html">Home</a>
+</li>
+<li>
+<a href="#m2" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Nodes</a>
+<ul class="submenu collapse list-unstyled show" id="m2">
+<li>
+<a href="#m3" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Image</a>
+<ul class="submenu collapse list-unstyled show" id="m3">
+<li>
+<a href="#m4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Math. Operations</a>
+<ul class="submenu collapse list-unstyled" id="m4">
+<li>
+<a  id="p5" href="nodes.image.math._operations.add.html">Add</a>
+</li>
+<li>
+<a  id="p6" href="nodes.image.math._operations.subtract.html">Subtract</a>
+</li>
+<li>
+<a  id="p7" href="nodes.image.math._operations.multiply.html">Multiply</a>
+</li>
+<li>
+<a  id="p8" href="nodes.image.math._operations.divide.html">Divide</a>
+</li>
+<li>
+<a  id="p9" href="nodes.image.math._operations.absolute_value.html">Absolute Value</a>
+</li>
+<li>
+<a  id="p10" href="nodes.image.math._operations.ceiling.html">Ceiling</a>
+</li>
+<li>
+<a  id="p11" href="nodes.image.math._operations.floor.html">Floor</a>
+</li>
+<li>
+<a  id="p12" href="nodes.image.math._operations.round.html">Round</a>
+</li>
+<li>
+<a  id="p13" href="nodes.image.math._operations.raise_to_power.html">Raise To Power</a>
+</li>
+<li>
+<a  id="p14" href="nodes.image.math._operations.square_root.html">Square Root</a>
+</li>
+<li>
+<a  id="p15" href="nodes.image.math._operations.principal_component_analysis.html">Principal Component Analysis</a>
+</li>
+<li>
+<a  id="p16" href="nodes.image.math._operations.convolution.html">Convolution</a>
+</li>
+<li>
+<a  id="p17" href="nodes.image.math._operations.forward_fft.html">Forward FFT</a>
+</li>
+<li>
+<a  id="p18" href="nodes.image.math._operations.inverse_fft.html">Inverse FFT</a>
+</li>
+<li>
+<a  id="p19" href="nodes.image.math._operations.fft_shift.html">FFT Shift</a>
+</li>
+<li>
+<a  id="p20" href="nodes.image.math._operations.inverse_fft_shift.html">Inverse FFT Shift</a>
+</li>
+<li>
+<a  id="p21" href="nodes.image.math._operations.fft_convolution.html">FFT Convolution</a>
+</li>
+<li>
+<a  id="p22" href="nodes.image.math._operations.create_expression.html">Create Expression</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m23" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Filters</a>
+<ul class="submenu collapse list-unstyled show" id="m23">
+<li>
+<a href="#m24" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Noise</a>
+<ul class="submenu collapse list-unstyled" id="m24">
+<li>
+<a  id="p25" href="nodes.image.filters.noise.normal_(gaussian).html">Normal (Gaussian)</a>
+</li>
+<li>
+<a  id="p26" href="nodes.image.filters.noise.gamma.html">Gamma</a>
+</li>
+<li>
+<a  id="p27" href="nodes.image.filters.noise.log-normal.html">Log-Normal</a>
+</li>
+<li>
+<a  id="p28" href="nodes.image.filters.noise.poission.html">Poission</a>
+</li>
+<li>
+<a  id="p29" href="nodes.image.filters.noise.laplace.html">Laplace</a>
+</li>
+<li>
+<a  id="p30" href="nodes.image.filters.noise.beta.html">Beta</a>
+</li>
+<li>
+<a  id="p31" href="nodes.image.filters.noise.chi.html">Chi</a>
+</li>
+<li>
+<a  id="p32" href="nodes.image.filters.noise.rician.html">Rician</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m33" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Denoise</a>
+<ul class="submenu collapse list-unstyled show" id="m33">
+<li>
+<a  id="p34" href="nodes.image.filters.denoise.gaussian_blur.html">Gaussian Blur</a>
+</li>
+<li>
+<a  id="p35" href="nodes.image.filters.denoise.median.html">Median</a>
+</li>
+<li>
+<a  id="p36" href="nodes.image.filters.denoise.box_mean.html">Box Mean</a>
+</li>
+<li>
+<a  id="p37" href="nodes.image.filters.denoise.curvature_flow.html">Curvature Flow</a>
+</li>
+<li>
+<a  id="p38" href="nodes.image.filters.denoise.minmax_curvature_flow.html">Min/Max Curvature Flow</a>
+</li>
+<li>
+<a class="focused" id="p39" href="nodes.image.filters.denoise.bilateral.html">Bilateral</a>
+</li>
+<li>
+<a  id="p40" href="nodes.image.filters.denoise.curvature_anisotropic_diffusion.html">Curvature Anisotropic Diffusion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m41" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Sharpen</a>
+<ul class="submenu collapse list-unstyled" id="m41">
+<li>
+<a  id="p42" href="nodes.image.filters.sharpen.laplacian.html">Laplacian</a>
+</li>
+<li>
+<a  id="p43" href="nodes.image.filters.sharpen.unsharp_masking.html">Unsharp masking</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p44" href="nodes.image.filters.adaptive_histogram_equalization.html">Adaptive Histogram Equalization</a>
+</li>
+<li>
+<a  id="p45" href="nodes.image.filters.normalize.html">Normalize</a>
+</li>
+<li>
+<a  id="p46" href="nodes.image.filters.truncate.html">Truncate</a>
+</li>
+<li>
+<a  id="p47" href="nodes.image.filters.sigmoid.html">Sigmoid</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m48" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Morphology</a>
+<ul class="submenu collapse list-unstyled" id="m48">
+<li>
+<a  id="p49" href="nodes.image.morphology.erode.html">Erode</a>
+</li>
+<li>
+<a  id="p50" href="nodes.image.morphology.dilate.html">Dilate</a>
+</li>
+<li>
+<a  id="p51" href="nodes.image.morphology.opening.html">Opening</a>
+</li>
+<li>
+<a  id="p52" href="nodes.image.morphology.closing.html">Closing</a>
+</li>
+<li>
+<a  id="p53" href="nodes.image.morphology.opening_by_reconstruction.html">Opening by Reconstruction</a>
+</li>
+<li>
+<a  id="p54" href="nodes.image.morphology.closing_by_reconstruction.html">Closing by Reconstruction</a>
+</li>
+<li>
+<a  id="p55" href="nodes.image.morphology.fill_hole.html">Fill Hole</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m56" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Flow Control</a>
+<ul class="submenu collapse list-unstyled" id="m56">
+<li>
+<a href="#m57" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Select</a>
+<ul class="submenu collapse list-unstyled" id="m57">
+<li>
+<a  id="p58" href="nodes.image.flow_control.select.from_four_images.html">From Four Images</a>
+</li>
+<li>
+<a  id="p59" href="nodes.image.flow_control.select.from_two_images.html">From Two Images</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m60" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Texture</a>
+<ul class="submenu collapse list-unstyled" id="m60">
+<li>
+<a  id="p61" href="nodes.image.texture.texture_analysis.html">Texture Analysis</a>
+</li>
+<li>
+<a  id="p62" href="nodes.image.texture.texture_glcm.html">Texture GLCM</a>
+</li>
+<li>
+<a  id="p63" href="nodes.image.texture.texture_lbp.html">Texture LBP</a>
+</li>
+<li>
+<a  id="p64" href="nodes.image.texture.noise_image.html">Noise Image</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m65" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m65">
+<li>
+<a  id="p66" href="nodes.image.convert_to.grid.html">Grid</a>
+</li>
+<li>
+<a  id="p67" href="nodes.image.convert_to.label_map_(region)_mask.html">Label Map (Region) Mask</a>
+</li>
+<li>
+<a  id="p68" href="nodes.image.convert_to.line_profile.html">Line Profile</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m69" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Segmentation</a>
+<ul class="submenu collapse list-unstyled" id="m69">
+<li>
+<a href="#m70" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Thresholding</a>
+<ul class="submenu collapse list-unstyled" id="m70">
+<li>
+<a  id="p71" href="nodes.image.segmentation.thresholding.threshold.html">Threshold</a>
+</li>
+<li>
+<a  id="p72" href="nodes.image.segmentation.thresholding.adaptive_threshold.html">Adaptive Threshold</a>
+</li>
+<li>
+<a  id="p73" href="nodes.image.segmentation.thresholding.connected_threshold.html">Connected Threshold</a>
+</li>
+<li>
+<a  id="p74" href="nodes.image.segmentation.thresholding.otsu__thresholding.html">Otsu  Thresholding</a>
+</li>
+<li>
+<a  id="p75" href="nodes.image.segmentation.thresholding.otsu_multi_thresholding.html">Otsu Multi Thresholding</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m76" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Edge Detection</a>
+<ul class="submenu collapse list-unstyled" id="m76">
+<li>
+<a  id="p77" href="nodes.image.segmentation.edge_detection.gradient_magnitude.html">Gradient Magnitude</a>
+</li>
+<li>
+<a  id="p78" href="nodes.image.segmentation.edge_detection.gradient_magnitude_recursive_gaussian.html">Gradient Magnitude Recursive Gaussian</a>
+</li>
+<li>
+<a  id="p79" href="nodes.image.segmentation.edge_detection.canny_edge_detection.html">Canny Edge Detection</a>
+</li>
+<li>
+<a  id="p80" href="nodes.image.segmentation.edge_detection.sobel.html">Sobel</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m81" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Level Set</a>
+<ul class="submenu collapse list-unstyled" id="m81">
+<li>
+<a  id="p82" href="nodes.image.segmentation.level_set.geodesic_active_contour_level_set.html">Geodesic Active Contour Level Set</a>
+</li>
+<li>
+<a  id="p83" href="nodes.image.segmentation.level_set.scalar_chan_vese_dense_level_set.html">Scalar Chan Vese Dense Level Set</a>
+</li>
+<li>
+<a  id="p84" href="nodes.image.segmentation.level_set.fast_marching.html">Fast Marching</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p85" href="nodes.image.segmentation.watershed.html">Watershed</a>
+</li>
+<li>
+<a  id="p86" href="nodes.image.segmentation.k-means.html">K-Means</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m87" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Registration</a>
+<ul class="submenu collapse list-unstyled" id="m87">
+<li>
+<a href="#m88" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Register</a>
+<ul class="submenu collapse list-unstyled" id="m88">
+<li>
+<a  id="p89" href="nodes.image.registration.register.elastix_registration.html">Elastix Registration</a>
+</li>
+<li>
+<a  id="p90" href="nodes.image.registration.register.demons_registration.html">Demons Registration</a>
+</li>
+<li>
+<a  id="p91" href="nodes.image.registration.register.optical_flow_registration.html">Optical Flow Registration</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m92" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Transform</a>
+<ul class="submenu collapse list-unstyled" id="m92">
+<li>
+<a  id="p93" href="nodes.image.registration.transform.apply_elastix_transform.html">Apply Elastix Transform</a>
+</li>
+<li>
+<a  id="p94" href="nodes.image.registration.transform.apply_dicom_transform_(dicom_reg).html">Apply DICOM Transform (DICOM REG)</a>
+</li>
+<li>
+<a  id="p95" href="nodes.image.registration.transform.invert_elastix_transform.html">Invert Elastix Transform</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m96" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Transform</a>
+<ul class="submenu collapse list-unstyled" id="m96">
+<li>
+<a  id="p97" href="nodes.image.transform.set_position.html">Set Position</a>
+</li>
+<li>
+<a  id="p98" href="nodes.image.transform.set_voxel_size.html">Set Voxel Size</a>
+</li>
+<li>
+<a  id="p99" href="nodes.image.transform.set_orientation.html">Set Orientation</a>
+</li>
+<li>
+<a  id="p100" href="nodes.image.transform.translate.html">Translate</a>
+</li>
+<li>
+<a  id="p101" href="nodes.image.transform.resample_to_reference.html">Resample To Reference</a>
+</li>
+<li>
+<a  id="p102" href="nodes.image.transform.change_voxel_size.html">Change Voxel Size</a>
+</li>
+<li>
+<a  id="p103" href="nodes.image.transform.change_matrix_size.html">Change Matrix Size</a>
+</li>
+<li>
+<a  id="p104" href="nodes.image.transform.deform_using_vector_field.html">Deform Using Vector Field</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m105" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reshape</a>
+<ul class="submenu collapse list-unstyled" id="m105">
+<li>
+<a  id="p106" href="nodes.image.reshape.extract_frames.html">Extract Frames</a>
+</li>
+<li>
+<a  id="p107" href="nodes.image.reshape.extract_slices.html">Extract Slices</a>
+</li>
+<li>
+<a  id="p108" href="nodes.image.reshape.merge_frames.html">Merge Frames</a>
+</li>
+<li>
+<a  id="p109" href="nodes.image.reshape.projection.html">Projection</a>
+</li>
+<li>
+<a  id="p110" href="nodes.image.reshape.image_paste.html">Image Paste</a>
+</li>
+<li>
+<a  id="p111" href="nodes.image.reshape.pad.html">Pad</a>
+</li>
+<li>
+<a  id="p112" href="nodes.image.reshape.flip_axes.html">Flip Axes</a>
+</li>
+<li>
+<a  id="p113" href="nodes.image.reshape.permute_axes.html">Permute Axes</a>
+</li>
+<li>
+<a  id="p114" href="nodes.image.reshape.create_stack.html">Create Stack</a>
+</li>
+<li>
+<a  id="p115" href="nodes.image.reshape.create_time_series.html">Create Time Series</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m116" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">MRI</a>
+<ul class="submenu collapse list-unstyled" id="m116">
+<li>
+<a href="#m117" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Relaxation Mapping</a>
+<ul class="submenu collapse list-unstyled" id="m117">
+<li>
+<a href="#m118" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">T1 Map</a>
+<ul class="submenu collapse list-unstyled" id="m118">
+<li>
+<a  id="p119" href="nodes.image.mri.relaxation_mapping.t1_map.inversion_recovery.html">Inversion Recovery</a>
+</li>
+<li>
+<a  id="p120" href="nodes.image.mri.relaxation_mapping.t1_map.variable_flip_angles.html">Variable Flip Angles</a>
+</li>
+<li>
+<a  id="p121" href="nodes.image.mri.relaxation_mapping.t1_map.schuff.html">Schuff</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p122" href="nodes.image.mri.relaxation_mapping.t2t2_map.html">T2/T2* Map</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m123" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Diffusion</a>
+<ul class="submenu collapse list-unstyled" id="m123">
+<li>
+<a  id="p124" href="nodes.image.mri.diffusion.adc_map.html">ADC Map</a>
+</li>
+<li>
+<a  id="p125" href="nodes.image.mri.diffusion.dti_estimator.html">DTI Estimator</a>
+</li>
+<li>
+<a  id="p126" href="nodes.image.mri.diffusion.dti_forward_model.html">DTI Forward Model</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m127" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Multidimensional Diffusion</a>
+<ul class="submenu collapse list-unstyled" id="m127">
+<li>
+<a href="#m128" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">DTD</a>
+<ul class="submenu collapse list-unstyled" id="m128">
+<li>
+<a  id="p129" href="nodes.image.mri.multidimensional_diffusion.dtd.dtd_analysis.html">DTD Analysis</a>
+</li>
+<li>
+<a  id="p130" href="nodes.image.mri.multidimensional_diffusion.dtd.dtd_fraction_map.html">DTD Fraction Map</a>
+</li>
+<li>
+<a  id="p131" href="nodes.image.mri.multidimensional_diffusion.dtd.dtd_signal_generation.html">DTD Signal Generation</a>
+</li>
+<li>
+<a  id="p132" href="nodes.image.mri.multidimensional_diffusion.dtd.dtd_statistical_descriptors.html">DTD Statistical Descriptors</a>
+</li>
+<li>
+<a  id="p133" href="nodes.image.mri.multidimensional_diffusion.dtd.cell_type_definitions_(dratio).html">Cell Type Definitions (Dratio)</a>
+</li>
+<li>
+<a  id="p134" href="nodes.image.mri.multidimensional_diffusion.dtd.cell_type_definitions_(ddelta).html">Cell Type Definitions (Ddelta)</a>
+</li>
+<li>
+<a  id="p135" href="nodes.image.mri.multidimensional_diffusion.dtd.cell_type_definitions_(ddelta2).html">Cell Type Definitions (Ddelta2)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m136" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">QTI</a>
+<ul class="submenu collapse list-unstyled" id="m136">
+<li>
+<a  id="p137" href="nodes.image.mri.multidimensional_diffusion.qti.qti_estimator.html">QTI Estimator</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m138" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">XPS Tools</a>
+<ul class="submenu collapse list-unstyled" id="m138">
+<li>
+<a  id="p139" href="nodes.image.mri.multidimensional_diffusion.xps_tools.xps_reader.html">XPS Reader</a>
+</li>
+<li>
+<a  id="p140" href="nodes.image.mri.multidimensional_diffusion.xps_tools.xps_merge.html">XPS Merge</a>
+</li>
+<li>
+<a  id="p141" href="nodes.image.mri.multidimensional_diffusion.xps_tools.xps_from_bval-bvec.html">XPS From Bval-Bvec</a>
+</li>
+<li>
+<a  id="p142" href="nodes.image.mri.multidimensional_diffusion.xps_tools.extract_b-tensor_subset.html">Extract B-Tensor Subset</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m143" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">DCE-MRI</a>
+<ul class="submenu collapse list-unstyled" id="m143">
+<li>
+<a href="#m144" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">AIF Generation</a>
+<ul class="submenu collapse list-unstyled" id="m144">
+<li>
+<a  id="p145" href="nodes.image.mri.dce-mri.aif_generation.parker_aif.html">Parker AIF</a>
+</li>
+<li>
+<a  id="p146" href="nodes.image.mri.dce-mri.aif_generation.aif_from_data.html">AIF From Data</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p147" href="nodes.image.mri.dce-mri.ca_quantifier.html">CA Quantifier</a>
+</li>
+<li>
+<a  id="p148" href="nodes.image.mri.dce-mri.linear_kety_estimator.html">Linear KETY Estimator</a>
+</li>
+<li>
+<a  id="p149" href="nodes.image.mri.dce-mri.brix.html">Brix</a>
+</li>
+<li>
+<a  id="p150" href="nodes.image.mri.dce-mri.area_under_curve.html">Area Under Curve</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m151" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Distortion Modelling</a>
+<ul class="submenu collapse list-unstyled" id="m151">
+<li>
+<a  id="p152" href="nodes.image.mri.distortion_modelling.induced_susceptibility_effect.html">Induced Susceptibility Effect</a>
+</li>
+<li>
+<a  id="p153" href="nodes.image.mri.distortion_modelling.susceptibility_map.html">Susceptibility Map</a>
+</li>
+<li>
+<a  id="p154" href="nodes.image.mri.distortion_modelling.b0_distortion.html">B0 Distortion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m155" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Distortion Correction</a>
+<ul class="submenu collapse list-unstyled" id="m155">
+<li>
+<a  id="p156" href="nodes.image.mri.distortion_correction.n4_bias_field_correction.html">N4 Bias Field Correction</a>
+</li>
+<li>
+<a  id="p157" href="nodes.image.mri.distortion_correction.b1_correction_map.html">B1 Correction Map</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m158" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PET</a>
+<ul class="submenu collapse list-unstyled" id="m158">
+<li>
+<a  id="p159" href="nodes.image.pet.suv.html">SUV</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m160" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Radiotherapy</a>
+<ul class="submenu collapse list-unstyled" id="m160">
+<li>
+<a  id="p161" href="nodes.image.radiotherapy.dose_volume_histogram.html">Dose Volume Histogram</a>
+</li>
+<li>
+<a  id="p162" href="nodes.image.radiotherapy.gamma_index.html">Gamma Index</a>
+</li>
+<li>
+<a  id="p163" href="nodes.image.radiotherapy.equivalent_uniform_dose.html">Equivalent Uniform Dose</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m164" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Statistics</a>
+<ul class="submenu collapse list-unstyled" id="m164">
+<li>
+<a  id="p165" href="nodes.image.statistics.descriptive_statistics.html">Descriptive Statistics</a>
+</li>
+<li>
+<a  id="p166" href="nodes.image.statistics.histogram.html">Histogram</a>
+</li>
+<li>
+<a  id="p167" href="nodes.image.statistics.image_time_statistics.html">Image Time Statistics</a>
+</li>
+<li>
+<a  id="p168" href="nodes.image.statistics.region_time_statistics.html">Region Time Statistics</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m169" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Export</a>
+<ul class="submenu collapse list-unstyled" id="m169">
+<li>
+<a  id="p170" href="nodes.image.export.dicom_.dcm.html">DICOM .dcm</a>
+</li>
+<li>
+<a  id="p171" href="nodes.image.export.database.html">Database</a>
+</li>
+<li>
+<a  id="p172" href="nodes.image.export.nifti_.nii.html">NIfTI .nii</a>
+</li>
+<li>
+<a  id="p173" href="nodes.image.export.image_.bmp,_.jpg_etc.html">Image .bmp, .jpg etc</a>
+</li>
+<li>
+<a  id="p174" href="nodes.image.export.metaio_.mhd.html">MetaIO .mhd</a>
+</li>
+<li>
+<a  id="p175" href="nodes.image.export.matlab_.mat.html">MATLAB .mat</a>
+</li>
+<li>
+<a  id="p176" href="nodes.image.export.csv_.csv.html">CSV .csv</a>
+</li>
+<li>
+<a  id="p177" href="nodes.image.export.transformix_.txt.html">Transformix .txt</a>
+</li>
+<li>
+<a  id="p178" href="nodes.image.export.sql.html">SQL</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m179" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Visualization</a>
+<ul class="submenu collapse list-unstyled" id="m179">
+<li>
+<a  id="p180" href="nodes.image.visualization.visualize.html">Visualize</a>
+</li>
+<li>
+<a  id="p181" href="nodes.image.visualization.visualize_rgb.html">Visualize RGB</a>
+</li>
+<li>
+<a  id="p182" href="nodes.image.visualization.create_rgb_image.html">Create RGB Image</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p183" href="nodes.image.create_new_image.html">Create New Image</a>
+</li>
+<li>
+<a  id="p184" href="nodes.image.rename_image.html">Rename Image</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m185" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Mask</a>
+<ul class="submenu collapse list-unstyled" id="m185">
+<li>
+<a href="#m186" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Boolean Algebra</a>
+<ul class="submenu collapse list-unstyled" id="m186">
+<li>
+<a  id="p187" href="nodes.mask.boolean_algebra.and.html">AND</a>
+</li>
+<li>
+<a  id="p188" href="nodes.mask.boolean_algebra.not.html">NOT</a>
+</li>
+<li>
+<a  id="p189" href="nodes.mask.boolean_algebra.or.html">OR</a>
+</li>
+<li>
+<a  id="p190" href="nodes.mask.boolean_algebra.xor.html">XOR</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m191" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Morphology</a>
+<ul class="submenu collapse list-unstyled" id="m191">
+<li>
+<a  id="p192" href="nodes.mask.morphology.erode.html">Erode</a>
+</li>
+<li>
+<a  id="p193" href="nodes.mask.morphology.dilate.html">Dilate</a>
+</li>
+<li>
+<a  id="p194" href="nodes.mask.morphology.opening.html">Opening</a>
+</li>
+<li>
+<a  id="p195" href="nodes.mask.morphology.closing.html">Closing</a>
+</li>
+<li>
+<a  id="p196" href="nodes.mask.morphology.opening_by_reconstruction.html">Opening by Reconstruction</a>
+</li>
+<li>
+<a  id="p197" href="nodes.mask.morphology.closing_by_reconstruction.html">Closing by Reconstruction</a>
+</li>
+<li>
+<a  id="p198" href="nodes.mask.morphology.seed_reconstruction.html">Seed Reconstruction</a>
+</li>
+<li>
+<a  id="p199" href="nodes.mask.morphology.fill_hole.html">Fill Hole</a>
+</li>
+<li>
+<a  id="p200" href="nodes.mask.morphology.contour_interpolation.html">Contour Interpolation</a>
+</li>
+<li>
+<a  id="p201" href="nodes.mask.morphology.bounding_box.html">Bounding Box</a>
+</li>
+<li>
+<a  id="p202" href="nodes.mask.morphology.contour.html">Contour</a>
+</li>
+<li>
+<a  id="p203" href="nodes.mask.morphology.thinning.html">Thinning</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m204" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Analysis</a>
+<ul class="submenu collapse list-unstyled" id="m204">
+<li>
+<a  id="p205" href="nodes.mask.analysis.hausdorff_distance.html">Hausdorff Distance</a>
+</li>
+<li>
+<a  id="p206" href="nodes.mask.analysis.maurer_distance.html">Maurer Distance</a>
+</li>
+<li>
+<a  id="p207" href="nodes.mask.analysis.overlap_measures.html">Overlap Measures</a>
+</li>
+<li>
+<a  id="p208" href="nodes.mask.analysis.staple.html">STAPLE</a>
+</li>
+<li>
+<a  id="p209" href="nodes.mask.analysis.voting.html">Voting</a>
+</li>
+<li>
+<a  id="p210" href="nodes.mask.analysis.shape_statistics.html">Shape Statistics</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m211" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m211">
+<li>
+<a  id="p212" href="nodes.mask.convert_to.image.html">Image</a>
+</li>
+<li>
+<a  id="p213" href="nodes.mask.convert_to.label_map_(regions).html">Label Map (Regions)</a>
+</li>
+<li>
+<a  id="p214" href="nodes.mask.convert_to.surface_estimation.html">Surface Estimation</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m215" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate</a>
+<ul class="submenu collapse list-unstyled" id="m215">
+<li>
+<a  id="p216" href="nodes.mask.generate.custom_mask_from_image.html">Custom Mask From Image</a>
+</li>
+<li>
+<a  id="p217" href="nodes.mask.generate.point_cloud.html">Point Cloud</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m218" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reshape</a>
+<ul class="submenu collapse list-unstyled" id="m218">
+<li>
+<a  id="p219" href="nodes.mask.reshape.crop_to_bounding_box.html">Crop To Bounding Box</a>
+</li>
+<li>
+<a  id="p220" href="nodes.mask.reshape.pad.html">Pad</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m221" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Export</a>
+<ul class="submenu collapse list-unstyled" id="m221">
+<li>
+<a  id="p222" href="nodes.mask.export.metaio_.mhd.html">MetaIO .mhd</a>
+</li>
+<li>
+<a  id="p223" href="nodes.mask.export.matlab_.mat.html">MATLAB .mat</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p224" href="nodes.mask.apply_to_image.html">Apply To Image</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m225" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Structure</a>
+<ul class="submenu collapse list-unstyled" id="m225">
+<li>
+<a href="#m226" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m226">
+<li>
+<a  id="p227" href="nodes.structure.convert_to.mask.html">Mask</a>
+</li>
+<li>
+<a  id="p228" href="nodes.structure.convert_to.point_data.html">Point Data</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m229" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate From</a>
+<ul class="submenu collapse list-unstyled" id="m229">
+<li>
+<a  id="p230" href="nodes.structure.generate_from.isosurface.html">Isosurface</a>
+</li>
+<li>
+<a  id="p231" href="nodes.structure.generate_from.mask.html">Mask</a>
+</li>
+<li>
+<a  id="p232" href="nodes.structure.generate_from.point_data.html">Point Data</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m233" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Export</a>
+<ul class="submenu collapse list-unstyled" id="m233">
+<li>
+<a  id="p234" href="nodes.structure.export.dicom_(rtstruct).html">DICOM (RTSTRUCT)</a>
+</li>
+<li>
+<a  id="p235" href="nodes.structure.export.mesh_(stl).html">Mesh (STL)</a>
+</li>
+<li>
+<a  id="p236" href="nodes.structure.export.image.html">Image</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m237" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Edit</a>
+<ul class="submenu collapse list-unstyled" id="m237">
+<li>
+<a  id="p238" href="nodes.structure.edit.clean.html">Clean</a>
+</li>
+<li>
+<a  id="p239" href="nodes.structure.edit.reduce.html">Reduce</a>
+</li>
+<li>
+<a  id="p240" href="nodes.structure.edit.filter.html">Filter</a>
+</li>
+<li>
+<a  id="p241" href="nodes.structure.edit.rename.html">Rename</a>
+</li>
+<li>
+<a  id="p242" href="nodes.structure.edit.merge.html">Merge</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m243" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Transform</a>
+<ul class="submenu collapse list-unstyled" id="m243">
+<li>
+<a  id="p244" href="nodes.structure.transform.apply_transform.html">Apply Transform</a>
+</li>
+<li>
+<a  id="p245" href="nodes.structure.transform.re-slice_to_image.html">Re-Slice to Image</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m246" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Data</a>
+<ul class="submenu collapse list-unstyled" id="m246">
+<li>
+<a href="#m247" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Curve</a>
+<ul class="submenu collapse list-unstyled" id="m247">
+<li>
+<a  id="p248" href="nodes.data.curve.merge_curves.html">Merge Curves</a>
+</li>
+<li>
+<a  id="p249" href="nodes.data.curve.create_expression.html">Create Expression</a>
+</li>
+<li>
+<a  id="p250" href="nodes.data.curve.data_to_curve.html">Data To Curve</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m251" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Export</a>
+<ul class="submenu collapse list-unstyled" id="m251">
+<li>
+<a  id="p252" href="nodes.data.export.csv.html">CSV</a>
+</li>
+<li>
+<a  id="p253" href="nodes.data.export.excel.html">Excel</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m254" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate From</a>
+<ul class="submenu collapse list-unstyled" id="m254">
+<li>
+<a  id="p255" href="nodes.data.generate_from.data_elements.html">Data Elements</a>
+</li>
+<li>
+<a  id="p256" href="nodes.data.generate_from.curves.html">Curves</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p257" href="nodes.data.transpose_data.html">Transpose Data</a>
+</li>
+<li>
+<a  id="p258" href="nodes.data.extract_data.html">Extract Data</a>
+</li>
+<li>
+<a  id="p259" href="nodes.data.merge_data.html">Merge Data</a>
+</li>
+<li>
+<a  id="p260" href="nodes.data.sort_data.html">Sort Data</a>
+</li>
+<li>
+<a  id="p261" href="nodes.data.create_expression.html">Create Expression</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m262" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Values</a>
+<ul class="submenu collapse list-unstyled" id="m262">
+<li>
+<a href="#m263" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Bit</a>
+<ul class="submenu collapse list-unstyled" id="m263">
+<li>
+<a href="#m264" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Boolean Algebra</a>
+<ul class="submenu collapse list-unstyled" id="m264">
+<li>
+<a  id="p265" href="nodes.values.bit.boolean_algebra.and.html">AND</a>
+</li>
+<li>
+<a  id="p266" href="nodes.values.bit.boolean_algebra.not.html">NOT</a>
+</li>
+<li>
+<a  id="p267" href="nodes.values.bit.boolean_algebra.or.html">OR</a>
+</li>
+<li>
+<a  id="p268" href="nodes.values.bit.boolean_algebra.xor.html">XOR</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m269" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate From</a>
+<ul class="submenu collapse list-unstyled" id="m269">
+<li>
+<a  id="p270" href="nodes.values.bit.generate_from.create_constant.html">Create Constant</a>
+</li>
+<li>
+<a  id="p271" href="nodes.values.bit.generate_from.number.html">Number</a>
+</li>
+<li>
+<a  id="p272" href="nodes.values.bit.generate_from.text.html">Text</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m273" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m273">
+<li>
+<a  id="p274" href="nodes.values.bit.convert_to.data_element.html">Data Element</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p275" href="nodes.values.bit.display_bit.html">Display Bit</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m276" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Number</a>
+<ul class="submenu collapse list-unstyled" id="m276">
+<li>
+<a href="#m277" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Math. Operations</a>
+<ul class="submenu collapse list-unstyled" id="m277">
+<li>
+<a  id="p278" href="nodes.values.number.math._operations.add.html">Add</a>
+</li>
+<li>
+<a  id="p279" href="nodes.values.number.math._operations.subtract.html">Subtract</a>
+</li>
+<li>
+<a  id="p280" href="nodes.values.number.math._operations.multiply.html">Multiply</a>
+</li>
+<li>
+<a  id="p281" href="nodes.values.number.math._operations.divide.html">Divide</a>
+</li>
+<li>
+<a  id="p282" href="nodes.values.number.math._operations.raise_to_power.html">Raise To Power</a>
+</li>
+<li>
+<a  id="p283" href="nodes.values.number.math._operations.sqrt.html">Sqrt</a>
+</li>
+<li>
+<a  id="p284" href="nodes.values.number.math._operations.sin.html">Sin</a>
+</li>
+<li>
+<a  id="p285" href="nodes.values.number.math._operations.cos.html">Cos</a>
+</li>
+<li>
+<a  id="p286" href="nodes.values.number.math._operations.tan.html">Tan</a>
+</li>
+<li>
+<a  id="p287" href="nodes.values.number.math._operations.log.html">Log</a>
+</li>
+<li>
+<a  id="p288" href="nodes.values.number.math._operations.log_10.html">Log 10</a>
+</li>
+<li>
+<a  id="p289" href="nodes.values.number.math._operations.create_expression.html">Create Expression</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m290" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Constants</a>
+<ul class="submenu collapse list-unstyled" id="m290">
+<li>
+<a  id="p291" href="nodes.values.number.constants.pi.html">Pi</a>
+</li>
+<li>
+<a  id="p292" href="nodes.values.number.constants.create_constant.html">Create Constant</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m293" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate From</a>
+<ul class="submenu collapse list-unstyled" id="m293">
+<li>
+<a  id="p294" href="nodes.values.number.generate_from.image.html">Image</a>
+</li>
+<li>
+<a  id="p295" href="nodes.values.number.generate_from.mask.html">Mask</a>
+</li>
+<li>
+<a  id="p296" href="nodes.values.number.generate_from.data.html">Data</a>
+</li>
+<li>
+<a  id="p297" href="nodes.values.number.generate_from.curve.html">Curve</a>
+</li>
+<li>
+<a  id="p298" href="nodes.values.number.generate_from.dicom_tag.html">Dicom Tag</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m299" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m299">
+<li>
+<a  id="p300" href="nodes.values.number.convert_to.text.html">Text</a>
+</li>
+<li>
+<a  id="p301" href="nodes.values.number.convert_to.data_element.html">Data Element</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p302" href="nodes.values.number.display_number.html">Display Number</a>
+</li>
+<li>
+<a  id="p303" href="nodes.values.number.get_voxel_position.html">Get Voxel Position</a>
+</li>
+<li>
+<a  id="p304" href="nodes.values.number.get_voxel_index.html">Get Voxel Index</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m305" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Text</a>
+<ul class="submenu collapse list-unstyled" id="m305">
+<li>
+<a href="#m306" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Constants</a>
+<ul class="submenu collapse list-unstyled" id="m306">
+<li>
+<a  id="p307" href="nodes.values.text.constants.create_constant.html">Create Constant</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m308" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Random</a>
+<ul class="submenu collapse list-unstyled" id="m308">
+<li>
+<a  id="p309" href="nodes.values.text.random.dicom_uid.html">DICOM UID</a>
+</li>
+<li>
+<a  id="p310" href="nodes.values.text.random.guid.html">GUID</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m311" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Format</a>
+<ul class="submenu collapse list-unstyled" id="m311">
+<li>
+<a  id="p312" href="nodes.values.text.format.concatenate.html">Concatenate</a>
+</li>
+<li>
+<a  id="p313" href="nodes.values.text.format.extract_substring.html">Extract Substring</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m314" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate From</a>
+<ul class="submenu collapse list-unstyled" id="m314">
+<li>
+<a  id="p315" href="nodes.values.text.generate_from.image_metadata.html">Image Metadata</a>
+</li>
+<li>
+<a  id="p316" href="nodes.values.text.generate_from.dicom_tag.html">Dicom Tag</a>
+</li>
+<li>
+<a  id="p317" href="nodes.values.text.generate_from.data.html">Data</a>
+</li>
+<li>
+<a  id="p318" href="nodes.values.text.generate_from.image_name.html">Image Name</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m319" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m319">
+<li>
+<a  id="p320" href="nodes.values.text.convert_to.data_element.html">Data Element</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p321" href="nodes.values.text.display_text.html">Display Text</a>
+</li>
+</ul>
+</li>
+<li>
+<a  id="p322" href="nodes.values.add_database_tag.html">Add Database Tag</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m323" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Vector</a>
+<ul class="submenu collapse list-unstyled" id="m323">
+<li>
+<a href="#m324" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Math. Operations</a>
+<ul class="submenu collapse list-unstyled" id="m324">
+<li>
+<a  id="p325" href="nodes.vector.math._operations.add.html">Add</a>
+</li>
+<li>
+<a  id="p326" href="nodes.vector.math._operations.subtract.html">Subtract</a>
+</li>
+<li>
+<a  id="p327" href="nodes.vector.math._operations.multiply.html">Multiply</a>
+</li>
+<li>
+<a  id="p328" href="nodes.vector.math._operations.divide.html">Divide</a>
+</li>
+<li>
+<a  id="p329" href="nodes.vector.math._operations.ceiling.html">Ceiling</a>
+</li>
+<li>
+<a  id="p330" href="nodes.vector.math._operations.floor.html">Floor</a>
+</li>
+<li>
+<a  id="p331" href="nodes.vector.math._operations.round.html">Round</a>
+</li>
+<li>
+<a  id="p332" href="nodes.vector.math._operations.dot_product.html">Dot Product</a>
+</li>
+<li>
+<a  id="p333" href="nodes.vector.math._operations.cross_product.html">Cross Product</a>
+</li>
+<li>
+<a  id="p334" href="nodes.vector.math._operations.invert_displacement_field.html">Invert Displacement Field</a>
+</li>
+<li>
+<a  id="p335" href="nodes.vector.math._operations.principal_component_analysis.html">Principal Component Analysis</a>
+</li>
+<li>
+<a  id="p336" href="nodes.vector.math._operations.jacobian_determinant.html">Jacobian Determinant</a>
+</li>
+<li>
+<a  id="p337" href="nodes.vector.math._operations.normalize.html">Normalize</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m338" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m338">
+<li>
+<a  id="p339" href="nodes.vector.convert_to.image.html">Image</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m340" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Create From</a>
+<ul class="submenu collapse list-unstyled" id="m340">
+<li>
+<a  id="p341" href="nodes.vector.create_from.elastix_transform.html">Elastix Transform</a>
+</li>
+<li>
+<a  id="p342" href="nodes.vector.create_from.xyz_images.html">XYZ Images</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m343" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Export</a>
+<ul class="submenu collapse list-unstyled" id="m343">
+<li>
+<a  id="p344" href="nodes.vector.export.metaio_.mhd.html">MetaIO .mhd</a>
+</li>
+<li>
+<a  id="p345" href="nodes.vector.export.matlab_.mat.html">MATLAB .mat</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m346" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Complex</a>
+<ul class="submenu collapse list-unstyled" id="m346">
+<li>
+<a href="#m347" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Convert To</a>
+<ul class="submenu collapse list-unstyled" id="m347">
+<li>
+<a  id="p348" href="nodes.complex.convert_to.magnitudephase_images.html">Magnitude/Phase Images</a>
+</li>
+<li>
+<a  id="p349" href="nodes.complex.convert_to.realimaginary_images.html">Real/Imaginary Images</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m350" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Generate From</a>
+<ul class="submenu collapse list-unstyled" id="m350">
+<li>
+<a  id="p351" href="nodes.complex.generate_from.magnitudephase_images.html">Magnitude/Phase Images</a>
+</li>
+<li>
+<a  id="p352" href="nodes.complex.generate_from.realimaginary_images.html">Real/Imaginary Images</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m353" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Export</a>
+<ul class="submenu collapse list-unstyled" id="m353">
+<li>
+<a  id="p354" href="nodes.complex.export.metaio_.mhd.html">MetaIO .mhd</a>
+</li>
+<li>
+<a  id="p355" href="nodes.complex.export.matlab_.mat.html">MATLAB .mat</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m356" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Applications</a>
+<ul class="submenu collapse list-unstyled" id="m356">
+<li>
+<a href="#m357" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reports</a>
+<ul class="submenu collapse list-unstyled" id="m357">
+<li>
+<a  id="p358" href="nodes.applications.reports.pdf.html">PDF</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m359" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Digital Phantoms</a>
+<ul class="submenu collapse list-unstyled" id="m359">
+<li>
+<a  id="p360" href="nodes.applications.digital_phantoms.brainweb_mr_beta.html">Brainweb MR BETA</a>
+</li>
+<li>
+<a  id="p361" href="nodes.applications.digital_phantoms.spin-echo_contrast_beta.html">Spin-echo contrast BETA</a>
+</li>
+<li>
+<a  id="p362" href="nodes.applications.digital_phantoms.gradient-echo_contrast_beta.html">Gradient-echo contrast BETA</a>
+</li>
+<li>
+<a  id="p363" href="nodes.applications.digital_phantoms.mri_emulator_beta.html">MRI Emulator BETA</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m364" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Deprecated</a>
+<ul class="submenu collapse list-unstyled" id="m364">
+<li>
+<a  id="p365" href="nodes.deprecated.patch_based_denoising.html">Patch Based Denoising</a>
+</li>
+<li>
+<a  id="p366" href="nodes.deprecated.landweber_deconvolution.html">Landweber Deconvolution</a>
+</li>
+<li>
+<a  id="p367" href="nodes.deprecated.projected_landweber_deconvolution.html">Projected Landweber Deconvolution</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m368" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tutorials</a>
+<ul class="submenu collapse list-unstyled" id="m368">
+<li>
+<a href="#m369" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Videos</a>
+<ul class="submenu collapse list-unstyled" id="m369">
+<li>
+<a  id="p370" href="tutorials.videos.getting_started.html">Getting Started</a>
+</li>
+<li>
+<a  id="p371" href="tutorials.videos.import_data.html">Import Data</a>
+</li>
+<li>
+<a  id="p372" href="tutorials.videos.the_visualizer.html">The Visualizer</a>
+</li>
+<li>
+<a  id="p373" href="tutorials.videos.organize_your_workflow.html">Organize your Workflow</a>
+</li>
+<li>
+<a  id="p374" href="tutorials.videos.batching.html">Batching</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m375" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Changelog</a>
+<ul class="submenu collapse list-unstyled" id="m375">
+<li>
+<a  id="p376" href="changelog.1.1.0.html">1.1.0</a>
+</li>
+<li>
+<a  id="p377" href="changelog.1.1.2.html">1.1.2</a>
+</li>
+<li>
+<a  id="p378" href="changelog.1.1.3.html">1.1.3</a>
+</li>
+<li>
+<a  id="p379" href="changelog.2021.1.0.html">2021.1.0</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m380" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Articles</a>
+<ul class="submenu collapse list-unstyled" id="m380">
+<li>
+<a  id="p381" href="articles.image_registration.html">Image registration</a>
+</li>
+<li>
+<a  id="p382" href="articles.smooth_masks.html">Smooth masks</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m383" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">dVIEWR</a>
+<ul class="submenu collapse list-unstyled" id="m383">
+<li>
+<a href="#m384" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Theory</a>
+<ul class="submenu collapse list-unstyled" id="m384">
+<li>
+<a  id="p385" href="dviewr.theory.tensor_parameterization.html">Tensor parameterization</a>
+</li>
+<li>
+<a  id="p386" href="dviewr.theory.voxel_content.html">Voxel content</a>
+</li>
+<li>
+<a href="#m387" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Q-space trajectory Imaging (QTI)</a>
+<ul class="submenu collapse list-unstyled" id="m387">
+<li>
+<a  id="p388" href="dviewr.theory.q-space_trajectory_imaging_(qti).signal_representation.html">Signal representation</a>
+</li>
+<li>
+<a  id="p389" href="dviewr.theory.q-space_trajectory_imaging_(qti).diffusion_contrasts.html">Diffusion contrasts</a>
+</li>
+<li>
+<a  id="p390" href="dviewr.theory.q-space_trajectory_imaging_(qti).drawbacks.html">Drawbacks</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#m391" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Diffusion tensor distribution imaging (DTD)</a>
+<ul class="submenu collapse list-unstyled" id="m391">
+<li>
+<a  id="p392" href="dviewr.theory.diffusion_tensor_distribution_imaging_(dtd).signal_representation.html">Signal representation</a>
+</li>
+<li>
+<a  id="p393" href="dviewr.theory.diffusion_tensor_distribution_imaging_(dtd).statistical_descriptors_and_binning.html">Statistical descriptors and binning</a>
+</li>
+<li>
+<a  id="p394" href="dviewr.theory.diffusion_tensor_distribution_imaging_(dtd).diffusion_measures.html">Diffusion measures</a>
+</li>
+<li>
+<a  id="p395" href="dviewr.theory.diffusion_tensor_distribution_imaging_(dtd).drawbacks.html">Drawbacks</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+
+        <!-- Page Content  -->
+        <div id="content" class="col"><h1 id="bilateral-denoising">Bilateral Denoising</h1>
+<div class="tiny"><p>Class: <strong>NodeImageBilateralFilter</strong></p>
+</div>
+<p><img src="images/nodes/nodeimagebilateralfilter.png" class="img-fluid" alt="Node Icon" /></p>
+<p>The bilateral filter blurs an image while preserving edges.</p>
+<p>This filter uses bilateral filtering to blur an image using both domain and range &ldquo;neighborhoods&rdquo;. Pixels that are close to a pixel in the image domain and similar to a pixel in the image range are used to calculate the filtered value. Two gaussian kernels (one in the image domain and one in the image range) are used to smooth the image. The result is an image that is smoothed in homogeneous regions yet has edges preserved. The result is similar to anisotropic diffusion but the implementation in non-iterative.</p>
+<p>Bilateral filtering is capable of reducing the noise in an image by an order of magnitude while maintaining edges.</p>
+<p>The bilateral operator used here was described by <a href="https://ieeexplore.ieee.org/document/710815">Tomasi and Manduchi</a>.</p>
+<h2 id="example-workflows">Example workflows</h2>
+<div class="tiny"><p><a href="workflows/denoising-filters.ice">Denoising filters example workflow</a></p>
+</div>
+<h2 id="inputs">Inputs</h2>
+<div class="box"><h4 id="image"><svg width="20" height="20"><circle cx="10" cy="8" r="6" stroke="#242424" stroke-width="1" fill="#90EE90" /></svg>Image</h4>
+<p>The input image.</p>
+<div class="tiny"><p>Type: <strong>Image4DFloat</strong>, Required, Single</p>
+</div>
+</div>
+<div><h2 id="outputs">Outputs</h2>
+<div class="box"><h4 id="output"><svg width="20" height="20"><circle cx="10" cy="8" r="6" stroke="#242424" stroke-width="1" fill="#90EE90" /></svg>Output</h4>
+<p>The denoised image.</p>
+<div class="tiny"><p>Type: <strong>Image4DFloat</strong></p>
+</div>
+</div>
+</div>
+<div><h2 id="settings">Settings</h2>
+<div class="box"><h4 id="domain-sigma-number">Domain Sigma <span class="label  label-blue">Number</span></h4>
+<p>The standard deviation of the gaussian blurring kernel in mm.</p>
+</div>
+</div>
+<div class="box"><h4 id="range-sigma-number">Range Sigma <span class="label  label-blue">Number</span></h4>
+<p>The standard deviation of the gaussian blurring kernel in the image range in intensity units.</p>
+</div>
+<div class="box"><h4 id="number-of-gaussian-samples-integer">Number of Gaussian Samples <span class="label  label-green">Integer</span></h4>
+<p>The number of samples in the approximation of the Gaussian used for the range smoothing.</p>
+</div>
+<h2 id="references">References</h2>
+<div class="tiny"><p> 1. "The Insight Segmentation and Registration Toolkit" www.itk.org</p>
+</div>
+<h2 id="see-also">See also</h2>
+<p><strong>Keywords</strong>:</p>
+<p class="copyright">Copyright &#169; 2020, NONPI Medical AB</p></div>
+
+        <!-- Indexbar  -->
+        <div id="right-wrapper" class="col-3">
+            <nav id="indexbar" class="nav sticky-top">
+                <p><i class="fas fa-align-left"></i> CONTENTS</p>
+                <a class="nav-link" href="#bilateral-denoising"><h1>Bilateral Denoising</h1></a>
+<a class="nav-link" href="#example-workflows"><h2>Example workflows</h2></a>
+<a class="nav-link" href="#inputs"><h2>Inputs</h2></a>
+<a class="nav-link" href="#outputs"><h2>Outputs</h2></a>
+<a class="nav-link" href="#settings"><h2>Settings</h2></a>
+<a class="nav-link" href="#references"><h2>References</h2></a>
+<a class="nav-link" href="#see-also"><h2>See also</h2></a>
+
+            </nav>
+        </div>
+    </div>
+
+    <!-- Popper.JS -->
+    <script src="scripts/jquery-3.5.0.min.js" type="text/javascript"></script>
+    <script src="scripts/prism.js" type="text/javascript"></script>
+    <script src="scripts/popper.min.js" type="text/javascript"></script>
+    <script src="scripts/bootstrap.js" type="text/javascript"></script>
+    <script src="scripts/tipuesearch_content.js" type="text/javascript"></script>
+    <script src="scripts/tipuesearch_set.js" type="text/javascript"></script>
+    <script src="scripts/tipuesearch.min.js" type="text/javascript"></script>
+    <script src="scripts/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#dismiss, .overlay').on('click', function () {
+                $('#searchbar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#searchbar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                $('#tipue_search_input').focus();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#tipue_search_input').tipuesearch({
+                'show': 7,
+                'footerPages': 7,
+                'showTime': false,
+                'showURL': false,
+                'wholeWords': false
+            });
+        });
+    </script>
+</body>
+</html>
