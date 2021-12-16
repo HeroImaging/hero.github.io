@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="2021.1.0.0" Timestamp="2021-06-04 13:17:44.4760040">
+<MICE Version="2021.2.0.0" Timestamp="2021-12-16 09:07:23.1617979">
   <Settings>
     <ID>0f6d064e-8aa0-4ce5-8bcf-036669d7128d</ID>
     <Name>New Process</Name>
@@ -8,7 +8,7 @@
     <Compress>False</Compress>
   </Settings>
   <Nodes>
-    <Node ID="D3F5CCd2FFdBDf7D" T="NodeMRIEmulator" V="0.1" X="38" Y="110" FI="">
+    <Node ID="3e26043D12E168BF" T="NodeMRIEmulator" V="0.1" X="38" Y="110" FI="">
       <Inputs />
       <Outputs>
         <IO ID="da4bCBf8D52AA0e7" T="Image4DFloat" N="MR Image" MI="1" MA="1" />
@@ -49,7 +49,7 @@
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="E0Ac60f5bB2707d1" T="NodeMRIEmulator" V="0.1" X="41" Y="207" FI="">
+    <Node ID="1bEB8dc03aF35b0A" T="NodeMRIEmulator" V="0.1" X="41" Y="207" FI="">
       <Inputs />
       <Outputs>
         <IO ID="035C13d1500AE44f" T="Image4DFloat" N="MR Image" MI="1" MA="1" />
@@ -90,7 +90,7 @@
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="AB83FBEe2fa5Db3C" T="NodeT2Map" V="0.1" X="660" Y="180" FI="">
+    <Node ID="dcB046f06bbF0B8E" T="NodeT2Map" V="0.1" X="660" Y="180" FI="">
       <Inputs>
         <IO ID="DF0f4Ba15184dAca" T="Image4DFloat" N="Echo Series" MI="1" MA="2147483647" />
         <IO ID="c61C2c2aa2F2D333" T="Image4DBool" N="Mask" MI="0" MA="1" />
@@ -103,7 +103,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="a7d7377ED3DdD4dd" T="NodeImageToMask" V="0.1" X="362" Y="85" FI="">
+    <Node ID="FAd7ADcF67C6eDED" T="NodeImageToMask" V="0.1" X="362" Y="85" FI="">
       <Inputs>
         <IO ID="7fE3efFb184eEac8" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>

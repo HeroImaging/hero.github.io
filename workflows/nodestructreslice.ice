@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="2021.1.0.0" Timestamp="2021-06-04 13:15:48.2684206">
+<MICE Version="2021.2.0.0" Timestamp="2021-12-16 09:05:03.6569784">
   <Settings>
     <ID>0f047e68-3491-4a80-958d-2fb3ea4b57f6</ID>
     <Name>New Process</Name>
@@ -8,7 +8,7 @@
     <Compress>False</Compress>
   </Settings>
   <Nodes>
-    <Node ID="e8Ff0b2e8B6Cd0aD" T="NodeStructReslice" V="1.0" X="701" Y="10" FI="">
+    <Node ID="62B68d202ac3ed6D" T="NodeStructReslice" V="1.0" X="701" Y="10" FI="">
       <Inputs>
         <IO ID="B3F8aeAF1525b1Ae" T="RTStructCollection" N="Structure" MI="1" MA="1" />
         <IO ID="4BC0B364032cBAb8" T="Image4DFloat" N="Reference" MI="1" MA="1" />
@@ -22,7 +22,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="B6CABEeBDfdBbB3b" T="NodeReadDicomDB" V="0.1" X="10" Y="52" FI="">
+    <Node ID="cB7A7fC3323A2d21" T="NodeReadDicomDB" V="0.1" X="10" Y="52" FI="">
       <Inputs />
       <Outputs>
         <IO ID="827fa6f4cbCf42E5" T="Image4DFloat" N="Image" MI="1" MA="1" />
@@ -30,6 +30,10 @@
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="14" />
+        <SN N="IStructs" V="True" />
+        <SN N="StructSeriesIDs" V="17" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="Brain 2.5" />
@@ -44,13 +48,11 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="17;" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="1FeEf7763Cdf5FfA" T="NodeResampleImageResolution" V="0.1" X="468" Y="3" FI="New Voxel Size X (mm);New Voxel Size Y (mm);New Voxel Size Z (mm);">
+    <Node ID="83AbCdc8DB333cBA" T="NodeResampleImageResolution" V="0.1" X="468" Y="3" FI="New Voxel Size X (mm);New Voxel Size Y (mm);New Voxel Size Z (mm);">
       <Inputs>
         <IO ID="1e06F6AfeDBFcbc1" T="Image4DFloat" N="Image" MI="1" MA="1" />
         <IO ID="6F7ed3FaEAA73b0b" T="Double" N="New Voxel Size X (mm)" MI="1" MA="1" />
@@ -68,7 +70,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="087aCf4bBBE3F242" T="NodeImageToDouble" V="0.1" X="156" Y="51" FI="">
+    <Node ID="5AF43eeDa6700e6a" T="NodeImageToDouble" V="0.1" X="156" Y="51" FI="">
       <Inputs>
         <IO ID="0A2Ccaca2bBDE42d" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
@@ -103,7 +105,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="FE67ee38eec1EAB6" T="NodeDoubleDivide" V="0.1" X="321" Y="108" FI="">
+    <Node ID="BBC4aF7afbEA8C0b" T="NodeDoubleDivide" V="0.1" X="321" Y="108" FI="">
       <Inputs>
         <IO ID="ef6Ae8eBc5baF6EF" T="Double" N="In" MI="1" MA="1" />
         <IO ID="Be5E5Ac6d4F66fd7" T="Double" N="Div" MI="1" MA="2147483647" />
@@ -115,7 +117,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="D27bf0Ba5C7F6fEA" T="NodeGenerateDouble" V="0.1" X="206" Y="144" FI="">
+    <Node ID="1406d1dbD45a6a43" T="NodeGenerateDouble" V="0.1" X="206" Y="144" FI="">
       <Inputs />
       <Outputs>
         <IO ID="3daFAea6cacDDAD5" T="Double" N="Value" MI="1" MA="1" />
@@ -128,7 +130,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="62E878bc5E1A6612" T="NodeIORepeater" V="0.1" X="156" Y="23" FI="">
+    <Node ID="16303c2A766b7b2C" T="NodeIORepeater" V="0.1" X="156" Y="23" FI="">
       <Inputs>
         <IO ID="d6f43522cDe4B6cE" T="Image4DFloat" N="In" MI="1" MA="2147483647" />
       </Inputs>
@@ -143,7 +145,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="6F1BecAeeDd2CFbe" T="NodeIORepeater" V="0.1" X="156" Y="-24" FI="">
+    <Node ID="Abc2a0DBb4eC3748" T="NodeIORepeater" V="0.1" X="156" Y="-24" FI="">
       <Inputs>
         <IO ID="14452bcdBA53ab6D" T="RTStructCollection" N="In" MI="1" MA="2147483647" />
       </Inputs>
@@ -158,7 +160,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="4dcDceA311F8c5De" T="NodeIORepeater" V="0.1" X="592" Y="-24" FI="">
+    <Node ID="d242C5d78E523CE3" T="NodeIORepeater" V="0.1" X="592" Y="-24" FI="">
       <Inputs>
         <IO ID="D5AEcb4BbeF6e218" T="RTStructCollection" N="In" MI="1" MA="2147483647" />
       </Inputs>
@@ -173,7 +175,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="AbA36c6ca33C40cc" T="NodeStructReduce" V="1.0" X="840" Y="17" FI="">
+    <Node ID="eF3F7AC0da5db30b" T="NodeStructReduce" V="1.0" X="840" Y="17" FI="">
       <Inputs>
         <IO ID="F17bEEA0Ba1dcB0e" T="RTStructCollection" N="Structure" MI="1" MA="1" />
       </Inputs>

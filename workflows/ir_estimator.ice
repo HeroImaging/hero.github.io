@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="2021.1.0.0" Timestamp="2021-06-02 12:29:47.1925028">
+<MICE Version="2021.2.0.0" Timestamp="2021-12-16 09:36:03.2884852">
   <Settings>
     <ID>194284b8-c0b9-40b5-b34f-f00161aca06c</ID>
     <Name>New Process</Name>
@@ -9,7 +9,7 @@ magnitude data.</Description>
     <Compress>False</Compress>
   </Settings>
   <Nodes>
-    <Node ID="BDb56Efe83Cda6ED" T="NodeMRIEmulator" V="0.1" X="49" Y="81" FI="">
+    <Node ID="8f8F3de2AB53cF0D" T="NodeMRIEmulator" V="0.1" X="49" Y="81" FI="">
       <Inputs />
       <Outputs>
         <IO ID="ca6A76ce3478F428" T="Image4DFloat" N="MR Image" MI="1" MA="1" />
@@ -50,7 +50,7 @@ magnitude data.</Description>
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="A62780d551CD8dCd" T="NodeMRIEmulator" V="0.1" X="46" Y="179" FI="">
+    <Node ID="602A563CeE76BD2E" T="NodeMRIEmulator" V="0.1" X="46" Y="179" FI="">
       <Inputs />
       <Outputs>
         <IO ID="3558Dd1d7832dFba" T="Image4DFloat" N="MR Image" MI="1" MA="1" />
@@ -91,7 +91,7 @@ magnitude data.</Description>
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="5D1D467CcEe63E60" T="NodeMRIEmulator" V="0.1" X="54" Y="278" FI="">
+    <Node ID="78EbD52371b7DdcF" T="NodeMRIEmulator" V="0.1" X="54" Y="278" FI="">
       <Inputs />
       <Outputs>
         <IO ID="ff3ad0fd876CAC53" T="Image4DFloat" N="MR Image" MI="1" MA="1" />
@@ -132,7 +132,7 @@ magnitude data.</Description>
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="bCb6148B3C1dDeE3" T="NodeMRIEmulator" V="0.1" X="53" Y="372" FI="">
+    <Node ID="75afdCccadfBa4D4" T="NodeMRIEmulator" V="0.1" X="53" Y="372" FI="">
       <Inputs />
       <Outputs>
         <IO ID="6B8fB8644Ae22bed" T="Image4DFloat" N="MR Image" MI="1" MA="1" />
@@ -173,7 +173,7 @@ magnitude data.</Description>
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="FaAAEB0Bc5f01ec4" T="NodeT1IR" V="0.1" X="463" Y="135" FI="">
+    <Node ID="fa51bDEaC87c5A5C" T="NodeT1IR" V="0.1" X="463" Y="135" FI="">
       <Inputs>
         <IO ID="B7EFeCA2a4eC2278" T="Image4DFloat" N="Dataset" MI="2" MA="2147483647" />
         <IO ID="1BA5c2BbDc0041C3" T="Image4DBool" N="Mask" MI="0" MA="1" />

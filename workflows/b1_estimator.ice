@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="2021.1.0.0" Timestamp="2021-06-04 13:08:02.4479538">
+<MICE Version="2021.2.0.0" Timestamp="2021-12-16 08:55:56.6036187">
   <Settings>
     <ID>194284b8-c0b9-40b5-b34f-f00161aca06c</ID>
     <Name>New Process</Name>
@@ -11,7 +11,7 @@ TR = 5s the condition for TR &gt;&gt; T1 is not fullfilled in the CSF hence givi
     <Compress>False</Compress>
   </Settings>
   <Nodes>
-    <Node ID="a8DCcdf8dd8fE0d0" T="NodeMRIEmulator" V="0.1" X="116" Y="235" FI="">
+    <Node ID="A4c310275FD3C20E" T="NodeMRIEmulator" V="0.1" X="116" Y="235" FI="">
       <Inputs />
       <Outputs>
         <IO ID="3b417Fe7AEf5cBE0" T="Image4DFloat" N="MR Image" MI="1" MA="1" />
@@ -52,7 +52,7 @@ TR = 5s the condition for TR &gt;&gt; T1 is not fullfilled in the CSF hence givi
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="bFCA2dA55cFB5E6C" T="NodeMRIEmulator" V="0.1" X="114" Y="338" FI="">
+    <Node ID="2B563bFaD1e2aCCB" T="NodeMRIEmulator" V="0.1" X="114" Y="338" FI="">
       <Inputs />
       <Outputs>
         <IO ID="Bd34ba5E32eBCAFb" T="Image4DFloat" N="MR Image" MI="1" MA="1" />
@@ -93,7 +93,7 @@ TR = 5s the condition for TR &gt;&gt; T1 is not fullfilled in the CSF hence givi
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="cdA6D4b2afAC3F30" T="NodeBOneCorrection" V="0.1" X="506" Y="290" FI="">
+    <Node ID="B543Ca0C5a72AA04" T="NodeBOneCorrection" V="0.1" X="506" Y="290" FI="">
       <Inputs>
         <IO ID="e54efae475aDCDeF" T="Image4DFloat" N="Angle 1" MI="1" MA="1" />
         <IO ID="768CeFdc51FF8228" T="Image4DFloat" N="Angle 2" MI="1" MA="1" />

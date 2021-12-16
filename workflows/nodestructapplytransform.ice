@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="2021.1.0.0" Timestamp="2021-06-04 13:49:41.4468345">
+<MICE Version="2021.2.0.0" Timestamp="2021-12-16 09:04:43.7085574">
   <Settings>
     <ID>52d2f5ec-87e0-4733-91e6-c1672cf5bea6</ID>
     <Name>New Process</Name>
@@ -8,7 +8,7 @@
     <Compress>False</Compress>
   </Settings>
   <Nodes>
-    <Node ID="02CAC1bF2De3Ccb3" T="NodeReadDicomDB" V="0.1" X="148" Y="329" FI="">
+    <Node ID="BebaFC257dF37Baa" T="NodeReadDicomDB" V="0.1" X="148" Y="329" FI="">
       <Inputs />
       <Outputs>
         <IO ID="cDAB6f504Ab3f8C3" T="Image4DFloat" N="Image" MI="1" MA="1" />
@@ -16,6 +16,10 @@
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="1" />
+        <SN N="IStructs" V="True" />
+        <SN N="StructSeriesIDs" V="4" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="Brain 2.5" />
@@ -30,13 +34,11 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="4;" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="e3a4A1cef0ddcBC0" T="NodeReadDicomDB" V="0.1" X="150" Y="447" FI="">
+    <Node ID="ca083BA2c57EBfB1" T="NodeReadDicomDB" V="0.1" X="150" Y="447" FI="">
       <Inputs />
       <Outputs>
         <IO ID="A5efcEdcb3b0ca3F" T="Image4DFloat" N="Image" MI="1" MA="1" />
@@ -44,6 +46,10 @@
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="14" />
+        <SN N="IStructs" V="True" />
+        <SN N="StructSeriesIDs" V="17" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="Brain 2.5" />
@@ -58,13 +64,11 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="17;" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="8Cbb15fDE3cC3eeE" T="NodeElastixProcessor" V="0.5" X="373" Y="389" FI="">
+    <Node ID="7BAF6ea3A40fBCdb" T="NodeElastixProcessor" V="0.5" X="373" Y="389" FI="">
       <Inputs>
         <IO ID="f6aeafAD0C6eeECa" T="Image4DFloat" N="Fixed" MI="1" MA="1" />
         <IO ID="eEDDf67AEcaf0426" T="Image4DFloat" N="Moving 1" MI="1" MA="1" />
@@ -92,7 +96,7 @@
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="3873Fe0f32DE14B8" T="NodeElastixProcessor" V="0.5" X="572" Y="428" FI="">
+    <Node ID="eaEF6D73Ac33cA48" T="NodeElastixProcessor" V="0.5" X="572" Y="428" FI="">
       <Inputs>
         <IO ID="44AbBD7BB086a2dD" T="Image4DFloat" N="Fixed" MI="1" MA="1" />
         <IO ID="A3875d20bAdcaCd5" T="Image4DFloat" N="Moving 1" MI="1" MA="1" />
@@ -120,7 +124,7 @@
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="564F2BebFf8Bd4C3" T="NodeIORepeater" V="0.1" X="373" Y="462" FI="">
+    <Node ID="02b8bDcfAd4c4Ccd" T="NodeIORepeater" V="0.1" X="373" Y="462" FI="">
       <Inputs>
         <IO ID="820dA31bECaebdbF" T="Image4DFloat" N="In" MI="1" MA="2147483647" />
       </Inputs>
@@ -135,7 +139,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="1fA7C31efBeF01DD" T="NodeStructApplyTransform" V="1.0" X="745" Y="460" FI="">
+    <Node ID="ecAADe10224cD486" T="NodeStructApplyTransform" V="1.0" X="745" Y="460" FI="">
       <Inputs>
         <IO ID="D0F46C8feAa3A1c2" T="TransformixParameter" N="Transform" MI="1" MA="1" />
         <IO ID="f508ac572B8FD1c3" T="RTStructCollection" N="Structure" MI="1" MA="1" />
@@ -146,6 +150,7 @@
       </Outputs>
       <Settings>
         <SN N="FTM" V="False" />
+        <SN N="IgnoreIT" V="False" />
         <SN N="MinArea" V="0.01" />
         <SN N="Decimate" V="True" />
         <SN N="It" V="5" />
@@ -154,7 +159,7 @@
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="EEE3FDFEfbb81DAC" T="NodeStructApplyTransform" V="1.0" X="925" Y="314" FI="">
+    <Node ID="F1fEbabd5b6D2d6C" T="NodeStructApplyTransform" V="1.0" X="925" Y="314" FI="">
       <Inputs>
         <IO ID="BeA664228cfDD04A" T="TransformixParameter" N="Transform" MI="1" MA="1" />
         <IO ID="D2dB7f652cEe8a5c" T="RTStructCollection" N="Structure" MI="1" MA="1" />
@@ -165,6 +170,7 @@
       </Outputs>
       <Settings>
         <SN N="FTM" V="False" />
+        <SN N="IgnoreIT" V="False" />
         <SN N="MinArea" V="0.01" />
         <SN N="Decimate" V="True" />
         <SN N="It" V="5" />
@@ -173,7 +179,7 @@
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="Ca7b7a2e527A4bE5" T="NodeIORepeater" V="0.1" X="578" Y="334" FI="">
+    <Node ID="Ff8BFF5BEDcC7eFe" T="NodeIORepeater" V="0.1" X="578" Y="334" FI="">
       <Inputs>
         <IO ID="8a80eAcE463DA7c8" T="TransformixParameter" N="In" MI="1" MA="2147483647" />
       </Inputs>

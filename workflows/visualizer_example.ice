@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="2021.1.0.0" Timestamp="2021-06-04 13:18:56.2066756">
+<MICE Version="2021.2.0.0" Timestamp="2021-12-16 09:08:37.7537424">
   <Settings>
     <ID>20192e7f-eb1e-41fa-9e61-a0a2edfef915</ID>
     <Name>visualizer_example</Name>
@@ -8,7 +8,7 @@
     <Compress>False</Compress>
   </Settings>
   <Nodes>
-    <Node ID="e172FA5Cfc58E4cA" T="NodeReadDicomDB" V="0.1" X="10" Y="10" FI="">
+    <Node ID="74ee367D5FAdf8A4" T="NodeReadDicomDB" V="0.1" X="10" Y="10" FI="">
       <Inputs />
       <Outputs>
         <IO ID="03C3A38Fc11A5FE5" T="Image4DFloat" N="Image" MI="1" MA="1" />
@@ -16,6 +16,10 @@
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="1" />
+        <SN N="IStructs" V="True" />
+        <SN N="StructSeriesIDs" V="4" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="Brain 2.5" />
@@ -30,13 +34,11 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="4;" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="765163C27377Acd0" T="NodeImageVisualize" V="1.0" X="370" Y="23" FI="">
+    <Node ID="7fEdBbabF01AeDb6" T="NodeImageVisualize" V="1.0" X="370" Y="23" FI="">
       <Inputs>
         <IO ID="C35AA8EE8EAE7Be8" T="Image4DFloat" N="In" MI="1" MA="1" />
       </Inputs>
@@ -59,7 +61,7 @@
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="61DF7aFc53cFBEAD" T="NodeStructProcessor" V="0.1" X="196" Y="148" FI="">
+    <Node ID="071627cECD11ABE8" T="NodeStructProcessor" V="0.1" X="196" Y="148" FI="">
       <Inputs>
         <IO ID="B22cdF3DCeA6B303" T="Image4DFloat" N="Image" MI="1" MA="1" />
         <IO ID="5b730B48C664613E" T="RTStructCollection" N="Structures" MI="1" MA="1" />
@@ -94,7 +96,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="f328d2a4fc0bf0e6" T="NodeImageVisualize" V="1.0" X="370" Y="148" FI="">
+    <Node ID="7Fb7eF4ACf5a1ec1" T="NodeImageVisualize" V="1.0" X="370" Y="148" FI="">
       <Inputs>
         <IO ID="cc8faE75dd15c1b0" T="Image4DBool" N="In" MI="1" MA="1" />
       </Inputs>
@@ -117,13 +119,17 @@
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="6df12a7cB6CFe6db" T="NodeReadDicomDB" V="0.1" X="10" Y="262" FI="">
+    <Node ID="Ce8ee4e0B2f2eC6E" T="NodeReadDicomDB" V="0.1" X="10" Y="262" FI="">
       <Inputs />
       <Outputs>
         <IO ID="16ef5Acb5525D700" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="5" />
+        <SN N="IStructs" V="False" />
+        <SN N="StructSeriesIDs" V="" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="T1w Tra" />
@@ -138,19 +144,21 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="37Ca4BbEc4A7Afde" T="NodeReadDicomDB" V="0.1" X="10" Y="346" FI="">
+    <Node ID="b72A6bA241dAcaEC" T="NodeReadDicomDB" V="0.1" X="10" Y="346" FI="">
       <Inputs />
       <Outputs>
         <IO ID="056Cd560F4d5a4d3" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="18" />
+        <SN N="IStructs" V="False" />
+        <SN N="StructSeriesIDs" V="" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="T1w Tra" />
@@ -165,13 +173,11 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="4ED308C0ED7Abd6a" T="NodeElastixProcessor" V="0.5" X="196" Y="345" FI="">
+    <Node ID="e5e8e4AAc7Bb0BB7" T="NodeElastixProcessor" V="0.5" X="196" Y="345" FI="">
       <Inputs>
         <IO ID="7843aFadFa1B76c5" T="Image4DFloat" N="Fixed" MI="1" MA="1" />
         <IO ID="806AFc1cDfFCefbB" T="Image4DFloat" N="Moving 1" MI="1" MA="1" />
@@ -198,7 +204,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="7B1ebB3F47E6FC5A" T="NodeImageVisualizeRGB" V="1.0" X="688" Y="299" FI="">
+    <Node ID="b21281EFe77de5f8" T="NodeImageVisualizeRGB" V="1.0" X="688" Y="299" FI="">
       <Inputs>
         <IO ID="a57073c4bcBACA5b" T="Image4DFloat" N="R" MI="1" MA="1" />
         <IO ID="ec1F56fcD4170Bee" T="Image4DFloat" N="G" MI="1" MA="1" />
@@ -219,7 +225,7 @@
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="10BD646fff88dBAF" T="NodeNormalize" V="0.1" X="376" Y="275" FI="">
+    <Node ID="AaB2cf2Bf66D50c3" T="NodeNormalize" V="0.1" X="376" Y="275" FI="">
       <Inputs>
         <IO ID="6bfEC7Fd16dAC7f5" T="Image4DFloat" N="In" MI="1" MA="1" />
       </Inputs>
@@ -233,7 +239,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="01BbE2EFaAee7ec5" T="NodeNormalize" V="0.1" X="376" Y="352" FI="">
+    <Node ID="230DB25B7aF2bAfd" T="NodeNormalize" V="0.1" X="376" Y="352" FI="">
       <Inputs>
         <IO ID="2Cd5eBac342d34D6" T="Image4DFloat" N="In" MI="1" MA="1" />
       </Inputs>
@@ -247,7 +253,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="0fDCEa5fBED10cb6" T="NodeImageMultiply" V="0.1" X="538" Y="312" FI="">
+    <Node ID="cF3C67F02a0EF045" T="NodeImageMultiply" V="0.1" X="538" Y="312" FI="">
       <Inputs>
         <IO ID="CBd2cfd435E54ef4" T="Image4DFloat" N="Multiply Images" MI="1" MA="2147483647" />
       </Inputs>
@@ -259,7 +265,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="DCD4FF0AB8eCE330" T="NodeImageMultiply" V="0.1" X="538" Y="346" FI="">
+    <Node ID="bAa074B6ABCDcbDF" T="NodeImageMultiply" V="0.1" X="538" Y="346" FI="">
       <Inputs>
         <IO ID="a5325FEec60CEb0c" T="Image4DFloat" N="Multiply Images" MI="1" MA="2147483647" />
       </Inputs>
@@ -271,7 +277,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="A550DF1a2f1deDFF" T="NodeImageAdd" V="0.1" X="604" Y="329" FI="">
+    <Node ID="7fCd04fc0EdcDFaE" T="NodeImageAdd" V="0.1" X="604" Y="329" FI="">
       <Inputs>
         <IO ID="DB6abdf64FA7Fd16" T="Image4DFloat" N="Add" MI="1" MA="2147483647" />
       </Inputs>
@@ -283,7 +289,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="F4d12814dD0eDC88" T="NodeIORepeater" V="0.1" X="608" Y="295" FI="">
+    <Node ID="24ae5Caf371b1B7F" T="NodeIORepeater" V="0.1" X="608" Y="295" FI="">
       <Inputs>
         <IO ID="7d8FbE1CD6fBFA22" T="Image4DFloat" N="In" MI="1" MA="2147483647" />
       </Inputs>
@@ -298,7 +304,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="4b4beE5d2C4aACEE" T="NodeIORepeater" V="0.1" X="608" Y="372" FI="">
+    <Node ID="C7c6edE6eF7bFFd4" T="NodeIORepeater" V="0.1" X="608" Y="372" FI="">
       <Inputs>
         <IO ID="DDDd8aceEEe3AbC6" T="Image4DFloat" N="In" MI="1" MA="2147483647" />
       </Inputs>
@@ -313,7 +319,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="D05d0cEe5c3A31C3" T="NodeImageColorMap" V="1.0" X="196" Y="576" FI="">
+    <Node ID="a188DBd8faE0e7bE" T="NodeImageColorMap" V="1.0" X="196" Y="576" FI="">
       <Inputs>
         <IO ID="FAD05375E2FF2cAE" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
@@ -333,7 +339,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="e4dDfdc4a8ECafb5" T="NodeReadDicomDB" V="0.1" X="10" Y="577" FI="">
+    <Node ID="a3bba520b1EaCed6" T="NodeReadDicomDB" V="0.1" X="10" Y="577" FI="">
       <Inputs />
       <Outputs>
         <IO ID="dc4FcCdFBC11D015" T="Image4DFloat" N="Image" MI="1" MA="1" />
@@ -341,6 +347,10 @@
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="14" />
+        <SN N="IStructs" V="True" />
+        <SN N="StructSeriesIDs" V="17" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="Brain 2.5" />
@@ -355,13 +365,11 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="17;" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="6fF21BAaBb547b71" T="NodeImageVisualizeRGB" V="1.0" X="761" Y="577" FI="">
+    <Node ID="3f3e46A4188e6fA0" T="NodeImageVisualizeRGB" V="1.0" X="761" Y="577" FI="">
       <Inputs>
         <IO ID="CFEbBfcD81712c61" T="Image4DFloat" N="R" MI="1" MA="1" />
         <IO ID="EFDC20Ea2DC1b6AB" T="Image4DFloat" N="G" MI="1" MA="1" />
@@ -382,7 +390,7 @@
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="0a20BcFB400becca" T="NodeImageExpression" V="0.1" X="316" Y="776" FI="">
+    <Node ID="86cF5fe8850fD53E" T="NodeImageExpression" V="0.1" X="316" Y="776" FI="">
       <Inputs>
         <IO ID="0C5cd641fDBc0EcF" T="Image4DFloat" N="a" MI="1" MA="1" />
       </Inputs>
@@ -402,7 +410,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="d568acb0772fe0d5" T="NodeImageMultiply" V="0.1" X="563" Y="641" FI="">
+    <Node ID="5aB2b4653066e7cf" T="NodeImageMultiply" V="0.1" X="563" Y="641" FI="">
       <Inputs>
         <IO ID="B57Fa576eEd8F101" T="Image4DFloat" N="Multiply Images" MI="1" MA="2147483647" />
       </Inputs>
@@ -414,7 +422,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="cA7a0B172FC00F14" T="NodeImageExpression" V="0.1" X="316" Y="717" FI="">
+    <Node ID="E2CDAedB1DaD2bfD" T="NodeImageExpression" V="0.1" X="316" Y="717" FI="">
       <Inputs>
         <IO ID="fD57bBebb725e5da" T="Image4DFloat" N="a" MI="1" MA="1" />
       </Inputs>
@@ -434,7 +442,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="A1eFF1ca3C577Ba4" T="NodeImageMultiply" V="0.1" X="563" Y="607" FI="">
+    <Node ID="aa41AFDa7A66E2F6" T="NodeImageMultiply" V="0.1" X="563" Y="607" FI="">
       <Inputs>
         <IO ID="8844Ab2A370CDAdA" T="Image4DFloat" N="Multiply Images" MI="1" MA="2147483647" />
       </Inputs>
@@ -446,7 +454,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="3EFcF202B77E434f" T="NodeImageExpression" V="0.1" X="316" Y="835" FI="">
+    <Node ID="10CBe0D0A7BFdF66" T="NodeImageExpression" V="0.1" X="316" Y="835" FI="">
       <Inputs>
         <IO ID="a58A2Ff87c844df1" T="Image4DFloat" N="a" MI="1" MA="1" />
       </Inputs>
@@ -466,7 +474,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="f1DcFFEDDd3A44dE" T="NodeImageMultiply" V="0.1" X="563" Y="573" FI="">
+    <Node ID="B4C4b6F86eBD6C65" T="NodeImageMultiply" V="0.1" X="563" Y="573" FI="">
       <Inputs>
         <IO ID="8bB8b13bD5fD7213" T="Image4DFloat" N="Multiply Images" MI="1" MA="2147483647" />
       </Inputs>

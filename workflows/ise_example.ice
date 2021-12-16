@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="2021.1.0.0" Timestamp="2021-06-04 13:09:51.3929666">
+<MICE Version="2021.2.0.0" Timestamp="2021-12-16 08:57:58.6681228">
   <Settings>
     <ID>48a33066-215e-4576-ad52-02b811bc9b2a</ID>
     <Name>New Process</Name>
@@ -8,7 +8,7 @@
     <Compress>False</Compress>
   </Settings>
   <Nodes>
-    <Node ID="bD0cF2E0017461EC" T="NodeInducedSusceptibilityEffect" V="0.1" X="418" Y="43" FI="">
+    <Node ID="7D8c283bcDA13bB2" T="NodeInducedSusceptibilityEffect" V="0.1" X="418" Y="43" FI="">
       <Inputs>
         <IO ID="cCA25b1a6B8e7764" T="Image4DFloat" N="Image" MI="1" MA="1" />
         <IO ID="CEa45E35bcEfa14c" T="Image4DFloat" N="Susceptibility" MI="1" MA="1" />
@@ -33,7 +33,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="F563b4C5fA3ffFdF" T="NodeReadDicomDB" V="0.1" X="10" Y="10" FI="">
+    <Node ID="eEE17dC010DdAaec" T="NodeReadDicomDB" V="0.1" X="10" Y="10" FI="">
       <Inputs />
       <Outputs>
         <IO ID="A2F2b2883B14F885" T="Image4DFloat" N="Image" MI="1" MA="1" />
@@ -41,6 +41,10 @@
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="14" />
+        <SN N="IStructs" V="True" />
+        <SN N="StructSeriesIDs" V="17" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="Brain 2.5" />
@@ -55,13 +59,11 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="17;" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="fa4CAEEc3FdBF55F" T="NodeSusceptibility" V="0.1" X="205" Y="-11" FI="">
+    <Node ID="fA5B518dEd3db8C0" T="NodeSusceptibility" V="0.1" X="205" Y="-11" FI="">
       <Inputs>
         <IO ID="Cc3FBC36A3f88aCD" T="Image4DFloat" N="CT Image" MI="1" MA="1" />
         <IO ID="ca4FEdCE02Ef6Ee7" T="Image4DBool" N="Mask" MI="0" MA="1" />
@@ -73,7 +75,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="aBcF36bfe84426BE" T="NodeImageToMask" V="0.1" X="205" Y="90" FI="">
+    <Node ID="ADF0D0a7d836Bdb3" T="NodeImageToMask" V="0.1" X="205" Y="90" FI="">
       <Inputs>
         <IO ID="C05acCEe3f816Ea5" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
@@ -86,7 +88,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="dE87C2cab603f54d" T="NodeImageVisualize" V="1.0" X="749" Y="34" FI="">
+    <Node ID="B4DcfAbD36Ea8Aff" T="NodeImageVisualize" V="1.0" X="749" Y="34" FI="">
       <Inputs>
         <IO ID="B068ACdeFcefFBE2" T="Image4DFloat" N="In" MI="1" MA="1" />
       </Inputs>
@@ -109,7 +111,7 @@
         <SN N="RunSingle" V="True" />
       </Settings>
     </Node>
-    <Node ID="b6A42FcfbA267DaE" T="NodeImageVisualize" V="1.0" X="747" Y="92" FI="">
+    <Node ID="ab580bcfddeFC372" T="NodeImageVisualize" V="1.0" X="747" Y="92" FI="">
       <Inputs>
         <IO ID="5aE71BF16Fdab1A7" T="Image4DFloat" N="In" MI="1" MA="1" />
       </Inputs>

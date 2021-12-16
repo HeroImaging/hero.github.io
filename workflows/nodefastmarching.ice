@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="2021.1.0.0" Timestamp="2021-06-04 13:10:42.8068809">
+<MICE Version="2021.2.0.0" Timestamp="2021-12-16 08:58:57.9402750">
   <Settings>
     <ID>efe6e1fe-c4a9-48ff-a379-c7fd40283cea</ID>
     <Name>New Process</Name>
@@ -8,7 +8,7 @@
     <Compress>False</Compress>
   </Settings>
   <Nodes>
-    <Node ID="ca82f6beb623dD0F" T="NodeGradientMagnitudeRecursiveGaussian" V="0.1" X="323" Y="10" FI="">
+    <Node ID="d505Ee1a8f6dFdDC" T="NodeGradientMagnitudeRecursiveGaussian" V="0.1" X="323" Y="10" FI="">
       <Inputs>
         <IO ID="a8Bf63B2DdBfAAF8" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
@@ -20,7 +20,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="ceb417beE2cb7cAD" T="NodeSigmoidFilter" V="0.1" X="502" Y="23" FI="">
+    <Node ID="1E51D8BfAE0B3Fc8" T="NodeSigmoidFilter" V="0.1" X="502" Y="23" FI="">
       <Inputs>
         <IO ID="D54b0dA1e08f24Ac" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
@@ -35,7 +35,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="f7abC281edfB0781" T="NodeImageToMask" V="0.1" X="776" Y="30" FI="">
+    <Node ID="EFde07adbC0Ced0d" T="NodeImageToMask" V="0.1" X="776" Y="30" FI="">
       <Inputs>
         <IO ID="Dad6D3A4bCD5BD33" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
@@ -48,7 +48,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="B5E4CDACdeeCDb1E" T="NodeFastMarching" V="1.0" X="624" Y="23" FI="">
+    <Node ID="d35bBef7bf2FBbF6" T="NodeFastMarching" V="1.0" X="624" Y="23" FI="">
       <Inputs>
         <IO ID="E2CccceDd1Cc34A2" T="Image4DFloat" N="Image" MI="1" MA="1" />
         <IO ID="DfC7ccCA2C51eeBd" T="Image4DBool" N="Seed Mask" MI="0" MA="1" />
@@ -65,13 +65,17 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="0C0f6E3DF65fc3ac" T="NodeReadDicomDB" V="0.1" X="10" Y="53" FI="">
+    <Node ID="ff4BA0aBc0Ae0454" T="NodeReadDicomDB" V="0.1" X="10" Y="53" FI="">
       <Inputs />
       <Outputs>
         <IO ID="fFdCa571f1EDa3Af" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="5" />
+        <SN N="IStructs" V="False" />
+        <SN N="StructSeriesIDs" V="" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="T1w Tra" />
@@ -86,13 +90,11 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="5322D2cEaD24f4DB" T="NodeCurvatureDiffusion" V="0.1" X="139" Y="10" FI="">
+    <Node ID="FDd4a2bAbEfeAce1" T="NodeCurvatureDiffusion" V="0.1" X="139" Y="10" FI="">
       <Inputs>
         <IO ID="5A5C00Dc3C7b17c2" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
@@ -107,7 +109,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="eb5E7c1e555dD08a" T="NodeImageToMask" V="0.1" X="139" Y="110" FI="">
+    <Node ID="e034dFFf15f14BEF" T="NodeImageToMask" V="0.1" X="139" Y="110" FI="">
       <Inputs>
         <IO ID="Dd75FedD71af2f8c" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
@@ -120,7 +122,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="Fd87fD8a5eCbaBfA" T="NodeMaskFillHole" V="0.1" X="282" Y="110" FI="">
+    <Node ID="d4D8cEe5001dD7CF" T="NodeMaskFillHole" V="0.1" X="282" Y="110" FI="">
       <Inputs>
         <IO ID="2C761EdEEDdACbFB" T="Image4DBool" N="Mask" MI="1" MA="1" />
       </Inputs>
@@ -133,7 +135,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="68A668EEB364C2dd" T="NodeMaskDilate" V="0.1" X="405" Y="110" FI="">
+    <Node ID="F3a55ef3E2ddaD8e" T="NodeMaskDilate" V="0.1" X="405" Y="110" FI="">
       <Inputs>
         <IO ID="3fa523Ee51dEbD58" T="Image4DBool" N="Mask" MI="1" MA="1" />
       </Inputs>
@@ -148,7 +150,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="Dc1DFd334d6F13BD" T="NodeMaskNot" V="0.1" X="525" Y="126" FI="">
+    <Node ID="05a3B2A3c774De2b" T="NodeMaskNot" V="0.1" X="525" Y="126" FI="">
       <Inputs>
         <IO ID="18BBEae7458ABf14" T="Image4DBool" N="In" MI="1" MA="1" />
       </Inputs>
@@ -159,7 +161,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="E2E4f67e554f7b5F" T="NodeFastMarching" V="1.0" X="624" Y="96" FI="">
+    <Node ID="7a685dE6E0A87457" T="NodeFastMarching" V="1.0" X="624" Y="96" FI="">
       <Inputs>
         <IO ID="bFb6f7a61Ccddad1" T="Image4DFloat" N="Image" MI="1" MA="1" />
         <IO ID="b85f266Cb2AAdce1" T="Image4DBool" N="Seed Mask" MI="0" MA="1" />
@@ -176,7 +178,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="0502CDD88bb5Af1C" T="NodeImageToMask" V="0.1" X="776" Y="103" FI="">
+    <Node ID="40Ac568BffCC68eF" T="NodeImageToMask" V="0.1" X="776" Y="103" FI="">
       <Inputs>
         <IO ID="B6bE65cB0Cfba04b" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
@@ -189,7 +191,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="0beC7E03FaB1Cf7c" T="NodeMaskNot" V="0.1" X="902" Y="119" FI="">
+    <Node ID="0b8a1deBD32dbE86" T="NodeMaskNot" V="0.1" X="902" Y="119" FI="">
       <Inputs>
         <IO ID="4Fb1BcAD3bEBBfE5" T="Image4DBool" N="In" MI="1" MA="1" />
       </Inputs>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="2021.1.0.0" Timestamp="2021-06-04 13:17:10.9799660">
+<MICE Version="2021.2.0.0" Timestamp="2021-12-16 09:06:45.7693717">
   <Settings>
     <ID>9da565c3-e9a8-4c05-a91e-989299bf1f3e</ID>
     <Name>New Process</Name>
@@ -8,13 +8,17 @@
     <Compress>False</Compress>
   </Settings>
   <Nodes>
-    <Node ID="55d3DAAd3C878fbC" T="NodeReadDicomDB" V="0.1" X="10" Y="10" FI="">
+    <Node ID="EFe8bb57773ea032" T="NodeReadDicomDB" V="0.1" X="10" Y="10" FI="">
       <Inputs />
       <Outputs>
         <IO ID="Da30D7c7cc4ff4aa" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="5" />
+        <SN N="IStructs" V="False" />
+        <SN N="StructSeriesIDs" V="" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="T1w Tra" />
@@ -29,13 +33,11 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="AfdcDBCba8DecFa7" T="NodeImageLaplacianSharpening" V="0.1" X="221" Y="-26" FI="">
+    <Node ID="cb8eBdd30dEBe25e" T="NodeImageLaplacianSharpening" V="0.1" X="221" Y="-26" FI="">
       <Inputs>
         <IO ID="52e2fb052fDC283e" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
@@ -47,7 +49,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="58Cfff316AC7a517" T="NodeImageUnsharpMask" V="0.1" X="175" Y="46" FI="">
+    <Node ID="Db143a0DB2ceF8Bb" T="NodeImageUnsharpMask" V="0.1" X="175" Y="46" FI="">
       <Inputs>
         <IO ID="CeeBFFafA627dA2b" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
@@ -61,7 +63,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="aDf8CA1b2E80FFbE" T="NodeImageToDouble" V="0.1" X="175" Y="118" FI="">
+    <Node ID="6dC8bCcE2F1FEDE0" T="NodeImageToDouble" V="0.1" X="175" Y="118" FI="">
       <Inputs>
         <IO ID="B068BD1B0ad4eA14" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
@@ -95,7 +97,7 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="BC618C7E4B6bEBFd" T="NodeImageTruncate" V="0.1" X="442" Y="59" FI="Max Level;Min Level;">
+    <Node ID="be6C6DAEA250aeAF" T="NodeImageTruncate" V="0.1" X="442" Y="59" FI="Max Level;Min Level;">
       <Inputs>
         <IO ID="b3a8Bef6AaD0CCC5" T="Image4DFloat" N="In" MI="1" MA="1" />
         <IO ID="7DF2F1227AA6A8fb" T="Double" N="Max Level" MI="1" MA="1" />

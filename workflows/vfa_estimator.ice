@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MICE Version="2021.1.0.0" Timestamp="2021-06-04 13:18:51.7566945">
+<MICE Version="2021.2.0.0" Timestamp="2021-12-16 09:08:32.4598352">
   <Settings>
     <ID>7ab19406-cc51-477e-a809-d00fd44a5892</ID>
     <Name>New Process</Name>
@@ -8,7 +8,7 @@
     <Compress>False</Compress>
   </Settings>
   <Nodes>
-    <Node ID="Cd6BEF210BBffDf7" T="NodeT1VFA" V="0.1" X="589" Y="347" FI="">
+    <Node ID="50FE30bffa1ABA6C" T="NodeT1VFA" V="0.1" X="589" Y="347" FI="">
       <Inputs>
         <IO ID="AFCEfDd83FeC4E6F" T="Image4DFloat" N="Dataset" MI="2" MA="2147483647" />
         <IO ID="A84281fD7C42C74F" T="Image4DBool" N="Mask" MI="0" MA="1" />
@@ -22,13 +22,17 @@
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="ddADFf1B65762DC1" T="NodeReadDicomDB" V="0.1" X="-30" Y="203" FI="">
+    <Node ID="4e2daFa71Ae0F7d6" T="NodeReadDicomDB" V="0.1" X="-30" Y="203" FI="">
       <Inputs />
       <Outputs>
         <IO ID="BeaE87Cfef8242cd" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="9" />
+        <SN N="IStructs" V="False" />
+        <SN N="StructSeriesIDs" V="" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="VFA 10" />
@@ -43,19 +47,21 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="3f7e5e8120Aa4bDb" T="NodeReadDicomDB" V="0.1" X="-30" Y="275" FI="">
+    <Node ID="Ee70bdaaddd2A5d7" T="NodeReadDicomDB" V="0.1" X="-30" Y="275" FI="">
       <Inputs />
       <Outputs>
         <IO ID="626314CFA32dcdDF" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="10" />
+        <SN N="IStructs" V="False" />
+        <SN N="StructSeriesIDs" V="" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="VFA 20" />
@@ -70,19 +76,21 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="53AAdB25eA467c8F" T="NodeReadDicomDB" V="0.1" X="-30" Y="347" FI="">
+    <Node ID="AF76bcE71Cad0EB6" T="NodeReadDicomDB" V="0.1" X="-30" Y="347" FI="">
       <Inputs />
       <Outputs>
         <IO ID="7d7eeDcDb56518bD" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="11" />
+        <SN N="IStructs" V="False" />
+        <SN N="StructSeriesIDs" V="" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="VFA 3" />
@@ -97,19 +105,21 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="3a3f37B82C13DC2A" T="NodeReadDicomDB" V="0.1" X="-30" Y="419" FI="">
+    <Node ID="acead4ACa4f7b016" T="NodeReadDicomDB" V="0.1" X="-30" Y="419" FI="">
       <Inputs />
       <Outputs>
         <IO ID="BafF0DdCAAcDed41" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="12" />
+        <SN N="IStructs" V="False" />
+        <SN N="StructSeriesIDs" V="" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="VFA 30" />
@@ -124,19 +134,21 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="3b4EFA4FA2D4EAd3" T="NodeReadDicomDB" V="0.1" X="-30" Y="491" FI="">
+    <Node ID="acA43EbF5e7f6e0B" T="NodeReadDicomDB" V="0.1" X="-30" Y="491" FI="">
       <Inputs />
       <Outputs>
         <IO ID="e4FA5F1a45fCff1E" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Outputs>
       <Settings>
         <SN N="SeriesID" V="13" />
+        <SN N="IStructs" V="False" />
+        <SN N="StructSeriesIDs" V="" />
+        <SN N="IRegs" V="False" />
+        <SN N="RegSeriesIDs" V="" />
         <SN N="Connection" V="MICE Demo Examples" />
         <SN N="DateOffset" V="0" />
         <SN N="MatchString" V="VFA 6" />
@@ -151,13 +163,11 @@
         <SN N="CaseSensitive" V="False" />
         <SN N="Action" V="Keep" />
         <SN N="MiceType" V="Image4DFloat" />
-        <SN N="StructSeriesIDs" V="" />
-        <SN N="RegSeriesIDs" V="" />
         <SN N="DataSeriesIDs" V="" />
         <SN N="RunSingle" V="False" />
       </Settings>
     </Node>
-    <Node ID="4bb12FadE26aD7aF" T="NodeImageToMask" V="0.1" X="270" Y="215" FI="">
+    <Node ID="FABa1A5278bE4daA" T="NodeImageToMask" V="0.1" X="270" Y="215" FI="">
       <Inputs>
         <IO ID="10b84550B258Ee8D" T="Image4DFloat" N="Image" MI="1" MA="1" />
       </Inputs>
