@@ -53,11 +53,11 @@
 <a  id="p1" href="home.html">Home</a>
 </li>
 <li>
-<a href="#m2" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Nodes</a>
-<ul class="submenu collapse list-unstyled show" id="m2">
+<a href="#m2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nodes</a>
+<ul class="submenu collapse list-unstyled" id="m2">
 <li>
-<a href="#m3" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Image</a>
-<ul class="submenu collapse list-unstyled show" id="m3">
+<a href="#m3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Image</a>
+<ul class="submenu collapse list-unstyled" id="m3">
 <li>
 <a href="#m4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Create/Import</a>
 <ul class="submenu collapse list-unstyled" id="m4">
@@ -370,8 +370,8 @@
 </ul>
 </li>
 <li>
-<a href="#m101" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Compare</a>
-<ul class="submenu collapse list-unstyled show" id="m101">
+<a href="#m101" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Compare</a>
+<ul class="submenu collapse list-unstyled" id="m101">
 <li>
 <a  id="p102" href="nodes.image.compare.equal.html">Equal</a>
 </li>
@@ -385,7 +385,7 @@
 <a  id="p105" href="nodes.image.compare.less_than_or_equal.html">Less Than or Equal</a>
 </li>
 <li>
-<a class="focused" id="p106" href="nodes.image.compare.greater_than.html">Greater Than</a>
+<a  id="p106" href="nodes.image.compare.greater_than.html">Greater Than</a>
 </li>
 <li>
 <a  id="p107" href="nodes.image.compare.greater_than_or_equal.html">Greater Than or Equal</a>
@@ -2968,10 +2968,10 @@
 </ul>
 </li>
 <li>
-<a href="#m873" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Changelog</a>
-<ul class="submenu collapse list-unstyled" id="m873">
+<a href="#m873" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Changelog</a>
+<ul class="submenu collapse list-unstyled show" id="m873">
 <li>
-<a  id="p874" href="changelog.2023.1.1.html">2023.1.1</a>
+<a class="focused" id="p874" href="changelog.2023.1.1.html">2023.1.1</a>
 </li>
 </ul>
 </li>
@@ -2989,78 +2989,65 @@
         </div>
 
         <!-- Page Content  -->
-        <div id="content" class="col"><h1 id="greater-than">Greater Than</h1>
-<p><img src="images/nodes/nodegeneralgreaterthan.png" class="img-fluid" alt="Node Icon" /></p>
-<p>Elementwise compare inputs with broadcasting. If <strong>Upper</strong> input elements are greater than <strong>Lower</strong> input elements, the output element is TRUE. You can compare any supported inputs to inputs of the same type, and any input element to <strong>Numbers</strong>.</p>
-<!---Tooltip\NodeGeneralGreaterThan\Elementwise compare inputs with broadcasting. If Upper input elements are greater than Lower input elements, the output element is TRUE.--->
-<h2 id="inputs">Inputs</h2>
-<div class="box"><h4 id="upper"><svg width="20" height="20"><circle cx="10" cy="8" r="6" stroke="#003F22" stroke-width="1" fill="#FFFFFF" /></svg>Upper</h4>
-<p>First input.</p>
-<div class="tiny"><p>Type: <strong>Column, Image, Numbers</strong>, List, Required, Single</p>
-</div>
-</div>
-<div>
-<div class="box"><h4 id="lower"><svg width="20" height="20"><rect x="4" y="3" width="11" height="11" stroke="#003F22" stroke-width="1" fill="#FFFFFF" /></svg>Lower</h4>
-<p>Second input.</p>
-<div class="tiny"><p>Type: <strong>Column, Image, Numbers</strong>, List, Required, Single</p>
-</div>
-</div>
-</div>
-<div><h2 id="outputs">Outputs</h2>
-<div class="box"><h4 id="output"><svg width="20" height="20"><circle cx="10" cy="8" r="6" stroke="#003F22" stroke-width="1" fill="#FFFFFF" /></svg>Output</h4>
-<p>Output. The output type is determined by the input types. If one input is an <strong>Image</strong> or a <strong>Column</strong>, the output will be an <strong>Image</strong> or a <strong>Column</strong>, respectively. If both inputs are <strong>Numbers</strong> type, the output will be a <strong>Numbers</strong> type.</p>
-<div class="tiny"><p>Type: <strong>Column, Image, Numbers</strong>, List</p>
-</div>
-</div>
-</div>
-<div><h2 id="settings">Settings</h2>
-<h3 id="value">Value</h3>
-<div class="box"><h4 id="value-array">Value <span class="label  label-blue">Array</span></h4>
-<p>Value to compare the first input to. Only valid if the optional input is not connected.</p>
-<!---Value\Value\Value to compare the first input to.---> 
-</div>
-</div>
-<div class="box"><h4 id="value-type-selection">Value Type <span class="label  label-purple">Selection</span></h4>
-<p>Value type of the <strong>Value</strong> setting.</p>
-<!---Value\Value Type\Value type of the Value setting.---> 
-<div class="tiny"><p>Values: <strong>Integer32, Integer64, Float32, Float64</strong></p>
-</div>
-</div>
-<div><h3 id="image-settings">Image Settings</h3>
-<div class="box"><h4 id="metadata-source-selection">Metadata Source <span class="label  label-purple">Selection</span></h4>
-<p>Select the source for the output metadata. This is only applicable if the output is an image.</p>
-<!---Image Settings\Metadata Source\Select the source for the output metadata.---> 
-<div class="tiny"><p>Values: <strong>Upper, Lower</strong></p>
-</div>
-</div>
-</div>
-<div><h3 id="column-settings">Column Settings</h3>
-<div class="box"><h4 id="column-name-text">Column Name <span class="label  label-red">Text</span></h4>
-<p>Set the name of the output column.</p>
-<!---Column Settings\Column Name\Set the name of the output column.---> 
-</div>
-</div>
-<h3 id="broadcast-settings">Broadcast Settings</h3>
-<div class="box"><h4 id="broadcasting-selection">Broadcasting <span class="label  label-purple">Selection</span></h4>
-<p>Select how to align the input data for broadcasting. Only applicable for <strong>Image</strong> and <strong>Numbers</strong>.</p>
-<!---Broadcast Settings\Broadcasting\Select how to align the input data for broadcasting.---> 
-<div class="tiny"><p>Values: <strong>Align Leading Dimensions, Align Trailing Dimensions</strong></p>
-</div>
-</div>
-<div><h2 id="see-also">See also</h2>
-<p><strong>Keywords</strong>:</p>
-</div>
+        <div id="content" class="col"><h1 id="section">2023.1.1</h1>
+<h2 id="whats-changed">What's Changed</h2>
+<h3 id="new-features">New Features:</h3>
+<ul>
+<li>Added snapping for wires, and vertical and horizontal alignment.
+<img src="images/release_notes/2023.1.1/snapping1.gif" class="img-fluid" alt="snapping" /></li>
+<li>Align input and outputs buttons now cycle through every connection. Now it's really easy to keep the workflows clean and tidy!
+<img src="images/release_notes/2023.1.1/snapping2.gif" class="img-fluid" alt="snapping2" /></li>
+<li>Column index now displayed in table viewer
+<img src="images/release_notes/2023.1.1/column.png" class="img-fluid" alt="image" /></li>
+<li>New Node: Label Map to Mask</li>
+<li>New Node: Create Numeric Meshgrid</li>
+<li>New Node: Export Nrrd.</li>
+</ul>
+<h3 id="updates">Updates</h3>
+<ul>
+<li>Morphology nodes now handle both images and masks
+<img src="images/release_notes/2023.1.1/morphology-nodes.gif" class="img-fluid" alt="morphology" /></li>
+<li>Removed limit of 6 layers in Visualize node</li>
+<li>Support for import json metadata when importing Nifti</li>
+<li>Changed default name of output histogram table</li>
+<li>Added support for drag-and-drop ice.gz, .hdata.gz and hxdata.gz to workflow</li>
+<li>Allow negative indices in Split Numeric Array. Like in e.g. numpy, -1 represents the last element, and -2 the second to last etc.</li>
+<li>Exported nifti compressed by default</li>
+<li>Elastix output image is now optional. Disable the output if you only want the transform, and want to save memory by not returning the image to the workflow.</li>
+<li>Force transform to run exclusively. This will prevent crashes caused by non-thread safe functions in the ITK library.</li>
+<li>All object attributes in the python library are now identical to the corresponding properties in Hero. For example, the &ldquo;Position&rdquo; property of an image in Hero had the corresponding attribute &ldquo;position&rdquo; in the python library, to conform to the naming conventions of PEP 8. Now the properties and attributes are identical.</li>
+</ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li>Several small fixes in the plugin editor</li>
+<li>Wrong output type in Apply Transform</li>
+<li>Fixed bug in settings in Geometric Shape node</li>
+<li>Fixed bug when applying deformation field</li>
+<li>&ldquo;Name&rdquo; field exposed for wrong input types in save to database node</li>
+<li>Export nodes now obey the compression setting</li>
+<li>Visualization &ldquo;sag&rdquo; orientation spelling has been corrected.</li>
+<li>Fixed scrolling issue in visualizer.</li>
+<li>N4 Bias field correction now handles list inputs correctly</li>
+<li>RTSTRUCT export of oblique frames of references are now supported.</li>
+<li>Files without file extension are now visible in the Open File dialogue window</li>
+<li>Struct name from plugin output is now correct</li>
+<li>Empty fields in Create Structure node now prevent the node from executing</li>
+<li>DVH calculates Mean correctly</li>
+<li>Gamma index now handles lists correctly</li>
+</ul>
+<h3 id="python-versions">Python versions</h3>
+<ul>
+<li>Python version 3.10.9 included</li>
+<li>Compatible with heropytools version 1.2.2</li>
+</ul>
 <p class="copyright">Copyright &#169; 2023, Hero Imaging AB</p></div>
 
         <!-- Indexbar  -->
         <div id="right-wrapper" class="col-3">
             <nav id="indexbar" class="nav sticky-top">
                 <p><i class="fas fa-align-left"></i> CONTENTS</p>
-                <a class="nav-link" href="#greater-than"><h1>Greater Than</h1></a>
-<a class="nav-link" href="#inputs"><h2>Inputs</h2></a>
-<a class="nav-link" href="#outputs"><h2>Outputs</h2></a>
-<a class="nav-link" href="#settings"><h2>Settings</h2></a>
-<a class="nav-link" href="#see-also"><h2>See also</h2></a>
+                <a class="nav-link" href="#section"><h1>2023.1.1</h1></a>
+<a class="nav-link" href="#whats-changed"><h2>What's Changed</h2></a>
 
             </nav>
         </div>

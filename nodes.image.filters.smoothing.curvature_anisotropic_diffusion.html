@@ -2968,10 +2968,10 @@
 </ul>
 </li>
 <li>
-<a href="#m873" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Release Notes</a>
+<a href="#m873" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Changelog</a>
 <ul class="submenu collapse list-unstyled" id="m873">
 <li>
-<a  id="p874" href="release_notes.2023.1.1.html">2023.1.1</a>
+<a  id="p874" href="changelog.2023.1.1.html">2023.1.1</a>
 </li>
 </ul>
 </li>
@@ -3007,7 +3007,7 @@
 </div>
 </div>
 <div><h2 id="settings">Settings</h2>
-<div class="box"><h4 id="conductance-settingsfloat">Conductance <span class="label  label-default">SettingsFloat</span></h4>
+<div class="box"><h4 id="conductance-float">Conductance <span class="label  label-default">Float</span></h4>
 <p>Controls the sensitivity of the conductance term in the basic anisotropic diffusion equation. It affects the conductance term in different ways depending on the particular variation on the basic equation. As a general rule, the lower the value, the more strongly the diffusion equation preserves image features (such as high gradients or curvature). A high value for conductance will cause the filter to diffuse image features more readily. Typical values range from 0.5 to 2.0 for data like the Visible Human color data, but the correct value for your application is wholly dependent on the results you want from a specific data set and the number or iterations you perform.</p>
 <!---Configure\Conductance\A high value for conductance will cause the filter to diffuse image features more readily.---> 
 </div>
@@ -3016,7 +3016,7 @@
 <p>Set the interval at which a new scaling for the conductance term is calculated.</p>
 <!---Configure\Scaling Update Interval\The interval at which a new scaling for the conductance term is calculated..---> 
 </div>
-<div class="box"><h4 id="time-step-settingsfloat">Time Step <span class="label  label-default">SettingsFloat</span></h4>
+<div class="box"><h4 id="time-step-float">Time Step <span class="label  label-default">Float</span></h4>
 <p>The time step to be used for each iteration (update). The time step is constrained at run-time to keep the solution stable. In general, the time step should be at or below (PixelSpacing)/2^(N+1), where N is the dimensionality (N = 2 or 3) of the image.</p>
 <!---Configure\Time Step\the time step should be at or below (PixelSpacing)/2^(N+1), where N is the dimensionality of the image.---> 
 </div>

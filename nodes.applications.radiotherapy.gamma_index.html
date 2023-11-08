@@ -2968,10 +2968,10 @@
 </ul>
 </li>
 <li>
-<a href="#m873" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Release Notes</a>
+<a href="#m873" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Changelog</a>
 <ul class="submenu collapse list-unstyled" id="m873">
 <li>
-<a  id="p874" href="release_notes.2023.1.1.html">2023.1.1</a>
+<a  id="p874" href="changelog.2023.1.1.html">2023.1.1</a>
 </li>
 </ul>
 </li>
@@ -3045,20 +3045,20 @@
 </div>
 </div>
 <div><h2 id="settings">Settings</h2>
-<div class="box"><h4 id="dose-criteria-settingsfloat">Dose Criteria [%] <span class="label  label-default">SettingsFloat</span></h4>
+<div class="box"><h4 id="dose-criteria-float">Dose Criteria [%] <span class="label  label-default">Float</span></h4>
 <p>Set the dose criterion.</p>
 <!---Configure\Dose Criteria [%]\Set the dose criterion.---> 
 </div>
 </div>
-<div class="box"><h4 id="distance-criteria-mm-settingsfloat">Distance Criteria [mm] <span class="label  label-default">SettingsFloat</span></h4>
+<div class="box"><h4 id="distance-criteria-mm-float">Distance Criteria [mm] <span class="label  label-default">Float</span></h4>
 <p>Set the distance criterion.</p>
 <!---Configure\Distance Criteria [mm]\Set the distance criterion.---> 
 </div>
-<div class="box"><h4 id="search-radius-mm-settingsfloat">Search Radius [mm] <span class="label  label-default">SettingsFloat</span></h4>
+<div class="box"><h4 id="search-radius-mm-float">Search Radius [mm] <span class="label  label-default">Float</span></h4>
 <p>Set the radius of the sphere around each evaluated voxel to evaluate the gamma index for. If the user desires a pass/fail gamma evaluation, the Search Radius can be set equal to Distance Criteria. If a more thorough evaluation is desired, set the Search Radius to at least 3 times the Distance Criteria. Increasing the search radius increases the computation time.</p>
 <!---Configure\Search Radius [mm]\Set the radius of the sphere around each evaluated voxel to evaluate the gamma index for.---> 
 </div>
-<div class="box"><h4 id="step-size-mm-settingsfloat">Step Size [mm] <span class="label  label-default">SettingsFloat</span></h4>
+<div class="box"><h4 id="step-size-mm-float">Step Size [mm] <span class="label  label-default">Float</span></h4>
 <p>Determines the resolution of the evaluation, i.e. the accuracy of the interpolation. Recommended step size is at most 1 / 3 of the distance to agreement(DTA) and a fraction of the resolution of the voxel size. As an example, for a 1 mm DTA and voxel size of 2 mm, a step size of 0.25 mm would be suitable. Increasing resolution increases computation time.</p>
 <!---Configure\Step Size [mm]\Determines the resolution of the evaluation, i.e. the accuracy of the interpolation.---> 
 </div>
@@ -3073,7 +3073,7 @@ Values: **Prescribed Dose, Neighborhood Dose**
 :::
 :::
 --->
-<div class="box"><h4 id="prescribed-dose-gy-settingsfloat">Prescribed Dose [Gy] <span class="label  label-default">SettingsFloat</span></h4>
+<div class="box"><h4 id="prescribed-dose-gy-float">Prescribed Dose [Gy] <span class="label  label-default">Float</span></h4>
 <p>The dose to which the dose criteria is related to. I.e. if a 3% dose criterion is chosen and the prescribed dose is 10 Gy, the absolute dose difference criteria in the gamma calculations will be 0.3 Gy.</p>
 <!---Configure\Prescribed Dose [Gy]\The dose to which the dose criteria is related to if Select Dose Reference is set to Prescribed Dose.---> 
 </div>
