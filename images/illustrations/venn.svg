@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -14,7 +12,7 @@
    viewBox="0 0 88.085464 85.7995"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="venn.svg">
   <defs
      id="defs2" />
@@ -25,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="37.273755"
-     inkscape:cy="192.03265"
+     inkscape:zoom="2.8"
+     inkscape:cx="113.48268"
+     inkscape:cy="218.56202"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -39,7 +37,8 @@
      fit-margin-top="0.1"
      fit-margin-left="0.1"
      fit-margin-right="0.1"
-     fit-margin-bottom="0.1" />
+     fit-margin-bottom="0.1"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -48,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,7 +59,7 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot8474"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        transform="matrix(0.26458333,0,0,0.26458333,38.971052,21.958819)"><flowRegion
          id="flowRegion8476"><rect
            id="rect8478"
@@ -68,8 +67,9 @@
            height="32.829956"
            x="464.67017"
            y="273.99155" /></flowRegion><flowPara
-         id="flowPara8480" /></flowRoot>    <flowRoot
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         id="flowPara8480" /></flowRoot>
+    <flowRoot
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot8488"
        xml:space="preserve"
        transform="translate(38.971052,21.958819)"><flowRegion
@@ -79,10 +79,11 @@
            height="32.829956"
            width="44.446712"
            id="rect8482" /></flowRegion><flowPara
-         id="flowPara8486" /></flowRoot>    <flowRoot
+         id="flowPara8486" /></flowRoot>
+    <flowRoot
        xml:space="preserve"
        id="flowRoot8496"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        transform="translate(38.971052,21.958819)"><flowRegion
          id="flowRegion8492"><rect
            id="rect8490"
@@ -90,92 +91,61 @@
            height="32.829956"
            x="464.67017"
            y="273.99155" /></flowRegion><flowPara
-         id="flowPara8494" /></flowRoot>    <g
-       id="g4711">
-      <ellipse
-         ry="26.836309"
-         rx="27.59226"
-         cy="112.20584"
-         cx="85.46212"
-         id="path4518"
-         style="opacity:0.5;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.31900001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <ellipse
-         style="opacity:0.51000001;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1.31900001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="ellipse4520"
-         cx="115.73428"
-         cy="112.33948"
-         rx="27.59226"
-         ry="26.836309" />
-      <text
-         id="text4524"
-         y="80.420761"
-         x="81.273232"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.69999981px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.26458332"
-           y="80.420761"
-           x="81.273232"
-           id="tspan4522"
-           sodipodi:role="line">S</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="111.83374"
-         y="80.420761"
-         id="text4528"><tspan
-           sodipodi:role="line"
-           id="tspan4526"
-           x="111.83374"
-           y="80.420761"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.69999981px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.26458332">T</tspan></text>
-      <text
-         id="text4532"
-         y="114.73109"
-         x="67.568893"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.26458332"
-           y="114.73109"
-           x="67.568893"
-           id="tspan4530"
-           sodipodi:role="line">S\T</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         id="flowPara8494" /></flowRoot>
+    <ellipse
+       ry="26.836309"
+       rx="27.59226"
+       cy="112.33948"
+       cx="85.46212"
+       id="path4518"
+       style="opacity:0.5;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.319;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <ellipse
+       style="opacity:0.51;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1.319;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="ellipse4520"
+       cx="115.73428"
+       cy="112.33948"
+       rx="27.59226"
+       ry="26.836309" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="122.49278"
+       y="114.86473"
+       id="text4536"><tspan
+         sodipodi:role="line"
+         id="tspan4534"
          x="122.49278"
-         y="114.73109"
-         id="text4536"><tspan
-           sodipodi:role="line"
-           id="tspan4534"
-           x="122.49278"
-           y="114.73109"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.26458332">T\S</tspan></text>
-      <text
-         id="text4540"
-         y="114.73282"
-         x="93.761307"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.26458332"
-           y="114.73282"
-           x="93.761307"
-           id="tspan4538"
-           sodipodi:role="line">T∩S</tspan></text>
-      <g
-         transform="translate(38.782064,20.068938)"
-         id="text8500"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         aria-label="{">
-        <path
-           id="path8537"
-           style="fill:none;stroke:#000000;stroke-width:0.76499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 105.31983,115.55559 c 0,13.76587 -38.4355,0.12865 -43.560234,13.63721 -5.458953,-13.50856 -43.560228,0 -43.560228,-13.63721"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="ccc" />
-      </g>
+         y="114.86473"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583">R\T</tspan></text>
+    <text
+       id="text4540"
+       y="114.90952"
+       x="92.532883"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
+         y="114.90952"
+         x="92.532883"
+         id="tspan4538"
+         sodipodi:role="line">T∩R</tspan></text>
+    <g
+       transform="translate(38.782064,20.068938)"
+       id="text8500"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       aria-label="{">
+      <path
+         id="path8537"
+         style="fill:none;stroke:#000000;stroke-width:0.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 105.31983,115.55559 c 0,13.76587 -38.4355,0.12865 -43.560234,13.63721 -5.458953,-13.50856 -43.560228,0 -43.560228,-13.63721"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc" />
+    </g>
+    <g
+       id="g924"
+       transform="translate(-0.49908104)">
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
          x="92.551781"
          y="156.77431"
          id="text8525"><tspan
@@ -183,15 +153,15 @@
            id="tspan8523"
            x="92.551781"
            y="156.77431"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.26458332">T </tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583">T </tspan></text>
       <text
          transform="scale(1,-1)"
          id="text8529"
          y="-151.63423"
          x="98.219208"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
          xml:space="preserve"><tspan
-           style="font-size:7.05555534px;stroke-width:0.26458332"
+           style="font-size:7.05556px;stroke-width:0.264583"
            y="-151.63423"
            x="98.219208"
            id="tspan8527"
@@ -200,13 +170,57 @@
          id="text4689"
          y="156.68819"
          x="104.26904"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Peignot;-inkscape-font-specification:'Peignot, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.26458332"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
            y="156.68819"
            x="104.26904"
            id="tspan4687"
-           sodipodi:role="line">S </tspan></text>
+           sodipodi:role="line">R </tspan></text>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:'Basier Square';-inkscape-font-specification:'Basier Square';stroke-width:0.264583"
+       x="111.83963"
+       y="82.036118"
+       id="text904"><tspan
+         sodipodi:role="line"
+         id="tspan902"
+         x="111.83963"
+         y="82.036118"
+         style="stroke-width:0.264583">R</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:'Basier Square';-inkscape-font-specification:'Basier Square';stroke-width:0.264583"
+       x="82.32946"
+       y="82.036118"
+       id="text908"><tspan
+         sodipodi:role="line"
+         id="tspan906"
+         x="82.32946"
+         y="82.036118"
+         style="stroke-width:0.264583">T</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:'Basier Square';-inkscape-font-specification:'Basier Square';stroke-width:0.264583"
+       x="68.027206"
+       y="101.31291"
+       id="text912"><tspan
+         sodipodi:role="line"
+         id="tspan910"
+         x="68.027206"
+         y="101.31291"
+         style="stroke-width:0.264583" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Basier Square';-inkscape-font-specification:'Basier Square';stroke-width:0.264583"
+       x="70.484055"
+       y="114.25718"
+       id="text916"><tspan
+         sodipodi:role="line"
+         id="tspan914"
+         x="70.484055"
+         y="114.25718"
+         style="font-size:6.35px;stroke-width:0.264583">T\R</tspan></text>
   </g>
 </svg>
